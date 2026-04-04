@@ -1,0 +1,15 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/jghig/projects/cxx/gican/out/debug/cmake_install.cmake",
+		"C:/Users/jghig/projects/cxx/gican/out/debug/lib/cmake_install.cmake",
+		"C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/cmake_install.cmake",
+		"C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/cmake_install.cmake",
+		"C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/external/glfw/cmake_install.cmake",
+		"C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/external/glfw/src/cmake_install.cmake",
+		"C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/cmake_install.cmake",
+		"C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/include/cmake_install.cmake",
+		"C:/Users/jghig/projects/cxx/gican/out/debug/gican/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

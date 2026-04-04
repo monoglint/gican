@@ -1,0 +1,45 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 4,
+        "minor": 2,
+        "patch": 3
+    },
+    "configurePresets": [
+        {
+            "name": "release",
+            "description": "Release mode",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/out/release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_CXX_COMPILER": "C:/msys64/clang64/bin/clang++.exe",
+                "CMAKE_CXX_FLAGS_RELEASE": "-Wall -stdlib=libc++",
+                "CMAKE_EXE_LINKER_FLAGS": ""
+            }
+        },
+
+        {
+            "name": "debug",
+            "description": "Debug mode",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/out/debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_CXX_COMPILER": "C:/msys64/clang64/bin/clang++.exe",
+                "CMAKE_CXX_FLAGS_DEBUG": "-Wall -g -stdlib=libc++",
+                "CMAKE_EXE_LINKER_FLAGS": ""
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "release",
+            "configurePreset": "release"
+        },
+        {
+            "name": "debug",
+            "configurePreset": "debug"
+        }
+    ]
+}
