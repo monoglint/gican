@@ -1,0 +1,14 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "gican_client\\CMakeFiles\\gican_client.dir\\src\\main.cxx.obj",
+      "requires": [
+        {
+          "logical-name": "raylib"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

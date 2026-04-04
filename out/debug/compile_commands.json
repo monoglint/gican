@@ -37,6 +37,12 @@
 },
 {
   "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\cc.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src -isystem C:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=gnu99 -o lib\\raylib\\raylib\\CMakeFiles\\raylib.dir\\utils.c.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\raylib\\src\\utils.c",
+  "file": "C:/Users/jghig/projects/cxx/gican/lib/raylib/src/utils.c",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/CMakeFiles/raylib.dir/utils.c.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
   "command": "C:\\msys64\\clang64\\bin\\cc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/include -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/src -IC:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall -o lib\\raylib\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\context.c.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\raylib\\src\\external\\glfw\\src\\context.c",
   "file": "C:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/src/context.c",
   "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.obj"
@@ -163,8 +169,38 @@
 },
 {
   "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
-  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -Wall -g -stdlib=libc++ -std=c++23 @gican\\CMakeFiles\\gican.dir\\src\\main.cxx.obj.modmap -o gican\\CMakeFiles\\gican.dir\\src\\main.cxx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican\\src\\main.cxx",
-  "file": "C:/Users/jghig/projects/cxx/gican/gican/src/main.cxx",
-  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/gican/CMakeFiles/gican.dir/src/main.cxx.obj"
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src -Wall -g -stdlib=libc++ -std=c++23 @lib\\raylib-cpp\\modules\\CMakeFiles\\raylib_cpp_modules.dir\\raylib.cppm.obj.modmap -o lib\\raylib-cpp\\modules\\CMakeFiles\\raylib_cpp_modules.dir\\raylib.cppm.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\raylib-cpp\\modules\\raylib.cppm",
+  "file": "C:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/modules/raylib.cppm",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/modules/CMakeFiles/raylib_cpp_modules.dir/raylib.cppm.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -Wall -g -stdlib=libc++ -std=c++23 @gican_shared\\base\\CMakeFiles\\base.dir\\ansi_format.ixx.obj.modmap -o gican_shared\\base\\CMakeFiles\\base.dir\\ansi_format.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_shared\\base\\ansi_format.ixx",
+  "file": "C:/Users/jghig/projects/cxx/gican/gican_shared/base/ansi_format.ixx",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/gican_shared/base/CMakeFiles/base.dir/ansi_format.ixx.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -Wall -g -stdlib=libc++ -std=c++23 @gican_shared\\base\\CMakeFiles\\base.dir\\base.ixx.obj.modmap -o gican_shared\\base\\CMakeFiles\\base.dir\\base.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_shared\\base\\base.ixx",
+  "file": "C:/Users/jghig/projects/cxx/gican/gican_shared/base/base.ixx",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/gican_shared/base/CMakeFiles/base.dir/base.ixx.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -Wall -g -stdlib=libc++ -std=c++23 @gican_shared\\base\\CMakeFiles\\base.dir\\panic.ixx.obj.modmap -o gican_shared\\base\\CMakeFiles\\base.dir\\panic.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_shared\\base\\panic.ixx",
+  "file": "C:/Users/jghig/projects/cxx/gican/gican_shared/base/panic.ixx",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/gican_shared/base/CMakeFiles/base.dir/panic.ixx.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -Wall -g -stdlib=libc++ -std=c++23 @gican_shared\\base\\CMakeFiles\\base.dir\\vector.ixx.obj.modmap -o gican_shared\\base\\CMakeFiles\\base.dir\\vector.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_shared\\base\\vector.ixx",
+  "file": "C:/Users/jghig/projects/cxx/gican/gican_shared/base/vector.ixx",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/gican_shared/base/CMakeFiles/base.dir/vector.ixx.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -Wall -g -stdlib=libc++ -std=c++23 @gican_client\\CMakeFiles\\gican_client.dir\\src\\main.cxx.obj.modmap -o gican_client\\CMakeFiles\\gican_client.dir\\src\\main.cxx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_client\\src\\main.cxx",
+  "file": "C:/Users/jghig/projects/cxx/gican/gican_client/src/main.cxx",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj"
 }
 ]

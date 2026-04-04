@@ -2305,8 +2305,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-4tx7qb"
-      binary: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-4tx7qb"
+      source: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-kzuian"
+      binary: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-kzuian"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/clang64/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -2317,16 +2317,16 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-4tx7qb'
+        Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-kzuian'
         
-        Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_abb43
-        [1/2] C:\\msys64\\clang64\\bin\\clang++.exe   -std=c++23   -v -MD -MT CMakeFiles/cmTC_abb43.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_abb43.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_abb43.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/clang64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_c0ded
+        [1/2] C:\\msys64\\clang64\\bin\\clang++.exe   -std=c++23   -v -MD -MT CMakeFiles/cmTC_c0ded.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_c0ded.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_c0ded.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/clang64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang version 21.1.8
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/msys64/clang64/bin
          (in-process)
-         "C:/msys64/clang64/bin/clang++.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-4tx7qb -v -fcoverage-compilation-dir=C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-4tx7qb -resource-dir C:/msys64/clang64/lib/clang/21 -dependency-file "CMakeFiles\\\\cmTC_abb43.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_abb43.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/include/c++/v1 -internal-isystem C:/msys64/clang64/include/c++/v1 -internal-isystem C:/msys64/clang64/lib/clang/21/include -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/clang64/include -std=c++23 -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o CMakeFiles/cmTC_abb43.dir/CMakeCXXCompilerABI.cpp.obj -x c++ C:/msys64/clang64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "C:/msys64/clang64/bin/clang++.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-kzuian -v -fcoverage-compilation-dir=C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-kzuian -resource-dir C:/msys64/clang64/lib/clang/21 -dependency-file "CMakeFiles\\\\cmTC_c0ded.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_c0ded.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/include/c++/v1 -internal-isystem C:/msys64/clang64/include/c++/v1 -internal-isystem C:/msys64/clang64/lib/clang/21/include -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/clang64/include -std=c++23 -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o CMakeFiles/cmTC_c0ded.dir/CMakeCXXCompilerABI.cpp.obj -x c++ C:/msys64/clang64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target x86_64-w64-windows-gnu
         ignoring nonexistent directory "C:/msys64/clang64/x86_64-w64-mingw32/include/c++/v1"
         ignoring nonexistent directory "C:/msys64/clang64/x86_64-w64-mingw32/include"
@@ -2337,12 +2337,12 @@ events:
          C:/msys64/clang64/lib/clang/21/include
          C:/msys64/clang64/include
         End of search list.
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\clang++.exe  -v -Wl,-v CMakeFiles/cmTC_abb43.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_abb43.exe -Wl,--out-implib,libcmTC_abb43.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\clang++.exe  -v -Wl,-v CMakeFiles/cmTC_c0ded.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_c0ded.exe -Wl,--out-implib,libcmTC_c0ded.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         clang version 21.1.8
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/msys64/clang64/bin
-         "C:/msys64/clang64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_abb43.exe C:/msys64/clang64/lib/crt2.o C:/msys64/clang64/lib/crtbegin.o -LC:/msys64/clang64/x86_64-w64-mingw32/lib -LC:/msys64/clang64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/clang64/lib -LC:/msys64/clang64/lib/clang/21/lib/windows -v CMakeFiles/cmTC_abb43.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_abb43.dll.a --major-image-version 0 --minor-image-version 0 -lc++ -lmingw32 C:/msys64/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/msys64/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/clang64/lib/crtend.o
+         "C:/msys64/clang64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_c0ded.exe C:/msys64/clang64/lib/crt2.o C:/msys64/clang64/lib/crtbegin.o -LC:/msys64/clang64/x86_64-w64-mingw32/lib -LC:/msys64/clang64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/clang64/lib -LC:/msys64/clang64/lib/clang/21/lib/windows -v CMakeFiles/cmTC_c0ded.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_c0ded.dll.a --major-image-version 0 --minor-image-version 0 -lc++ -lmingw32 C:/msys64/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/msys64/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/clang64/lib/crtend.o
         LLD 21.1.8 (https://github.com/msys2/MINGW-packages cd1581c9800c7dbed6185443400f7fbb49300265) (compatible with GNU linkers)
         
       exitCode: 0
@@ -2376,16 +2376,16 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-4tx7qb']
+        ignore line: [Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-kzuian']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_abb43]
-        ignore line: [[1/2] C:\\msys64\\clang64\\bin\\clang++.exe   -std=c++23   -v -MD -MT CMakeFiles/cmTC_abb43.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_abb43.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_abb43.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/clang64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_c0ded]
+        ignore line: [[1/2] C:\\msys64\\clang64\\bin\\clang++.exe   -std=c++23   -v -MD -MT CMakeFiles/cmTC_c0ded.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_c0ded.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_c0ded.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/clang64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang version 21.1.8]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/msys64/clang64/bin]
         ignore line: [ (in-process)]
-        ignore line: [ "C:/msys64/clang64/bin/clang++.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-4tx7qb -v -fcoverage-compilation-dir=C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-4tx7qb -resource-dir C:/msys64/clang64/lib/clang/21 -dependency-file "CMakeFiles\\\\cmTC_abb43.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_abb43.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/include/c++/v1 -internal-isystem C:/msys64/clang64/include/c++/v1 -internal-isystem C:/msys64/clang64/lib/clang/21/include -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/clang64/include -std=c++23 -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o CMakeFiles/cmTC_abb43.dir/CMakeCXXCompilerABI.cpp.obj -x c++ C:/msys64/clang64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "C:/msys64/clang64/bin/clang++.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-kzuian -v -fcoverage-compilation-dir=C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-kzuian -resource-dir C:/msys64/clang64/lib/clang/21 -dependency-file "CMakeFiles\\\\cmTC_c0ded.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_c0ded.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/include/c++/v1 -internal-isystem C:/msys64/clang64/include/c++/v1 -internal-isystem C:/msys64/clang64/lib/clang/21/include -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/clang64/include -std=c++23 -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fno-implicit-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o CMakeFiles/cmTC_c0ded.dir/CMakeCXXCompilerABI.cpp.obj -x c++ C:/msys64/clang64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target x86_64-w64-windows-gnu]
         ignore line: [ignoring nonexistent directory "C:/msys64/clang64/x86_64-w64-mingw32/include/c++/v1"]
         ignore line: [ignoring nonexistent directory "C:/msys64/clang64/x86_64-w64-mingw32/include"]
@@ -2396,18 +2396,18 @@ events:
         ignore line: [ C:/msys64/clang64/lib/clang/21/include]
         ignore line: [ C:/msys64/clang64/include]
         ignore line: [End of search list.]
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\clang++.exe  -v -Wl -v CMakeFiles/cmTC_abb43.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_abb43.exe -Wl --out-implib libcmTC_abb43.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\clang++.exe  -v -Wl -v CMakeFiles/cmTC_c0ded.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_c0ded.exe -Wl --out-implib libcmTC_c0ded.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [clang version 21.1.8]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/msys64/clang64/bin]
-        link line: [ "C:/msys64/clang64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_abb43.exe C:/msys64/clang64/lib/crt2.o C:/msys64/clang64/lib/crtbegin.o -LC:/msys64/clang64/x86_64-w64-mingw32/lib -LC:/msys64/clang64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/clang64/lib -LC:/msys64/clang64/lib/clang/21/lib/windows -v CMakeFiles/cmTC_abb43.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_abb43.dll.a --major-image-version 0 --minor-image-version 0 -lc++ -lmingw32 C:/msys64/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/msys64/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/clang64/lib/crtend.o]
+        link line: [ "C:/msys64/clang64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_c0ded.exe C:/msys64/clang64/lib/crt2.o C:/msys64/clang64/lib/crtbegin.o -LC:/msys64/clang64/x86_64-w64-mingw32/lib -LC:/msys64/clang64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/clang64/lib -LC:/msys64/clang64/lib/clang/21/lib/windows -v CMakeFiles/cmTC_c0ded.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_c0ded.dll.a --major-image-version 0 --minor-image-version 0 -lc++ -lmingw32 C:/msys64/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/msys64/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/clang64/lib/crtend.o]
           arg [C:/msys64/clang64/bin/ld.lld] ==> ignore
           arg [-m] ==> ignore
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_abb43.exe] ==> ignore
+          arg [cmTC_c0ded.exe] ==> ignore
           arg [C:/msys64/clang64/lib/crt2.o] ==> obj [C:/msys64/clang64/lib/crt2.o]
           arg [C:/msys64/clang64/lib/crtbegin.o] ==> obj [C:/msys64/clang64/lib/crtbegin.o]
           arg [-LC:/msys64/clang64/x86_64-w64-mingw32/lib] ==> dir [C:/msys64/clang64/x86_64-w64-mingw32/lib]
@@ -2415,9 +2415,9 @@ events:
           arg [-LC:/msys64/clang64/lib] ==> dir [C:/msys64/clang64/lib]
           arg [-LC:/msys64/clang64/lib/clang/21/lib/windows] ==> dir [C:/msys64/clang64/lib/clang/21/lib/windows]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_abb43.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [CMakeFiles/cmTC_c0ded.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_abb43.dll.a] ==> ignore
+          arg [libcmTC_c0ded.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2471,7 +2471,7 @@ events:
     backtrace:
       - "C:/msys64/clang64/share/cmake/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
       - "C:/msys64/clang64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
-      - "lib/raylib/CMakeLists.txt:3 (project)"
+      - "lib/raylib/CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER"
     description: "C compiler"
@@ -2542,7 +2542,7 @@ events:
       - "C:/msys64/clang64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "C:/msys64/clang64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/msys64/clang64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "lib/raylib/CMakeLists.txt:3 (project)"
+      - "lib/raylib/CMakeLists.txt:2 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -2603,7 +2603,7 @@ events:
       - "C:/msys64/clang64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/msys64/clang64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/msys64/clang64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "lib/raylib/CMakeLists.txt:3 (project)"
+      - "lib/raylib/CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler: C:/msys64/clang64/bin/cc.exe 
@@ -2624,7 +2624,7 @@ events:
     backtrace:
       - "C:/msys64/clang64/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:26 (find_program)"
       - "C:/msys64/clang64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "lib/raylib/CMakeLists.txt:3 (project)"
+      - "lib/raylib/CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_AR"
     description: "LLVM archiver"
@@ -3048,7 +3048,7 @@ events:
     backtrace:
       - "C:/msys64/clang64/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:38 (find_program)"
       - "C:/msys64/clang64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "lib/raylib/CMakeLists.txt:3 (project)"
+      - "lib/raylib/CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_RANLIB"
     description: "Generate index for LLVM archive"
@@ -3472,7 +3472,7 @@ events:
     backtrace:
       - "C:/msys64/clang64/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:50 (find_program)"
       - "C:/msys64/clang64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "lib/raylib/CMakeLists.txt:3 (project)"
+      - "lib/raylib/CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_CLANG_SCAN_DEPS"
     description: "`clang-scan-deps` dependency scanner"
@@ -3896,32 +3896,31 @@ events:
     backtrace:
       - "C:/msys64/clang64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "C:/msys64/clang64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "lib/raylib/CMakeLists.txt:3 (project)"
+      - "lib/raylib/CMakeLists.txt:2 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-mm9n9k"
-      binary: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-mm9n9k"
+      source: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-bg0c7k"
+      binary: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-bg0c7k"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/clang64/bin/clang-scan-deps.exe"
       CMAKE_CXX_SCAN_FOR_MODULES: "ON"
       CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-mm9n9k'
+        Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-bg0c7k'
         
-        Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_8a09b
-        [1/2] C:\\msys64\\clang64\\bin\\cc.exe   -v -MD -MT CMakeFiles/cmTC_8a09b.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_8a09b.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_8a09b.dir/CMakeCCompilerABI.c.obj -c C:/msys64/clang64/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_b0971
+        [1/2] C:\\msys64\\clang64\\bin\\cc.exe   -v -MD -MT CMakeFiles/cmTC_b0971.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_b0971.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_b0971.dir/CMakeCCompilerABI.c.obj -c C:/msys64/clang64/share/cmake/Modules/CMakeCCompilerABI.c
         clang version 21.1.8
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/msys64/clang64/bin
          (in-process)
-         "C:/msys64/clang64/bin/cc.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-mm9n9k -v -fcoverage-compilation-dir=C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-mm9n9k -resource-dir C:/msys64/clang64/lib/clang/21 -dependency-file "CMakeFiles\\\\cmTC_8a09b.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_8a09b.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/msys64/clang64/lib/clang/21/include -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/clang64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o CMakeFiles/cmTC_8a09b.dir/CMakeCCompilerABI.c.obj -x c C:/msys64/clang64/share/cmake/Modules/CMakeCCompilerABI.c
+         "C:/msys64/clang64/bin/cc.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-bg0c7k -v -fcoverage-compilation-dir=C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-bg0c7k -resource-dir C:/msys64/clang64/lib/clang/21 -dependency-file "CMakeFiles\\\\cmTC_b0971.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_b0971.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/msys64/clang64/lib/clang/21/include -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/clang64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o CMakeFiles/cmTC_b0971.dir/CMakeCCompilerABI.c.obj -x c C:/msys64/clang64/share/cmake/Modules/CMakeCCompilerABI.c
         clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target x86_64-w64-windows-gnu
         ignoring nonexistent directory "C:/msys64/clang64/x86_64-w64-mingw32/include"
         ignoring nonexistent directory "C:/msys64/clang64/x86_64-w64-mingw32/usr/include"
@@ -3930,12 +3929,12 @@ events:
          C:/msys64/clang64/lib/clang/21/include
          C:/msys64/clang64/include
         End of search list.
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe  -v -Wl,-v CMakeFiles/cmTC_8a09b.dir/CMakeCCompilerABI.c.obj -o cmTC_8a09b.exe -Wl,--out-implib,libcmTC_8a09b.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe  -v -Wl,-v CMakeFiles/cmTC_b0971.dir/CMakeCCompilerABI.c.obj -o cmTC_b0971.exe -Wl,--out-implib,libcmTC_b0971.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         clang version 21.1.8
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/msys64/clang64/bin
-         "C:/msys64/clang64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_8a09b.exe C:/msys64/clang64/lib/crt2.o C:/msys64/clang64/lib/crtbegin.o -LC:/msys64/clang64/x86_64-w64-mingw32/lib -LC:/msys64/clang64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/clang64/lib -LC:/msys64/clang64/lib/clang/21/lib/windows -v CMakeFiles/cmTC_8a09b.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_8a09b.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 C:/msys64/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/msys64/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/clang64/lib/crtend.o
+         "C:/msys64/clang64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_b0971.exe C:/msys64/clang64/lib/crt2.o C:/msys64/clang64/lib/crtbegin.o -LC:/msys64/clang64/x86_64-w64-mingw32/lib -LC:/msys64/clang64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/clang64/lib -LC:/msys64/clang64/lib/clang/21/lib/windows -v CMakeFiles/cmTC_b0971.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_b0971.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 C:/msys64/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/msys64/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/clang64/lib/crtend.o
         LLD 21.1.8 (https://github.com/msys2/MINGW-packages cd1581c9800c7dbed6185443400f7fbb49300265) (compatible with GNU linkers)
         
       exitCode: 0
@@ -3944,7 +3943,7 @@ events:
     backtrace:
       - "C:/msys64/clang64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
       - "C:/msys64/clang64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "lib/raylib/CMakeLists.txt:3 (project)"
+      - "lib/raylib/CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
@@ -3962,21 +3961,21 @@ events:
     backtrace:
       - "C:/msys64/clang64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
       - "C:/msys64/clang64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "lib/raylib/CMakeLists.txt:3 (project)"
+      - "lib/raylib/CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-mm9n9k']
+        ignore line: [Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-bg0c7k']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_8a09b]
-        ignore line: [[1/2] C:\\msys64\\clang64\\bin\\cc.exe   -v -MD -MT CMakeFiles/cmTC_8a09b.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_8a09b.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_8a09b.dir/CMakeCCompilerABI.c.obj -c C:/msys64/clang64/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_b0971]
+        ignore line: [[1/2] C:\\msys64\\clang64\\bin\\cc.exe   -v -MD -MT CMakeFiles/cmTC_b0971.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_b0971.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_b0971.dir/CMakeCCompilerABI.c.obj -c C:/msys64/clang64/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang version 21.1.8]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/msys64/clang64/bin]
         ignore line: [ (in-process)]
-        ignore line: [ "C:/msys64/clang64/bin/cc.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-mm9n9k -v -fcoverage-compilation-dir=C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-mm9n9k -resource-dir C:/msys64/clang64/lib/clang/21 -dependency-file "CMakeFiles\\\\cmTC_8a09b.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_8a09b.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/msys64/clang64/lib/clang/21/include -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/clang64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o CMakeFiles/cmTC_8a09b.dir/CMakeCCompilerABI.c.obj -x c C:/msys64/clang64/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "C:/msys64/clang64/bin/cc.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-bg0c7k -v -fcoverage-compilation-dir=C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-bg0c7k -resource-dir C:/msys64/clang64/lib/clang/21 -dependency-file "CMakeFiles\\\\cmTC_b0971.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_b0971.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/msys64/clang64/lib/clang/21/include -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/clang64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/clang64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o CMakeFiles/cmTC_b0971.dir/CMakeCCompilerABI.c.obj -x c C:/msys64/clang64/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target x86_64-w64-windows-gnu]
         ignore line: [ignoring nonexistent directory "C:/msys64/clang64/x86_64-w64-mingw32/include"]
         ignore line: [ignoring nonexistent directory "C:/msys64/clang64/x86_64-w64-mingw32/usr/include"]
@@ -3985,18 +3984,18 @@ events:
         ignore line: [ C:/msys64/clang64/lib/clang/21/include]
         ignore line: [ C:/msys64/clang64/include]
         ignore line: [End of search list.]
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe  -v -Wl -v CMakeFiles/cmTC_8a09b.dir/CMakeCCompilerABI.c.obj -o cmTC_8a09b.exe -Wl --out-implib libcmTC_8a09b.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe  -v -Wl -v CMakeFiles/cmTC_b0971.dir/CMakeCCompilerABI.c.obj -o cmTC_b0971.exe -Wl --out-implib libcmTC_b0971.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [clang version 21.1.8]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/msys64/clang64/bin]
-        link line: [ "C:/msys64/clang64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_8a09b.exe C:/msys64/clang64/lib/crt2.o C:/msys64/clang64/lib/crtbegin.o -LC:/msys64/clang64/x86_64-w64-mingw32/lib -LC:/msys64/clang64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/clang64/lib -LC:/msys64/clang64/lib/clang/21/lib/windows -v CMakeFiles/cmTC_8a09b.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_8a09b.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 C:/msys64/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/msys64/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/clang64/lib/crtend.o]
+        link line: [ "C:/msys64/clang64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_b0971.exe C:/msys64/clang64/lib/crt2.o C:/msys64/clang64/lib/crtbegin.o -LC:/msys64/clang64/x86_64-w64-mingw32/lib -LC:/msys64/clang64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/clang64/lib -LC:/msys64/clang64/lib/clang/21/lib/windows -v CMakeFiles/cmTC_b0971.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_b0971.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 C:/msys64/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/msys64/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/clang64/lib/crtend.o]
           arg [C:/msys64/clang64/bin/ld.lld] ==> ignore
           arg [-m] ==> ignore
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_8a09b.exe] ==> ignore
+          arg [cmTC_b0971.exe] ==> ignore
           arg [C:/msys64/clang64/lib/crt2.o] ==> obj [C:/msys64/clang64/lib/crt2.o]
           arg [C:/msys64/clang64/lib/crtbegin.o] ==> obj [C:/msys64/clang64/lib/crtbegin.o]
           arg [-LC:/msys64/clang64/x86_64-w64-mingw32/lib] ==> dir [C:/msys64/clang64/x86_64-w64-mingw32/lib]
@@ -4004,9 +4003,9 @@ events:
           arg [-LC:/msys64/clang64/lib] ==> dir [C:/msys64/clang64/lib]
           arg [-LC:/msys64/clang64/lib/clang/21/lib/windows] ==> dir [C:/msys64/clang64/lib/clang/21/lib/windows]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_8a09b.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [CMakeFiles/cmTC_b0971.dir/CMakeCCompilerABI.c.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_8a09b.dll.a] ==> ignore
+          arg [libcmTC_b0971.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -4050,7 +4049,7 @@ events:
       - "C:/msys64/clang64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
       - "C:/msys64/clang64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
       - "C:/msys64/clang64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "lib/raylib/CMakeLists.txt:3 (project)"
+      - "lib/raylib/CMakeLists.txt:2 (project)"
     message: |
       Running the C compiler's linker: "C:/msys64/clang64/bin/ld.lld" "-v"
       LLD 21.1.8 (https://github.com/msys2/MINGW-packages cd1581c9800c7dbed6185443400f7fbb49300265) (compatible with GNU linkers)
@@ -4062,28 +4061,27 @@ events:
       - "C:/msys64/clang64/share/cmake/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
       - "lib/raylib/cmake/AddIfFlagCompiles.cmake:3 (CHECK_C_COMPILER_FLAG)"
       - "lib/raylib/cmake/CompilerFlags.cmake:5 (add_if_flag_compiles)"
-      - "lib/raylib/CMakeLists.txt:27 (include)"
+      - "lib/raylib/CMakeLists.txt:34 (include)"
     checks:
       - "Performing Test COMPILER_HAS_THOSE_TOGGLES"
     directories:
-      source: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-at8fun"
-      binary: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-at8fun"
+      source: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-utmze5"
+      binary: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-utmze5"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/clang64/bin/clang-scan-deps.exe"
       CMAKE_CXX_SCAN_FOR_MODULES: "ON"
       CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_MODULE_PATH: "C:/Users/jghig/projects/cxx/gican/lib/raylib/cmake"
     buildResult:
       variable: "COMPILER_HAS_THOSE_TOGGLES"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-at8fun'
+        Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-utmze5'
         
-        Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_aee58
-        [1/2] C:\\msys64\\clang64\\bin\\cc.exe -DCOMPILER_HAS_THOSE_TOGGLES  -Werror=pointer-arith -MD -MT CMakeFiles/cmTC_aee58.dir/src.c.obj -MF CMakeFiles\\cmTC_aee58.dir\\src.c.obj.d -o CMakeFiles/cmTC_aee58.dir/src.c.obj -c C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-at8fun/src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe   CMakeFiles/cmTC_aee58.dir/src.c.obj -o cmTC_aee58.exe -Wl,--out-implib,libcmTC_aee58.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_9c7d2
+        [1/2] C:\\msys64\\clang64\\bin\\cc.exe -DCOMPILER_HAS_THOSE_TOGGLES  -Werror=pointer-arith -MD -MT CMakeFiles/cmTC_9c7d2.dir/src.c.obj -MF CMakeFiles\\cmTC_9c7d2.dir\\src.c.obj.d -o CMakeFiles/cmTC_9c7d2.dir/src.c.obj -c C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-utmze5/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe   CMakeFiles/cmTC_9c7d2.dir/src.c.obj -o cmTC_9c7d2.exe -Wl,--out-implib,libcmTC_9c7d2.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -4097,40 +4095,39 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-q5fgqi"
-      binary: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-q5fgqi"
+      source: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-9ezctq"
+      binary: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-9ezctq"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/clang64/bin/clang-scan-deps.exe"
       CMAKE_CXX_SCAN_FOR_MODULES: "ON"
       CMAKE_C_FLAGS: "-fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith "
-      CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
       CMAKE_MODULE_PATH: "C:/Users/jghig/projects/cxx/gican/lib/raylib/cmake;C:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-q5fgqi'
+        Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-9ezctq'
         
-        Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_afdec
-        [1/2] C:\\msys64\\clang64\\bin\\cc.exe -DCMAKE_HAVE_LIBC_PTHREAD  -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -std=gnu99 -MD -MT CMakeFiles/cmTC_afdec.dir/src.c.obj -MF CMakeFiles\\cmTC_afdec.dir\\src.c.obj.d -o CMakeFiles/cmTC_afdec.dir/src.c.obj -c C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-q5fgqi/src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  CMakeFiles/cmTC_afdec.dir/src.c.obj -o cmTC_afdec.exe -Wl,--out-implib,libcmTC_afdec.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        FAILED: [code=1] cmTC_afdec.exe 
-        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  CMakeFiles/cmTC_afdec.dir/src.c.obj -o cmTC_afdec.exe -Wl,--out-implib,libcmTC_afdec.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_cf210
+        [1/2] C:\\msys64\\clang64\\bin\\cc.exe -DCMAKE_HAVE_LIBC_PTHREAD  -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith -MD -MT CMakeFiles/cmTC_cf210.dir/src.c.obj -MF CMakeFiles\\cmTC_cf210.dir\\src.c.obj.d -o CMakeFiles/cmTC_cf210.dir/src.c.obj -c C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-9ezctq/src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  CMakeFiles/cmTC_cf210.dir/src.c.obj -o cmTC_cf210.exe -Wl,--out-implib,libcmTC_cf210.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        FAILED: [code=1] cmTC_cf210.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  CMakeFiles/cmTC_cf210.dir/src.c.obj -o cmTC_cf210.exe -Wl,--out-implib,libcmTC_cf210.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         ld.lld: error: undefined symbol: pthread_create
-        >>> referenced by CMakeFiles/cmTC_afdec.dir/src.c.obj:(main)
+        >>> referenced by CMakeFiles/cmTC_cf210.dir/src.c.obj:(main)
         
         ld.lld: error: undefined symbol: pthread_detach
-        >>> referenced by CMakeFiles/cmTC_afdec.dir/src.c.obj:(main)
+        >>> referenced by CMakeFiles/cmTC_cf210.dir/src.c.obj:(main)
         
         ld.lld: error: undefined symbol: pthread_cancel
-        >>> referenced by CMakeFiles/cmTC_afdec.dir/src.c.obj:(main)
+        >>> referenced by CMakeFiles/cmTC_cf210.dir/src.c.obj:(main)
         
         ld.lld: error: undefined symbol: pthread_join
-        >>> referenced by CMakeFiles/cmTC_afdec.dir/src.c.obj:(main)
+        >>> referenced by CMakeFiles/cmTC_cf210.dir/src.c.obj:(main)
         
         ld.lld: error: undefined symbol: pthread_exit
-        >>> referenced by CMakeFiles/cmTC_afdec.dir/src.c.obj:(main)
+        >>> referenced by CMakeFiles/cmTC_cf210.dir/src.c.obj:(main)
         cc: error: linker command failed with exit code 1 (use -v to see invocation)
         ninja: build stopped: subcommand failed.
         
@@ -4145,8 +4142,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-7ucr9y"
-      binary: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-7ucr9y"
+      source: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-z6apjb"
+      binary: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-z6apjb"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/clang64/bin/clang-scan-deps.exe"
       CMAKE_CXX_SCAN_FOR_MODULES: "ON"
@@ -4158,13 +4155,13 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-7ucr9y'
+        Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-z6apjb'
         
-        Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_5fcd6
-        [1/2] C:\\msys64\\clang64\\bin\\cc.exe   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=pthread_create -std=gnu99 -MD -MT CMakeFiles/cmTC_5fcd6.dir/CheckFunctionExists.c.obj -MF CMakeFiles\\cmTC_5fcd6.dir\\CheckFunctionExists.c.obj.d -o CMakeFiles/cmTC_5fcd6.dir/CheckFunctionExists.c.obj -c C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-7ucr9y/CheckFunctionExists.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_5fcd6.dir/CheckFunctionExists.c.obj -o cmTC_5fcd6.exe -Wl,--out-implib,libcmTC_5fcd6.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lpthreads  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-        FAILED: [code=1] cmTC_5fcd6.exe 
-        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_5fcd6.dir/CheckFunctionExists.c.obj -o cmTC_5fcd6.exe -Wl,--out-implib,libcmTC_5fcd6.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lpthreads  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_e34c9
+        [1/2] C:\\msys64\\clang64\\bin\\cc.exe   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=pthread_create -std=gnu99 -MD -MT CMakeFiles/cmTC_e34c9.dir/CheckFunctionExists.c.obj -MF CMakeFiles\\cmTC_e34c9.dir\\CheckFunctionExists.c.obj.d -o CMakeFiles/cmTC_e34c9.dir/CheckFunctionExists.c.obj -c C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-z6apjb/CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_e34c9.dir/CheckFunctionExists.c.obj -o cmTC_e34c9.exe -Wl,--out-implib,libcmTC_e34c9.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lpthreads  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        FAILED: [code=1] cmTC_e34c9.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_e34c9.dir/CheckFunctionExists.c.obj -o cmTC_e34c9.exe -Wl,--out-implib,libcmTC_e34c9.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lpthreads  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         lld: error: unable to find library -lpthreads
         cc: error: linker command failed with exit code 1 (use -v to see invocation)
         ninja: build stopped: subcommand failed.
@@ -4180,8 +4177,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-xenaz4"
-      binary: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-xenaz4"
+      source: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-eoi67z"
+      binary: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-eoi67z"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/clang64/bin/clang-scan-deps.exe"
       CMAKE_CXX_SCAN_FOR_MODULES: "ON"
@@ -4193,11 +4190,11 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-xenaz4'
+        Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-eoi67z'
         
-        Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_61cf6
-        [1/2] C:\\msys64\\clang64\\bin\\cc.exe   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=pthread_create -std=gnu99 -MD -MT CMakeFiles/cmTC_61cf6.dir/CheckFunctionExists.c.obj -MF CMakeFiles\\cmTC_61cf6.dir\\CheckFunctionExists.c.obj.d -o CMakeFiles/cmTC_61cf6.dir/CheckFunctionExists.c.obj -c C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-xenaz4/CheckFunctionExists.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_61cf6.dir/CheckFunctionExists.c.obj -o cmTC_61cf6.exe -Wl,--out-implib,libcmTC_61cf6.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lpthread  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_89297
+        [1/2] C:\\msys64\\clang64\\bin\\cc.exe   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=pthread_create -std=gnu99 -MD -MT CMakeFiles/cmTC_89297.dir/CheckFunctionExists.c.obj -MF CMakeFiles\\cmTC_89297.dir\\CheckFunctionExists.c.obj.d -o CMakeFiles/cmTC_89297.dir/CheckFunctionExists.c.obj -c C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-eoi67z/CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_89297.dir/CheckFunctionExists.c.obj -o cmTC_89297.exe -Wl,--out-implib,libcmTC_89297.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lpthread  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -4208,8 +4205,8 @@ events:
     checks:
       - "Looking for dinput.h"
     directories:
-      source: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-395nhf"
-      binary: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-395nhf"
+      source: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-oz7nw3"
+      binary: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-oz7nw3"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/clang64/bin/clang-scan-deps.exe"
       CMAKE_CXX_SCAN_FOR_MODULES: "ON"
@@ -4221,11 +4218,11 @@ events:
       variable: "DINPUT_H_FOUND"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-395nhf'
+        Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-oz7nw3'
         
-        Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_33a90
-        [1/2] C:\\msys64\\clang64\\bin\\cc.exe   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -std=gnu99 -MD -MT CMakeFiles/cmTC_33a90.dir/CheckIncludeFile.c.obj -MF CMakeFiles\\cmTC_33a90.dir\\CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_33a90.dir/CheckIncludeFile.c.obj -c C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-395nhf/CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  CMakeFiles/cmTC_33a90.dir/CheckIncludeFile.c.obj -o cmTC_33a90.exe -Wl,--out-implib,libcmTC_33a90.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_e4343
+        [1/2] C:\\msys64\\clang64\\bin\\cc.exe   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -std=gnu99 -MD -MT CMakeFiles/cmTC_e4343.dir/CheckIncludeFile.c.obj -MF CMakeFiles\\cmTC_e4343.dir\\CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_e4343.dir/CheckIncludeFile.c.obj -c C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-oz7nw3/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  CMakeFiles/cmTC_e4343.dir/CheckIncludeFile.c.obj -o cmTC_e4343.exe -Wl,--out-implib,libcmTC_e4343.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -4236,8 +4233,8 @@ events:
     checks:
       - "Looking for xinput.h"
     directories:
-      source: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-9bd1vk"
-      binary: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-9bd1vk"
+      source: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-lgag0l"
+      binary: "C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-lgag0l"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/clang64/bin/clang-scan-deps.exe"
       CMAKE_CXX_SCAN_FOR_MODULES: "ON"
@@ -4249,11 +4246,11 @@ events:
       variable: "XINPUT_H_FOUND"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-9bd1vk'
+        Change Dir: 'C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-lgag0l'
         
-        Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_2b42c
-        [1/2] C:\\msys64\\clang64\\bin\\cc.exe   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -std=gnu99 -MD -MT CMakeFiles/cmTC_2b42c.dir/CheckIncludeFile.c.obj -MF CMakeFiles\\cmTC_2b42c.dir\\CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_2b42c.dir/CheckIncludeFile.c.obj -c C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-9bd1vk/CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  CMakeFiles/cmTC_2b42c.dir/CheckIncludeFile.c.obj -o cmTC_2b42c.exe -Wl,--out-implib,libcmTC_2b42c.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        Run Build Command(s): C:/msys64/clang64/bin/ninja.exe -v cmTC_952a1
+        [1/2] C:\\msys64\\clang64\\bin\\cc.exe   -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith   -std=gnu99 -MD -MT CMakeFiles/cmTC_952a1.dir/CheckIncludeFile.c.obj -MF CMakeFiles\\cmTC_952a1.dir\\CheckIncludeFile.c.obj.d -o CMakeFiles/cmTC_952a1.dir/CheckIncludeFile.c.obj -c C:/Users/jghig/projects/cxx/gican/out/debug/CMakeFiles/CMakeScratch/TryCompile-lgag0l/CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\clang64\\bin\\cc.exe -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  CMakeFiles/cmTC_952a1.dir/CheckIncludeFile.c.obj -o cmTC_952a1.exe -Wl,--out-implib,libcmTC_952a1.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
 ...

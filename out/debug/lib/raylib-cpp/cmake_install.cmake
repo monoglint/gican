@@ -40,6 +40,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/include/cmake_install.cmake")
+  include("C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/modules/cmake_install.cmake")
 
 endif()
 

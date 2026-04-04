@@ -1,0 +1,3 @@
+ninja_dyndep_version = 1.0
+build gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj: dyndep
+

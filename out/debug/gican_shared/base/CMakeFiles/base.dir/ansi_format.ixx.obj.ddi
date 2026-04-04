@@ -1,0 +1,16 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "gican_shared\\base\\CMakeFiles\\base.dir\\ansi_format.ixx.obj",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "base:ansi_format",
+          "source-path": "C:/Users/jghig/projects/cxx/gican/gican_shared/base/ansi_format.ixx"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

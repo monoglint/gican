@@ -1,0 +1,16 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "lib\\raylib-cpp\\modules\\CMakeFiles\\raylib_cpp_modules.dir\\raylib.cppm.obj",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "raylib",
+          "source-path": "C:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/modules/raylib.cppm"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

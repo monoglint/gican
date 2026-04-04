@@ -1,0 +1,36 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "Clang",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : 
+	{
+		"lib/raylib-cpp/modules/CMakeFiles/raylib_cpp_modules.dir/raylib.cppm.obj" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "",
+			"source" : "C:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/modules/raylib.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		}
+	},
+	"database-info" : null,
+	"dir-cur-bld" : "C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/modules",
+	"dir-cur-src" : "C:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/modules",
+	"dir-top-bld" : "C:/Users/jghig/projects/cxx/gican/out/debug",
+	"dir-top-src" : "C:/Users/jghig/projects/cxx/gican",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\raylib-cpp\\include",
+		"C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\raylib\\src"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/modules/CMakeFiles/raylib_cpp_modules.dir",
+	"sources" : {}
+}

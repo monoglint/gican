@@ -12,9 +12,19 @@
 	"dir-top-src" : "C:/Users/jghig/projects/cxx/gican",
 	"exports" : [],
 	"forward-modules-from-target-dirs" : [],
-	"include-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\raylib-cpp\\include",
+		"C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\raylib\\src",
+		"C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\raylib\\src\\external\\glfw\\include"
+	],
 	"language" : "CXX",
-	"linked-target-dirs" : [],
+	"linked-target-dirs" : 
+	[
+		"C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/modules/CMakeFiles/raylib_cpp_modules.dir",
+		"C:/Users/jghig/projects/cxx/gican/out/debug/gican/src/voxel/CMakeFiles/voxel.dir",
+		"C:/Users/jghig/projects/cxx/gican/out/debug/gican/src/base/CMakeFiles/base.dir"
+	],
 	"module-dir" : "C:/Users/jghig/projects/cxx/gican/out/debug/gican/CMakeFiles/gican.dir",
 	"sources" : 
 	{

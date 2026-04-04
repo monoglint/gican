@@ -1,0 +1,4 @@
+ninja_dyndep_version = 1.0
+build lib/raylib-cpp/modules/CMakeFiles/raylib_cpp_modules.dir/raylib.cppm.obj | lib/raylib-cpp/modules/CMakeFiles/raylib_cpp_modules.dir/raylib.pcm: dyndep
+  restat = 1
+

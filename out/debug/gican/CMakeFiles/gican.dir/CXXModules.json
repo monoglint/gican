@@ -1,5 +1,42 @@
 {
 	"modules" : {},
-	"references" : {},
-	"usages" : {}
+	"references" : 
+	{
+		"base" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "gican/src/base/CMakeFiles/base.dir/base.pcm"
+		},
+		"base:vector" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "gican/src/base/CMakeFiles/base.dir/base-vector.pcm"
+		},
+		"raylib" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "lib/raylib-cpp/modules/CMakeFiles/raylib_cpp_modules.dir/raylib.pcm"
+		},
+		"voxel:chunk" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "gican/src/voxel/CMakeFiles/voxel.dir/voxel-chunk.pcm"
+		}
+	},
+	"usages" : 
+	{
+		"base" : 
+		[
+			"base:ansi_format",
+			"base:panic",
+			"base:vector"
+		],
+		"voxel:chunk" : 
+		[
+			"base",
+			"base:ansi_format",
+			"base:panic",
+			"base:vector"
+		]
+	}
 }

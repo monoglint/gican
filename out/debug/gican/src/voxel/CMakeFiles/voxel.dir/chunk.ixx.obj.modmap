@@ -1,0 +1,4 @@
+-x c++-module
+-fmodule-output=gican/src/voxel/CMakeFiles/voxel.dir/voxel-chunk.pcm
+-fmodule-file=base=gican/src/base/CMakeFiles/base.dir/base.pcm
+-fmodule-file=base:vector=gican/src/base/CMakeFiles/base.dir/base-vector.pcm

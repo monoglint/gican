@@ -1,0 +1,7 @@
+ninja_dyndep_version = 1.0
+build gican/src/base/CMakeFiles/base.dir/base.ixx.obj | gican/src/base/CMakeFiles/base.dir/base.pcm: dyndep | gican/src/base/CMakeFiles/base.dir/base-vector.pcm
+  restat = 1
+
+build gican/src/base/CMakeFiles/base.dir/vector.ixx.obj | gican/src/base/CMakeFiles/base.dir/base-vector.pcm: dyndep
+  restat = 1
+

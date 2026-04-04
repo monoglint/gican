@@ -1,0 +1,13 @@
+ninja_dyndep_version = 1.0
+build gican_shared/base/CMakeFiles/base.dir/ansi_format.ixx.obj | gican_shared/base/CMakeFiles/base.dir/base-ansi_format.pcm: dyndep
+  restat = 1
+
+build gican_shared/base/CMakeFiles/base.dir/base.ixx.obj | gican_shared/base/CMakeFiles/base.dir/base.pcm: dyndep | gican_shared/base/CMakeFiles/base.dir/base-ansi_format.pcm gican_shared/base/CMakeFiles/base.dir/base-panic.pcm gican_shared/base/CMakeFiles/base.dir/base-vector.pcm
+  restat = 1
+
+build gican_shared/base/CMakeFiles/base.dir/panic.ixx.obj | gican_shared/base/CMakeFiles/base.dir/base-panic.pcm: dyndep | gican_shared/base/CMakeFiles/base.dir/base-ansi_format.pcm
+  restat = 1
+
+build gican_shared/base/CMakeFiles/base.dir/vector.ixx.obj | gican_shared/base/CMakeFiles/base.dir/base-vector.pcm: dyndep
+  restat = 1
+

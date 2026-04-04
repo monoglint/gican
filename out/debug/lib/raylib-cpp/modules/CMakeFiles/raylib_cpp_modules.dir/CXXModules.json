@@ -1,0 +1,19 @@
+{
+	"modules" : 
+	{
+		"raylib" : 
+		{
+			"bmi" : "C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/modules/CMakeFiles/raylib_cpp_modules.dir/raylib.pcm",
+			"is-private" : false
+		}
+	},
+	"references" : 
+	{
+		"raylib" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "lib/raylib-cpp/modules/CMakeFiles/raylib_cpp_modules.dir/raylib.pcm"
+		}
+	},
+	"usages" : {}
+}

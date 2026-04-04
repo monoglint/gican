@@ -10,4 +10,6 @@ set(CMAKE_CXX_SCAN_FOR_MODULES ON)
 project(gican LANGUAGES CXX)
 
 add_subdirectory(lib)
-add_subdirectory(gican)
+add_subdirectory(gican_shared)
+add_subdirectory(gican_client)
+add_subdirectory(gican_server)

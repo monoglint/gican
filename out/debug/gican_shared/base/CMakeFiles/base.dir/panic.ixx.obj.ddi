@@ -1,0 +1,21 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "gican_shared\\base\\CMakeFiles\\base.dir\\panic.ixx.obj",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "base:panic",
+          "source-path": "C:/Users/jghig/projects/cxx/gican/gican_shared/base/panic.ixx"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "base:ansi_format"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}
