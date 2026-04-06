@@ -1,10 +1,11 @@
-import raylib;
 
 #include <iostream>
 
+import raylib;
+
 int main() {
-    raylib::Window window(800, 450, "test window");
-    std::cout << "Hello world!\n";
+    raylib::Window window(800, 450, "test window", raylib::ConfigFlags::FLAG_WINDOW_RESIZABLE);
+    std::cout << "Initializing gican client.\n";
 
     raylib::Camera3D camera;
     camera.position = {10, 10, 10};

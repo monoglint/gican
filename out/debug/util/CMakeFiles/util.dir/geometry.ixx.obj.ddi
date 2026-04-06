@@ -1,0 +1,21 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "util\\CMakeFiles\\util.dir\\geometry.ixx.obj",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "util:geometry",
+          "source-path": "C:/Users/jghig/projects/cxx/gican/util/geometry.ixx"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "util:hash"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

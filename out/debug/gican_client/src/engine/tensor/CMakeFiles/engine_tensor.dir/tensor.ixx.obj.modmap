@@ -1,0 +1,9 @@
+-x c++-module
+-fmodule-output=gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor.pcm
+-fmodule-file=engine.tensor:tensor_manager=gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-tensor_manager.pcm
+-fmodule-file=util=util/CMakeFiles/util.dir/util.pcm
+-fmodule-file=util:ansi_format=util/CMakeFiles/util.dir/util-ansi_format.pcm
+-fmodule-file=util:cube_array=util/CMakeFiles/util.dir/util-cube_array.pcm
+-fmodule-file=util:geometry=util/CMakeFiles/util.dir/util-geometry.pcm
+-fmodule-file=util:hash=util/CMakeFiles/util.dir/util-hash.pcm
+-fmodule-file=util:panic=util/CMakeFiles/util.dir/util-panic.pcm

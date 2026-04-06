@@ -1284,291 +1284,225 @@ build lib/raylib-cpp/modules/install/strip: phony lib/raylib-cpp/modules/CMakeFi
 # C:/Users/jghig/projects/cxx/gican/CMakeLists.txt
 # =============================================================================
 
-
-#############################################
-# Utility command for gican_shared
-
-build gican_shared/gican_shared: phony
-
-
-#############################################
-# Utility command for package
-
-build gican_shared/CMakeFiles/package.util: CUSTOM_COMMAND gican_shared/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug && C:\msys64\clang64\bin\cpack.exe --config ./CPackConfig.cmake"
-  DESC = Run CPack packaging tool...
-  pool = console
-  restat = 1
-
-build gican_shared/package: phony gican_shared/CMakeFiles/package.util
-
-
-#############################################
-# Utility command for package_source
-
-build gican_shared/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug && C:\msys64\clang64\bin\cpack.exe --config ./CPackSourceConfig.cmake"
-  DESC = Run CPack packaging tool for source...
-  pool = console
-  restat = 1
-
-build gican_shared/package_source: phony gican_shared/CMakeFiles/package_source.util
-
-
-#############################################
-# Utility command for edit_cache
-
-build gican_shared/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_shared && C:\msys64\clang64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build gican_shared/edit_cache: phony gican_shared/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build gican_shared/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_shared && C:\msys64\clang64\bin\cmake.exe --regenerate-during-build -SC:\Users\jghig\projects\cxx\gican -BC:\Users\jghig\projects\cxx\gican\out\debug"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build gican_shared/rebuild_cache: phony gican_shared/CMakeFiles/rebuild_cache.util
-
-
-#############################################
-# Utility command for list_install_components
-
-build gican_shared/list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build gican_shared/CMakeFiles/install.util: CUSTOM_COMMAND gican_shared/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_shared && C:\msys64\clang64\bin\cmake.exe -P cmake_install.cmake"
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build gican_shared/install: phony gican_shared/CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build gican_shared/CMakeFiles/install/local.util: CUSTOM_COMMAND gican_shared/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_shared && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build gican_shared/install/local: phony gican_shared/CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build gican_shared/CMakeFiles/install/strip.util: CUSTOM_COMMAND gican_shared/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_shared && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build gican_shared/install/strip: phony gican_shared/CMakeFiles/install/strip.util
-
 # =============================================================================
-# Write statements declared in CMakeLists.txt:
-# C:/Users/jghig/projects/cxx/gican/gican_shared/CMakeLists.txt
-# =============================================================================
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target base
+# Object build statements for STATIC_LIBRARY target util
 
 
 #############################################
-# Order-only phony target for base
+# Order-only phony target for util
 
-build cmake_object_order_depends_target_base: phony || .
+build cmake_object_order_depends_target_util: phony || .
 
-build gican_shared/base/CMakeFiles/base.dir/ansi_format.ixx.obj.ddi: CXX_SCAN__base_Debug C$:/Users/jghig/projects/cxx/gican/gican_shared/base/ansi_format.ixx || cmake_object_order_depends_target_base
-  DEP_FILE = gican_shared\base\CMakeFiles\base.dir\ansi_format.ixx.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = gican_shared\base\CMakeFiles\base.dir\ansi_format.ixx.obj.ddi
+build util/CMakeFiles/util.dir/ansi_format.ixx.obj.ddi: CXX_SCAN__util_Debug C$:/Users/jghig/projects/cxx/gican/util/ansi_format.ixx || cmake_object_order_depends_target_util
+  DEP_FILE = util\CMakeFiles\util.dir\ansi_format.ixx.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = util\CMakeFiles\util.dir\ansi_format.ixx.obj.ddi
   FLAGS = -Wall -g -stdlib=libc++ -std=c++23
-  OBJ_FILE = gican_shared\base\CMakeFiles\base.dir\ansi_format.ixx.obj
-  PREPROCESSED_OUTPUT_FILE = gican_shared\base\CMakeFiles\base.dir\ansi_format.ixx.obj.ddi.i
+  OBJ_FILE = util\CMakeFiles\util.dir\ansi_format.ixx.obj
+  PREPROCESSED_OUTPUT_FILE = util\CMakeFiles\util.dir\ansi_format.ixx.obj.ddi.i
 
-build gican_shared/base/CMakeFiles/base.dir/ansi_format.ixx.obj: CXX_COMPILER__base_scanned_Debug C$:/Users/jghig/projects/cxx/gican/gican_shared/base/ansi_format.ixx | gican_shared/base/CMakeFiles/base.dir/ansi_format.ixx.obj.modmap || cmake_object_order_depends_target_base gican_shared/base/CMakeFiles/base.dir/CXX.dd
+build util/CMakeFiles/util.dir/ansi_format.ixx.obj: CXX_COMPILER__util_scanned_Debug C$:/Users/jghig/projects/cxx/gican/util/ansi_format.ixx | util/CMakeFiles/util.dir/ansi_format.ixx.obj.modmap || cmake_object_order_depends_target_util util/CMakeFiles/util.dir/CXX.dd
   CONFIG = Debug
-  DEP_FILE = gican_shared\base\CMakeFiles\base.dir\ansi_format.ixx.obj.d
-  DYNDEP_MODULE_MAP_FILE = gican_shared\base\CMakeFiles\base.dir\ansi_format.ixx.obj.modmap
+  DEP_FILE = util\CMakeFiles\util.dir\ansi_format.ixx.obj.d
+  DYNDEP_MODULE_MAP_FILE = util\CMakeFiles\util.dir\ansi_format.ixx.obj.modmap
   FLAGS = -Wall -g -stdlib=libc++ -std=c++23
-  OBJECT_DIR = gican_shared\base\CMakeFiles\base.dir
-  OBJECT_FILE_DIR = gican_shared\base\CMakeFiles\base.dir
-  TARGET_SUPPORT_DIR = gican_shared\base\CMakeFiles\base.dir
-  dyndep = gican_shared/base/CMakeFiles/base.dir/CXX.dd
+  OBJECT_DIR = util\CMakeFiles\util.dir
+  OBJECT_FILE_DIR = util\CMakeFiles\util.dir
+  TARGET_SUPPORT_DIR = util\CMakeFiles\util.dir
+  dyndep = util/CMakeFiles/util.dir/CXX.dd
 
-build gican_shared/base/CMakeFiles/base.dir/base.ixx.obj.ddi: CXX_SCAN__base_Debug C$:/Users/jghig/projects/cxx/gican/gican_shared/base/base.ixx || cmake_object_order_depends_target_base
-  DEP_FILE = gican_shared\base\CMakeFiles\base.dir\base.ixx.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = gican_shared\base\CMakeFiles\base.dir\base.ixx.obj.ddi
+build util/CMakeFiles/util.dir/util.ixx.obj.ddi: CXX_SCAN__util_Debug C$:/Users/jghig/projects/cxx/gican/util/util.ixx || cmake_object_order_depends_target_util
+  DEP_FILE = util\CMakeFiles\util.dir\util.ixx.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = util\CMakeFiles\util.dir\util.ixx.obj.ddi
   FLAGS = -Wall -g -stdlib=libc++ -std=c++23
-  OBJ_FILE = gican_shared\base\CMakeFiles\base.dir\base.ixx.obj
-  PREPROCESSED_OUTPUT_FILE = gican_shared\base\CMakeFiles\base.dir\base.ixx.obj.ddi.i
+  OBJ_FILE = util\CMakeFiles\util.dir\util.ixx.obj
+  PREPROCESSED_OUTPUT_FILE = util\CMakeFiles\util.dir\util.ixx.obj.ddi.i
 
-build gican_shared/base/CMakeFiles/base.dir/base.ixx.obj: CXX_COMPILER__base_scanned_Debug C$:/Users/jghig/projects/cxx/gican/gican_shared/base/base.ixx | gican_shared/base/CMakeFiles/base.dir/base.ixx.obj.modmap || cmake_object_order_depends_target_base gican_shared/base/CMakeFiles/base.dir/CXX.dd
+build util/CMakeFiles/util.dir/util.ixx.obj: CXX_COMPILER__util_scanned_Debug C$:/Users/jghig/projects/cxx/gican/util/util.ixx | util/CMakeFiles/util.dir/util.ixx.obj.modmap || cmake_object_order_depends_target_util util/CMakeFiles/util.dir/CXX.dd
   CONFIG = Debug
-  DEP_FILE = gican_shared\base\CMakeFiles\base.dir\base.ixx.obj.d
-  DYNDEP_MODULE_MAP_FILE = gican_shared\base\CMakeFiles\base.dir\base.ixx.obj.modmap
+  DEP_FILE = util\CMakeFiles\util.dir\util.ixx.obj.d
+  DYNDEP_MODULE_MAP_FILE = util\CMakeFiles\util.dir\util.ixx.obj.modmap
   FLAGS = -Wall -g -stdlib=libc++ -std=c++23
-  OBJECT_DIR = gican_shared\base\CMakeFiles\base.dir
-  OBJECT_FILE_DIR = gican_shared\base\CMakeFiles\base.dir
-  TARGET_SUPPORT_DIR = gican_shared\base\CMakeFiles\base.dir
-  dyndep = gican_shared/base/CMakeFiles/base.dir/CXX.dd
+  OBJECT_DIR = util\CMakeFiles\util.dir
+  OBJECT_FILE_DIR = util\CMakeFiles\util.dir
+  TARGET_SUPPORT_DIR = util\CMakeFiles\util.dir
+  dyndep = util/CMakeFiles/util.dir/CXX.dd
 
-build gican_shared/base/CMakeFiles/base.dir/panic.ixx.obj.ddi: CXX_SCAN__base_Debug C$:/Users/jghig/projects/cxx/gican/gican_shared/base/panic.ixx || cmake_object_order_depends_target_base
-  DEP_FILE = gican_shared\base\CMakeFiles\base.dir\panic.ixx.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = gican_shared\base\CMakeFiles\base.dir\panic.ixx.obj.ddi
+build util/CMakeFiles/util.dir/panic.ixx.obj.ddi: CXX_SCAN__util_Debug C$:/Users/jghig/projects/cxx/gican/util/panic.ixx || cmake_object_order_depends_target_util
+  DEP_FILE = util\CMakeFiles\util.dir\panic.ixx.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = util\CMakeFiles\util.dir\panic.ixx.obj.ddi
   FLAGS = -Wall -g -stdlib=libc++ -std=c++23
-  OBJ_FILE = gican_shared\base\CMakeFiles\base.dir\panic.ixx.obj
-  PREPROCESSED_OUTPUT_FILE = gican_shared\base\CMakeFiles\base.dir\panic.ixx.obj.ddi.i
+  OBJ_FILE = util\CMakeFiles\util.dir\panic.ixx.obj
+  PREPROCESSED_OUTPUT_FILE = util\CMakeFiles\util.dir\panic.ixx.obj.ddi.i
 
-build gican_shared/base/CMakeFiles/base.dir/panic.ixx.obj: CXX_COMPILER__base_scanned_Debug C$:/Users/jghig/projects/cxx/gican/gican_shared/base/panic.ixx | gican_shared/base/CMakeFiles/base.dir/panic.ixx.obj.modmap || cmake_object_order_depends_target_base gican_shared/base/CMakeFiles/base.dir/CXX.dd
+build util/CMakeFiles/util.dir/panic.ixx.obj: CXX_COMPILER__util_scanned_Debug C$:/Users/jghig/projects/cxx/gican/util/panic.ixx | util/CMakeFiles/util.dir/panic.ixx.obj.modmap || cmake_object_order_depends_target_util util/CMakeFiles/util.dir/CXX.dd
   CONFIG = Debug
-  DEP_FILE = gican_shared\base\CMakeFiles\base.dir\panic.ixx.obj.d
-  DYNDEP_MODULE_MAP_FILE = gican_shared\base\CMakeFiles\base.dir\panic.ixx.obj.modmap
+  DEP_FILE = util\CMakeFiles\util.dir\panic.ixx.obj.d
+  DYNDEP_MODULE_MAP_FILE = util\CMakeFiles\util.dir\panic.ixx.obj.modmap
   FLAGS = -Wall -g -stdlib=libc++ -std=c++23
-  OBJECT_DIR = gican_shared\base\CMakeFiles\base.dir
-  OBJECT_FILE_DIR = gican_shared\base\CMakeFiles\base.dir
-  TARGET_SUPPORT_DIR = gican_shared\base\CMakeFiles\base.dir
-  dyndep = gican_shared/base/CMakeFiles/base.dir/CXX.dd
+  OBJECT_DIR = util\CMakeFiles\util.dir
+  OBJECT_FILE_DIR = util\CMakeFiles\util.dir
+  TARGET_SUPPORT_DIR = util\CMakeFiles\util.dir
+  dyndep = util/CMakeFiles/util.dir/CXX.dd
 
-build gican_shared/base/CMakeFiles/base.dir/vector.ixx.obj.ddi: CXX_SCAN__base_Debug C$:/Users/jghig/projects/cxx/gican/gican_shared/base/vector.ixx || cmake_object_order_depends_target_base
-  DEP_FILE = gican_shared\base\CMakeFiles\base.dir\vector.ixx.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = gican_shared\base\CMakeFiles\base.dir\vector.ixx.obj.ddi
+build util/CMakeFiles/util.dir/cube_array.ixx.obj.ddi: CXX_SCAN__util_Debug C$:/Users/jghig/projects/cxx/gican/util/cube_array.ixx || cmake_object_order_depends_target_util
+  DEP_FILE = util\CMakeFiles\util.dir\cube_array.ixx.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = util\CMakeFiles\util.dir\cube_array.ixx.obj.ddi
   FLAGS = -Wall -g -stdlib=libc++ -std=c++23
-  OBJ_FILE = gican_shared\base\CMakeFiles\base.dir\vector.ixx.obj
-  PREPROCESSED_OUTPUT_FILE = gican_shared\base\CMakeFiles\base.dir\vector.ixx.obj.ddi.i
+  OBJ_FILE = util\CMakeFiles\util.dir\cube_array.ixx.obj
+  PREPROCESSED_OUTPUT_FILE = util\CMakeFiles\util.dir\cube_array.ixx.obj.ddi.i
 
-build gican_shared/base/CMakeFiles/base.dir/vector.ixx.obj: CXX_COMPILER__base_scanned_Debug C$:/Users/jghig/projects/cxx/gican/gican_shared/base/vector.ixx | gican_shared/base/CMakeFiles/base.dir/vector.ixx.obj.modmap || cmake_object_order_depends_target_base gican_shared/base/CMakeFiles/base.dir/CXX.dd
+build util/CMakeFiles/util.dir/cube_array.ixx.obj: CXX_COMPILER__util_scanned_Debug C$:/Users/jghig/projects/cxx/gican/util/cube_array.ixx | util/CMakeFiles/util.dir/cube_array.ixx.obj.modmap || cmake_object_order_depends_target_util util/CMakeFiles/util.dir/CXX.dd
   CONFIG = Debug
-  DEP_FILE = gican_shared\base\CMakeFiles\base.dir\vector.ixx.obj.d
-  DYNDEP_MODULE_MAP_FILE = gican_shared\base\CMakeFiles\base.dir\vector.ixx.obj.modmap
+  DEP_FILE = util\CMakeFiles\util.dir\cube_array.ixx.obj.d
+  DYNDEP_MODULE_MAP_FILE = util\CMakeFiles\util.dir\cube_array.ixx.obj.modmap
   FLAGS = -Wall -g -stdlib=libc++ -std=c++23
-  OBJECT_DIR = gican_shared\base\CMakeFiles\base.dir
-  OBJECT_FILE_DIR = gican_shared\base\CMakeFiles\base.dir
-  TARGET_SUPPORT_DIR = gican_shared\base\CMakeFiles\base.dir
-  dyndep = gican_shared/base/CMakeFiles/base.dir/CXX.dd
+  OBJECT_DIR = util\CMakeFiles\util.dir
+  OBJECT_FILE_DIR = util\CMakeFiles\util.dir
+  TARGET_SUPPORT_DIR = util\CMakeFiles\util.dir
+  dyndep = util/CMakeFiles/util.dir/CXX.dd
 
-build gican_shared/base/CMakeFiles/base.dir/CXX.dd | gican_shared/base/CMakeFiles/base.dir/CXXModules.json gican_shared/base/CMakeFiles/base.dir/ansi_format.ixx.obj.modmap gican_shared/base/CMakeFiles/base.dir/base.ixx.obj.modmap gican_shared/base/CMakeFiles/base.dir/panic.ixx.obj.modmap gican_shared/base/CMakeFiles/base.dir/vector.ixx.obj.modmap: CXX_DYNDEP__base_Debug gican_shared/base/CMakeFiles/base.dir/ansi_format.ixx.obj.ddi gican_shared/base/CMakeFiles/base.dir/base.ixx.obj.ddi gican_shared/base/CMakeFiles/base.dir/panic.ixx.obj.ddi gican_shared/base/CMakeFiles/base.dir/vector.ixx.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/gican_shared/base/CMakeFiles/base.dir/CXXDependInfo.json
+build util/CMakeFiles/util.dir/geometry.ixx.obj.ddi: CXX_SCAN__util_Debug C$:/Users/jghig/projects/cxx/gican/util/geometry.ixx || cmake_object_order_depends_target_util
+  DEP_FILE = util\CMakeFiles\util.dir\geometry.ixx.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = util\CMakeFiles\util.dir\geometry.ixx.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  OBJ_FILE = util\CMakeFiles\util.dir\geometry.ixx.obj
+  PREPROCESSED_OUTPUT_FILE = util\CMakeFiles\util.dir\geometry.ixx.obj.ddi.i
+
+build util/CMakeFiles/util.dir/geometry.ixx.obj: CXX_COMPILER__util_scanned_Debug C$:/Users/jghig/projects/cxx/gican/util/geometry.ixx | util/CMakeFiles/util.dir/geometry.ixx.obj.modmap || cmake_object_order_depends_target_util util/CMakeFiles/util.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = util\CMakeFiles\util.dir\geometry.ixx.obj.d
+  DYNDEP_MODULE_MAP_FILE = util\CMakeFiles\util.dir\geometry.ixx.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  OBJECT_DIR = util\CMakeFiles\util.dir
+  OBJECT_FILE_DIR = util\CMakeFiles\util.dir
+  TARGET_SUPPORT_DIR = util\CMakeFiles\util.dir
+  dyndep = util/CMakeFiles/util.dir/CXX.dd
+
+build util/CMakeFiles/util.dir/hash.ixx.obj.ddi: CXX_SCAN__util_Debug C$:/Users/jghig/projects/cxx/gican/util/hash.ixx || cmake_object_order_depends_target_util
+  DEP_FILE = util\CMakeFiles\util.dir\hash.ixx.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = util\CMakeFiles\util.dir\hash.ixx.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  OBJ_FILE = util\CMakeFiles\util.dir\hash.ixx.obj
+  PREPROCESSED_OUTPUT_FILE = util\CMakeFiles\util.dir\hash.ixx.obj.ddi.i
+
+build util/CMakeFiles/util.dir/hash.ixx.obj: CXX_COMPILER__util_scanned_Debug C$:/Users/jghig/projects/cxx/gican/util/hash.ixx | util/CMakeFiles/util.dir/hash.ixx.obj.modmap || cmake_object_order_depends_target_util util/CMakeFiles/util.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = util\CMakeFiles\util.dir\hash.ixx.obj.d
+  DYNDEP_MODULE_MAP_FILE = util\CMakeFiles\util.dir\hash.ixx.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  OBJECT_DIR = util\CMakeFiles\util.dir
+  OBJECT_FILE_DIR = util\CMakeFiles\util.dir
+  TARGET_SUPPORT_DIR = util\CMakeFiles\util.dir
+  dyndep = util/CMakeFiles/util.dir/CXX.dd
+
+build util/CMakeFiles/util.dir/CXX.dd | util/CMakeFiles/util.dir/CXXModules.json util/CMakeFiles/util.dir/ansi_format.ixx.obj.modmap util/CMakeFiles/util.dir/util.ixx.obj.modmap util/CMakeFiles/util.dir/panic.ixx.obj.modmap util/CMakeFiles/util.dir/cube_array.ixx.obj.modmap util/CMakeFiles/util.dir/geometry.ixx.obj.modmap util/CMakeFiles/util.dir/hash.ixx.obj.modmap: CXX_DYNDEP__util_Debug util/CMakeFiles/util.dir/ansi_format.ixx.obj.ddi util/CMakeFiles/util.dir/util.ixx.obj.ddi util/CMakeFiles/util.dir/panic.ixx.obj.ddi util/CMakeFiles/util.dir/cube_array.ixx.obj.ddi util/CMakeFiles/util.dir/geometry.ixx.obj.ddi util/CMakeFiles/util.dir/hash.ixx.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir/CXXDependInfo.json
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target base
+# Link build statements for STATIC_LIBRARY target util
 
 
 #############################################
-# Link the static library gican_shared\base\libbase.a
+# Link the static library util\libutil.a
 
-build gican_shared/base/libbase.a: CXX_STATIC_LIBRARY_LINKER__base_Debug gican_shared/base/CMakeFiles/base.dir/ansi_format.ixx.obj gican_shared/base/CMakeFiles/base.dir/base.ixx.obj gican_shared/base/CMakeFiles/base.dir/panic.ixx.obj gican_shared/base/CMakeFiles/base.dir/vector.ixx.obj
+build util/libutil.a: CXX_STATIC_LIBRARY_LINKER__util_Debug util/CMakeFiles/util.dir/ansi_format.ixx.obj util/CMakeFiles/util.dir/util.ixx.obj util/CMakeFiles/util.dir/panic.ixx.obj util/CMakeFiles/util.dir/cube_array.ixx.obj util/CMakeFiles/util.dir/geometry.ixx.obj util/CMakeFiles/util.dir/hash.ixx.obj
   CONFIG = Debug
   LANGUAGE_COMPILE_FLAGS = -Wall -g -stdlib=libc++
-  OBJECT_DIR = gican_shared\base\CMakeFiles\base.dir
+  OBJECT_DIR = util\CMakeFiles\util.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = gican_shared\base\libbase.a
-  TARGET_PDB = base.a.dbg
-  TARGET_SUPPORT_DIR = gican_shared\base\CMakeFiles\base.dir
+  TARGET_FILE = util\libutil.a
+  TARGET_PDB = util.a.dbg
+  TARGET_SUPPORT_DIR = util\CMakeFiles\util.dir
 
 
 #############################################
 # Utility command for package
 
-build gican_shared/base/CMakeFiles/package.util: CUSTOM_COMMAND gican_shared/base/all
+build util/CMakeFiles/package.util: CUSTOM_COMMAND util/all
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug && C:\msys64\clang64\bin\cpack.exe --config ./CPackConfig.cmake"
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
 
-build gican_shared/base/package: phony gican_shared/base/CMakeFiles/package.util
+build util/package: phony util/CMakeFiles/package.util
 
 
 #############################################
 # Utility command for package_source
 
-build gican_shared/base/CMakeFiles/package_source.util: CUSTOM_COMMAND
+build util/CMakeFiles/package_source.util: CUSTOM_COMMAND
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug && C:\msys64\clang64\bin\cpack.exe --config ./CPackSourceConfig.cmake"
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
 
-build gican_shared/base/package_source: phony gican_shared/base/CMakeFiles/package_source.util
+build util/package_source: phony util/CMakeFiles/package_source.util
 
 
 #############################################
 # Utility command for edit_cache
 
-build gican_shared/base/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_shared\base && C:\msys64\clang64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+build util/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\util && C:\msys64\clang64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build gican_shared/base/edit_cache: phony gican_shared/base/CMakeFiles/edit_cache.util
+build util/edit_cache: phony util/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build gican_shared/base/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_shared\base && C:\msys64\clang64\bin\cmake.exe --regenerate-during-build -SC:\Users\jghig\projects\cxx\gican -BC:\Users\jghig\projects\cxx\gican\out\debug"
+build util/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\util && C:\msys64\clang64\bin\cmake.exe --regenerate-during-build -SC:\Users\jghig\projects\cxx\gican -BC:\Users\jghig\projects\cxx\gican\out\debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build gican_shared/base/rebuild_cache: phony gican_shared/base/CMakeFiles/rebuild_cache.util
+build util/rebuild_cache: phony util/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build gican_shared/base/list_install_components: phony
+build util/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build gican_shared/base/CMakeFiles/install.util: CUSTOM_COMMAND gican_shared/base/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_shared\base && C:\msys64\clang64\bin\cmake.exe -P cmake_install.cmake"
+build util/CMakeFiles/install.util: CUSTOM_COMMAND util/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\util && C:\msys64\clang64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build gican_shared/base/install: phony gican_shared/base/CMakeFiles/install.util
+build util/install: phony util/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build gican_shared/base/CMakeFiles/install/local.util: CUSTOM_COMMAND gican_shared/base/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_shared\base && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build util/CMakeFiles/install/local.util: CUSTOM_COMMAND util/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\util && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build gican_shared/base/install/local: phony gican_shared/base/CMakeFiles/install/local.util
+build util/install/local: phony util/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build gican_shared/base/CMakeFiles/install/strip.util: CUSTOM_COMMAND gican_shared/base/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_shared\base && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+build util/CMakeFiles/install/strip.util: CUSTOM_COMMAND util/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\util && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build gican_shared/base/install/strip: phony gican_shared/base/CMakeFiles/install/strip.util
+build util/install/strip: phony util/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -1582,26 +1516,30 @@ build gican_shared/base/install/strip: phony gican_shared/base/CMakeFiles/instal
 #############################################
 # Order-only phony target for gican_client
 
-build cmake_object_order_depends_target_gican_client: phony || .
+build cmake_object_order_depends_target_gican_client: phony || cmake_object_order_depends_target_glfw cmake_object_order_depends_target_raylib cmake_object_order_depends_target_raylib_cpp_modules cmake_object_order_depends_target_util
 
 build gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj.ddi: CXX_SCAN__gican_client_Debug C$:/Users/jghig/projects/cxx/gican/gican_client/src/main.cxx || cmake_object_order_depends_target_gican_client
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
   DEP_FILE = gican_client\CMakeFiles\gican_client.dir\src\main.cxx.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = gican_client\CMakeFiles\gican_client.dir\src\main.cxx.obj.ddi
   FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/include
   OBJ_FILE = gican_client\CMakeFiles\gican_client.dir\src\main.cxx.obj
   PREPROCESSED_OUTPUT_FILE = gican_client\CMakeFiles\gican_client.dir\src\main.cxx.obj.ddi.i
 
 build gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj: CXX_COMPILER__gican_client_scanned_Debug C$:/Users/jghig/projects/cxx/gican/gican_client/src/main.cxx | gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj.modmap || cmake_object_order_depends_target_gican_client gican_client/CMakeFiles/gican_client.dir/CXX.dd
   CONFIG = Debug
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
   DEP_FILE = gican_client\CMakeFiles\gican_client.dir\src\main.cxx.obj.d
   DYNDEP_MODULE_MAP_FILE = gican_client\CMakeFiles\gican_client.dir\src\main.cxx.obj.modmap
   FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/include
   OBJECT_DIR = gican_client\CMakeFiles\gican_client.dir
   OBJECT_FILE_DIR = gican_client\CMakeFiles\gican_client.dir\src
   TARGET_SUPPORT_DIR = gican_client\CMakeFiles\gican_client.dir
   dyndep = gican_client/CMakeFiles/gican_client.dir/CXX.dd
 
-build gican_client/CMakeFiles/gican_client.dir/CXX.dd | gican_client/CMakeFiles/gican_client.dir/CXXModules.json gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj.modmap: CXX_DYNDEP__gican_client_Debug gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/CMakeFiles/gican_client.dir/CXXDependInfo.json
+build gican_client/CMakeFiles/gican_client.dir/CXX.dd | gican_client/CMakeFiles/gican_client.dir/CXXModules.json gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj.modmap: CXX_DYNDEP__gican_client_Debug gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/CMakeFiles/gican_client.dir/CXXDependInfo.json util/CMakeFiles/util.dir/CXXModules.json lib/raylib-cpp/modules/CMakeFiles/raylib_cpp_modules.dir/CXXModules.json
 
 
 # =============================================================================
@@ -1611,10 +1549,10 @@ build gican_client/CMakeFiles/gican_client.dir/CXX.dd | gican_client/CMakeFiles/
 #############################################
 # Link the executable gican_client\gican_client.exe
 
-build gican_client/gican_client.exe: CXX_EXECUTABLE_LINKER__gican_client_Debug gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj
+build gican_client/gican_client.exe: CXX_EXECUTABLE_LINKER__gican_client_Debug gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj | util/libutil.a lib/raylib-cpp/modules/libraylib_cpp_modules.a lib/raylib/raylib/libraylib.a || lib/raylib-cpp/modules/libraylib_cpp_modules.a lib/raylib/raylib/external/glfw/src/glfw lib/raylib/raylib/libraylib.a util/libutil.a
   CONFIG = Debug
   FLAGS = -Wall -g -stdlib=libc++
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = util/libutil.a  lib/raylib-cpp/modules/libraylib_cpp_modules.a  lib/raylib/raylib/libraylib.a  -lopengl32  -lglu32  -lwinmm  -lpthread  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = gican_client\CMakeFiles\gican_client.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -1719,12 +1657,6 @@ build gican_client/install/strip: phony gican_client/CMakeFiles/install/strip.ut
 
 
 #############################################
-# Utility command for gican_client_src
-
-build gican_client/src/gican_client_src: phony
-
-
-#############################################
 # Utility command for package
 
 build gican_client/src/CMakeFiles/package.util: CUSTOM_COMMAND gican_client/src/all
@@ -1814,118 +1746,511 @@ build gican_client/src/install/strip: phony gican_client/src/CMakeFiles/install/
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/jghig/projects/cxx/gican/CMakeLists.txt
+# C:/Users/jghig/projects/cxx/gican/gican_client/src/CMakeLists.txt
 # =============================================================================
 
 
 #############################################
 # Utility command for package
 
-build gican_server/CMakeFiles/package.util: CUSTOM_COMMAND gican_server/all
+build gican_client/src/engine/CMakeFiles/package.util: CUSTOM_COMMAND gican_client/src/engine/all
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug && C:\msys64\clang64\bin\cpack.exe --config ./CPackConfig.cmake"
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
 
-build gican_server/package: phony gican_server/CMakeFiles/package.util
+build gican_client/src/engine/package: phony gican_client/src/engine/CMakeFiles/package.util
 
 
 #############################################
 # Utility command for package_source
 
-build gican_server/CMakeFiles/package_source.util: CUSTOM_COMMAND
+build gican_client/src/engine/CMakeFiles/package_source.util: CUSTOM_COMMAND
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug && C:\msys64\clang64\bin\cpack.exe --config ./CPackSourceConfig.cmake"
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
 
-build gican_server/package_source: phony gican_server/CMakeFiles/package_source.util
+build gican_client/src/engine/package_source: phony gican_client/src/engine/CMakeFiles/package_source.util
 
 
 #############################################
 # Utility command for edit_cache
 
-build gican_server/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_server && C:\msys64\clang64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+build gican_client/src/engine/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\engine && C:\msys64\clang64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build gican_server/edit_cache: phony gican_server/CMakeFiles/edit_cache.util
+build gican_client/src/engine/edit_cache: phony gican_client/src/engine/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build gican_server/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_server && C:\msys64\clang64\bin\cmake.exe --regenerate-during-build -SC:\Users\jghig\projects\cxx\gican -BC:\Users\jghig\projects\cxx\gican\out\debug"
+build gican_client/src/engine/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\engine && C:\msys64\clang64\bin\cmake.exe --regenerate-during-build -SC:\Users\jghig\projects\cxx\gican -BC:\Users\jghig\projects\cxx\gican\out\debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build gican_server/rebuild_cache: phony gican_server/CMakeFiles/rebuild_cache.util
+build gican_client/src/engine/rebuild_cache: phony gican_client/src/engine/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build gican_server/list_install_components: phony
+build gican_client/src/engine/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build gican_server/CMakeFiles/install.util: CUSTOM_COMMAND gican_server/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_server && C:\msys64\clang64\bin\cmake.exe -P cmake_install.cmake"
+build gican_client/src/engine/CMakeFiles/install.util: CUSTOM_COMMAND gican_client/src/engine/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\engine && C:\msys64\clang64\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build gican_server/install: phony gican_server/CMakeFiles/install.util
+build gican_client/src/engine/install: phony gican_client/src/engine/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build gican_server/CMakeFiles/install/local.util: CUSTOM_COMMAND gican_server/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_server && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build gican_client/src/engine/CMakeFiles/install/local.util: CUSTOM_COMMAND gican_client/src/engine/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\engine && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build gican_server/install/local: phony gican_server/CMakeFiles/install/local.util
+build gican_client/src/engine/install/local: phony gican_client/src/engine/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build gican_server/CMakeFiles/install/strip.util: CUSTOM_COMMAND gican_server/all
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_server && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+build gican_client/src/engine/CMakeFiles/install/strip.util: CUSTOM_COMMAND gican_client/src/engine/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\engine && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build gican_server/install/strip: phony gican_server/CMakeFiles/install/strip.util
+build gican_client/src/engine/install/strip: phony gican_client/src/engine/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/jghig/projects/cxx/gican/gican_client/src/engine/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target engine_tensor
+
+
+#############################################
+# Order-only phony target for engine_tensor
+
+build cmake_object_order_depends_target_engine_tensor: phony || cmake_object_order_depends_target_util
+
+build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor_manager.ixx.obj.ddi: CXX_SCAN__engine_tensor_Debug C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/tensor_manager.ixx || cmake_object_order_depends_target_engine_tensor
+  DEP_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor_manager.ixx.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor_manager.ixx.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  OBJ_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor_manager.ixx.obj
+  PREPROCESSED_OUTPUT_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor_manager.ixx.obj.ddi.i
+
+build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor_manager.ixx.obj: CXX_COMPILER__engine_tensor_scanned_Debug C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/tensor_manager.ixx | gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor_manager.ixx.obj.modmap || cmake_object_order_depends_target_engine_tensor gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor_manager.ixx.obj.d
+  DYNDEP_MODULE_MAP_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor_manager.ixx.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  OBJECT_DIR = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir
+  OBJECT_FILE_DIR = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir
+  TARGET_SUPPORT_DIR = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir
+  dyndep = gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXX.dd
+
+build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor.ixx.obj.ddi: CXX_SCAN__engine_tensor_Debug C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/tensor.ixx || cmake_object_order_depends_target_engine_tensor
+  DEP_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor.ixx.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor.ixx.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  OBJ_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor.ixx.obj
+  PREPROCESSED_OUTPUT_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor.ixx.obj.ddi.i
+
+build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor.ixx.obj: CXX_COMPILER__engine_tensor_scanned_Debug C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/tensor.ixx | gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor.ixx.obj.modmap || cmake_object_order_depends_target_engine_tensor gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor.ixx.obj.d
+  DYNDEP_MODULE_MAP_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor.ixx.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  OBJECT_DIR = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir
+  OBJECT_FILE_DIR = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir
+  TARGET_SUPPORT_DIR = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir
+  dyndep = gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXX.dd
+
+build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXX.dd | gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXXModules.json gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor_manager.ixx.obj.modmap gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor.ixx.obj.modmap: CXX_DYNDEP__engine_tensor_Debug gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor_manager.ixx.obj.ddi gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor.ixx.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXXDependInfo.json util/CMakeFiles/util.dir/CXXModules.json
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target engine_tensor
+
+
+#############################################
+# Link the static library gican_client\src\engine\tensor\libengine_tensor.a
+
+build gican_client/src/engine/tensor/libengine_tensor.a: CXX_STATIC_LIBRARY_LINKER__engine_tensor_Debug gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor_manager.ixx.obj gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor.ixx.obj || util/libutil.a
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -Wall -g -stdlib=libc++
+  OBJECT_DIR = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = gican_client\src\engine\tensor\libengine_tensor.a
+  TARGET_PDB = engine_tensor.a.dbg
+  TARGET_SUPPORT_DIR = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir
+
+
+#############################################
+# Utility command for package
+
+build gican_client/src/engine/tensor/CMakeFiles/package.util: CUSTOM_COMMAND gican_client/src/engine/tensor/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug && C:\msys64\clang64\bin\cpack.exe --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build gican_client/src/engine/tensor/package: phony gican_client/src/engine/tensor/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build gican_client/src/engine/tensor/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug && C:\msys64\clang64\bin\cpack.exe --config ./CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build gican_client/src/engine/tensor/package_source: phony gican_client/src/engine/tensor/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build gican_client/src/engine/tensor/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\engine\tensor && C:\msys64\clang64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build gican_client/src/engine/tensor/edit_cache: phony gican_client/src/engine/tensor/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build gican_client/src/engine/tensor/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\engine\tensor && C:\msys64\clang64\bin\cmake.exe --regenerate-during-build -SC:\Users\jghig\projects\cxx\gican -BC:\Users\jghig\projects\cxx\gican\out\debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build gican_client/src/engine/tensor/rebuild_cache: phony gican_client/src/engine/tensor/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build gican_client/src/engine/tensor/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build gican_client/src/engine/tensor/CMakeFiles/install.util: CUSTOM_COMMAND gican_client/src/engine/tensor/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\engine\tensor && C:\msys64\clang64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build gican_client/src/engine/tensor/install: phony gican_client/src/engine/tensor/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build gican_client/src/engine/tensor/CMakeFiles/install/local.util: CUSTOM_COMMAND gican_client/src/engine/tensor/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\engine\tensor && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build gican_client/src/engine/tensor/install/local: phony gican_client/src/engine/tensor/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build gican_client/src/engine/tensor/CMakeFiles/install/strip.util: CUSTOM_COMMAND gican_client/src/engine/tensor/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\engine\tensor && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build gican_client/src/engine/tensor/install/strip: phony gican_client/src/engine/tensor/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/jghig/projects/cxx/gican/gican_client/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for package
+
+build gican_client/src/game/CMakeFiles/package.util: CUSTOM_COMMAND gican_client/src/game/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug && C:\msys64\clang64\bin\cpack.exe --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build gican_client/src/game/package: phony gican_client/src/game/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build gican_client/src/game/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug && C:\msys64\clang64\bin\cpack.exe --config ./CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build gican_client/src/game/package_source: phony gican_client/src/game/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build gican_client/src/game/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\game && C:\msys64\clang64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build gican_client/src/game/edit_cache: phony gican_client/src/game/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build gican_client/src/game/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\game && C:\msys64\clang64\bin\cmake.exe --regenerate-during-build -SC:\Users\jghig\projects\cxx\gican -BC:\Users\jghig\projects\cxx\gican\out\debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build gican_client/src/game/rebuild_cache: phony gican_client/src/game/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build gican_client/src/game/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build gican_client/src/game/CMakeFiles/install.util: CUSTOM_COMMAND gican_client/src/game/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\game && C:\msys64\clang64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build gican_client/src/game/install: phony gican_client/src/game/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build gican_client/src/game/CMakeFiles/install/local.util: CUSTOM_COMMAND gican_client/src/game/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\game && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build gican_client/src/game/install/local: phony gican_client/src/game/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build gican_client/src/game/CMakeFiles/install/strip.util: CUSTOM_COMMAND gican_client/src/game/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\game && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build gican_client/src/game/install/strip: phony gican_client/src/game/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/jghig/projects/cxx/gican/gican_client/src/game/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target game_sketch
+
+
+#############################################
+# Order-only phony target for game_sketch
+
+build cmake_object_order_depends_target_game_sketch: phony || cmake_object_order_depends_target_util
+
+build gican_client/src/game/sketch/CMakeFiles/game_sketch.dir/sketch.ixx.obj.ddi: CXX_SCAN__game_sketch_Debug C$:/Users/jghig/projects/cxx/gican/gican_client/src/game/sketch/sketch.ixx || cmake_object_order_depends_target_game_sketch
+  DEP_FILE = gican_client\src\game\sketch\CMakeFiles\game_sketch.dir\sketch.ixx.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = gican_client\src\game\sketch\CMakeFiles\game_sketch.dir\sketch.ixx.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  OBJ_FILE = gican_client\src\game\sketch\CMakeFiles\game_sketch.dir\sketch.ixx.obj
+  PREPROCESSED_OUTPUT_FILE = gican_client\src\game\sketch\CMakeFiles\game_sketch.dir\sketch.ixx.obj.ddi.i
+
+build gican_client/src/game/sketch/CMakeFiles/game_sketch.dir/sketch.ixx.obj: CXX_COMPILER__game_sketch_scanned_Debug C$:/Users/jghig/projects/cxx/gican/gican_client/src/game/sketch/sketch.ixx | gican_client/src/game/sketch/CMakeFiles/game_sketch.dir/sketch.ixx.obj.modmap || cmake_object_order_depends_target_game_sketch gican_client/src/game/sketch/CMakeFiles/game_sketch.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = gican_client\src\game\sketch\CMakeFiles\game_sketch.dir\sketch.ixx.obj.d
+  DYNDEP_MODULE_MAP_FILE = gican_client\src\game\sketch\CMakeFiles\game_sketch.dir\sketch.ixx.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  OBJECT_DIR = gican_client\src\game\sketch\CMakeFiles\game_sketch.dir
+  OBJECT_FILE_DIR = gican_client\src\game\sketch\CMakeFiles\game_sketch.dir
+  TARGET_SUPPORT_DIR = gican_client\src\game\sketch\CMakeFiles\game_sketch.dir
+  dyndep = gican_client/src/game/sketch/CMakeFiles/game_sketch.dir/CXX.dd
+
+build gican_client/src/game/sketch/CMakeFiles/game_sketch.dir/CXX.dd | gican_client/src/game/sketch/CMakeFiles/game_sketch.dir/CXXModules.json gican_client/src/game/sketch/CMakeFiles/game_sketch.dir/sketch.ixx.obj.modmap: CXX_DYNDEP__game_sketch_Debug gican_client/src/game/sketch/CMakeFiles/game_sketch.dir/sketch.ixx.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game/sketch/CMakeFiles/game_sketch.dir/CXXDependInfo.json util/CMakeFiles/util.dir/CXXModules.json
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target game_sketch
+
+
+#############################################
+# Link the static library gican_client\src\game\sketch\libgame_sketch.a
+
+build gican_client/src/game/sketch/libgame_sketch.a: CXX_STATIC_LIBRARY_LINKER__game_sketch_Debug gican_client/src/game/sketch/CMakeFiles/game_sketch.dir/sketch.ixx.obj || util/libutil.a
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -Wall -g -stdlib=libc++
+  OBJECT_DIR = gican_client\src\game\sketch\CMakeFiles\game_sketch.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = gican_client\src\game\sketch\libgame_sketch.a
+  TARGET_PDB = game_sketch.a.dbg
+  TARGET_SUPPORT_DIR = gican_client\src\game\sketch\CMakeFiles\game_sketch.dir
+
+
+#############################################
+# Utility command for package
+
+build gican_client/src/game/sketch/CMakeFiles/package.util: CUSTOM_COMMAND gican_client/src/game/sketch/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug && C:\msys64\clang64\bin\cpack.exe --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build gican_client/src/game/sketch/package: phony gican_client/src/game/sketch/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build gican_client/src/game/sketch/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug && C:\msys64\clang64\bin\cpack.exe --config ./CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build gican_client/src/game/sketch/package_source: phony gican_client/src/game/sketch/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build gican_client/src/game/sketch/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\game\sketch && C:\msys64\clang64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build gican_client/src/game/sketch/edit_cache: phony gican_client/src/game/sketch/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build gican_client/src/game/sketch/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\game\sketch && C:\msys64\clang64\bin\cmake.exe --regenerate-during-build -SC:\Users\jghig\projects\cxx\gican -BC:\Users\jghig\projects\cxx\gican\out\debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build gican_client/src/game/sketch/rebuild_cache: phony gican_client/src/game/sketch/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build gican_client/src/game/sketch/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build gican_client/src/game/sketch/CMakeFiles/install.util: CUSTOM_COMMAND gican_client/src/game/sketch/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\game\sketch && C:\msys64\clang64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build gican_client/src/game/sketch/install: phony gican_client/src/game/sketch/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build gican_client/src/game/sketch/CMakeFiles/install/local.util: CUSTOM_COMMAND gican_client/src/game/sketch/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\game\sketch && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build gican_client/src/game/sketch/install/local: phony gican_client/src/game/sketch/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build gican_client/src/game/sketch/CMakeFiles/install/strip.util: CUSTOM_COMMAND gican_client/src/game/sketch/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\gican_client\src\game\sketch && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build gican_client/src/game/sketch/install/strip: phony gican_client/src/game/sketch/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Target aliases.
 
-build base: phony gican_shared/base/libbase.a
+build engine_tensor: phony gican_client/src/engine/tensor/libengine_tensor.a
+
+build game_sketch: phony gican_client/src/game/sketch/libgame_sketch.a
 
 build gican_client: phony gican_client/gican_client.exe
 
 build gican_client.exe: phony gican_client/gican_client.exe
 
-build gican_client_src: phony gican_client/src/gican_client_src
-
-build gican_shared: phony gican_shared/gican_shared
-
 build glfw: phony lib/raylib/raylib/external/glfw/src/glfw
 
-build libbase.a: phony gican_shared/base/libbase.a
+build libengine_tensor.a: phony gican_client/src/engine/tensor/libengine_tensor.a
+
+build libgame_sketch.a: phony gican_client/src/game/sketch/libgame_sketch.a
 
 build libraylib.a: phony lib/raylib/raylib/libraylib.a
 
 build libraylib_cpp_modules.a: phony lib/raylib-cpp/modules/libraylib_cpp_modules.a
+
+build libutil.a: phony util/libutil.a
 
 build raylib: phony lib/raylib/raylib/libraylib.a
 
@@ -1935,6 +2260,8 @@ build uninstall: phony lib/raylib/uninstall
 
 build update_mappings: phony lib/raylib/raylib/external/glfw/src/update_mappings
 
+build util: phony util/libutil.a
+
 # =============================================================================
 # Folder targets.
 
@@ -1943,7 +2270,7 @@ build update_mappings: phony lib/raylib/raylib/external/glfw/src/update_mappings
 #############################################
 # Folder: C:/Users/jghig/projects/cxx/gican/out/debug
 
-build codegen: phony lib/codegen gican_shared/codegen gican_client/codegen gican_server/codegen
+build codegen: phony lib/codegen util/codegen gican_client/codegen
 
 # =============================================================================
 
@@ -1957,28 +2284,35 @@ build gican_client/codegen: phony gican_client/src/codegen
 #############################################
 # Folder: C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src
 
-build gican_client/src/codegen: phony
+build gican_client/src/codegen: phony gican_client/src/engine/codegen gican_client/src/game/codegen
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/gican_server
+# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine
 
-build gican_server/codegen: phony
-
-# =============================================================================
-
-#############################################
-# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/gican_shared
-
-build gican_shared/codegen: phony gican_shared/base/codegen
+build gican_client/src/engine/codegen: phony gican_client/src/engine/tensor/codegen
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/gican_shared/base
+# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor
 
-build gican_shared/base/codegen: phony
+build gican_client/src/engine/tensor/codegen: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game
+
+build gican_client/src/game/codegen: phony gican_client/src/game/sketch/codegen
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game/sketch
+
+build gican_client/src/game/sketch/codegen: phony
 
 # =============================================================================
 
@@ -2039,9 +2373,16 @@ build lib/raylib/raylib/external/glfw/src/codegen: phony
 # =============================================================================
 
 #############################################
+# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/util
+
+build util/codegen: phony
+
+# =============================================================================
+
+#############################################
 # Folder: C:/Users/jghig/projects/cxx/gican/out/debug
 
-build all: phony lib/all gican_shared/all gican_client/all gican_server/all
+build all: phony lib/all util/all gican_client/all
 
 # =============================================================================
 
@@ -2055,28 +2396,35 @@ build gican_client/all: phony gican_client/gican_client.exe gican_client/src/all
 #############################################
 # Folder: C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src
 
-build gican_client/src/all: phony gican_client/src/gican_client_src
+build gican_client/src/all: phony gican_client/src/engine/all gican_client/src/game/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/gican_server
+# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine
 
-build gican_server/all: phony
-
-# =============================================================================
-
-#############################################
-# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/gican_shared
-
-build gican_shared/all: phony gican_shared/gican_shared gican_shared/base/all
+build gican_client/src/engine/all: phony gican_client/src/engine/tensor/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/gican_shared/base
+# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor
 
-build gican_shared/base/all: phony gican_shared/base/libbase.a
+build gican_client/src/engine/tensor/all: phony gican_client/src/engine/tensor/libengine_tensor.a
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game
+
+build gican_client/src/game/all: phony gican_client/src/game/sketch/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game/sketch
+
+build gican_client/src/game/sketch/all: phony gican_client/src/game/sketch/libgame_sketch.a
 
 # =============================================================================
 
@@ -2135,20 +2483,27 @@ build lib/raylib/raylib/external/glfw/all: phony lib/raylib/raylib/external/glfw
 build lib/raylib/raylib/external/glfw/src/all: phony lib/raylib/raylib/external/glfw/src/glfw
 
 # =============================================================================
+
+#############################################
+# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/util
+
+build util/all: phony util/libutil.a
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:/Users/jghig/projects/cxx/gican/out/debug/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/external/glfw/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/external/glfw/src/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/include/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/modules/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_shared/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_shared/base/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_server/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/CTestTestfile.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/CTestTestfile.cmake: RERUN_CMAKE | C$:/Users/jghig/projects/cxx/gican/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_server/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_shared/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_shared/base/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/modules/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/CMakeOptions.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/AddIfFlagCompiles.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/CompileDefinitions.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/CompilerFlags.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/EnumOption.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/GlfwImport.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/InstallConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/JoinPaths.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/LibraryConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/LibraryPathToLinkerFlags.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/PackConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/ParseConfigHeader.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/PopulateConfigVariablesLocally.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/Uninstall.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/raylib-config-version.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/raylib.pc.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMake/glfw3.pc.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMake/glfw3Config.cmake.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/src/CMakeLists.txt C$:/msys64/clang64/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/msys64/clang64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/clang64/share/cmake/Modules/CPack.cmake C$:/msys64/clang64/share/cmake/Modules/CPackComponent.cmake C$:/msys64/clang64/share/cmake/Modules/CheckCCompilerFlag.cmake C$:/msys64/clang64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/clang64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/clang64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang-C.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/FindOpenGL.cmake C$:/msys64/clang64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/clang64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/clang64/share/cmake/Modules/FindThreads.cmake C$:/msys64/clang64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD-C.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD-C.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang-C.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/clang64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake C$:/msys64/clang64/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake
+build build.ninja C$:/Users/jghig/projects/cxx/gican/out/debug/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/external/glfw/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/external/glfw/src/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/include/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/modules/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/util/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game/sketch/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/CTestTestfile.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/CTestTestfile.cmake: RERUN_CMAKE | C$:/Users/jghig/projects/cxx/gican/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/game/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/game/sketch/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/modules/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/CMakeOptions.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/AddIfFlagCompiles.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/CompileDefinitions.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/CompilerFlags.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/EnumOption.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/GlfwImport.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/InstallConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/JoinPaths.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/LibraryConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/LibraryPathToLinkerFlags.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/PackConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/ParseConfigHeader.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/PopulateConfigVariablesLocally.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/Uninstall.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/raylib-config-version.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/raylib.pc.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMake/glfw3.pc.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMake/glfw3Config.cmake.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/util/CMakeLists.txt C$:/msys64/clang64/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/msys64/clang64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/clang64/share/cmake/Modules/CPack.cmake C$:/msys64/clang64/share/cmake/Modules/CPackComponent.cmake C$:/msys64/clang64/share/cmake/Modules/CheckCCompilerFlag.cmake C$:/msys64/clang64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/clang64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/clang64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang-C.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/FindOpenGL.cmake C$:/msys64/clang64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/clang64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/clang64/share/cmake/Modules/FindThreads.cmake C$:/msys64/clang64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD-C.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD-C.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang-C.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/clang64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake C$:/msys64/clang64/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/jghig/projects/cxx/gican/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_server/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_shared/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_shared/base/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/modules/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/CMakeOptions.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/AddIfFlagCompiles.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/CompileDefinitions.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/CompilerFlags.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/EnumOption.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/GlfwImport.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/InstallConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/JoinPaths.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/LibraryConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/LibraryPathToLinkerFlags.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/PackConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/ParseConfigHeader.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/PopulateConfigVariablesLocally.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/Uninstall.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/raylib-config-version.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/raylib.pc.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMake/glfw3.pc.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMake/glfw3Config.cmake.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/src/CMakeLists.txt C$:/msys64/clang64/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/msys64/clang64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/clang64/share/cmake/Modules/CPack.cmake C$:/msys64/clang64/share/cmake/Modules/CPackComponent.cmake C$:/msys64/clang64/share/cmake/Modules/CheckCCompilerFlag.cmake C$:/msys64/clang64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/clang64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/clang64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang-C.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/FindOpenGL.cmake C$:/msys64/clang64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/clang64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/clang64/share/cmake/Modules/FindThreads.cmake C$:/msys64/clang64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD-C.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD-C.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang-C.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/clang64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake C$:/msys64/clang64/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake: phony
+build C$:/Users/jghig/projects/cxx/gican/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/game/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/game/sketch/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/modules/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/CMakeOptions.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/AddIfFlagCompiles.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/CompileDefinitions.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/CompilerFlags.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/EnumOption.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/GlfwImport.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/InstallConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/JoinPaths.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/LibraryConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/LibraryPathToLinkerFlags.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/PackConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/ParseConfigHeader.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/PopulateConfigVariablesLocally.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/Uninstall.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/raylib-config-version.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/raylib.pc.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMake/glfw3.pc.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMake/glfw3Config.cmake.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/util/CMakeLists.txt C$:/msys64/clang64/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/msys64/clang64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/clang64/share/cmake/Modules/CPack.cmake C$:/msys64/clang64/share/cmake/Modules/CPackComponent.cmake C$:/msys64/clang64/share/cmake/Modules/CheckCCompilerFlag.cmake C$:/msys64/clang64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/clang64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/clang64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang-C.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/FindOpenGL.cmake C$:/msys64/clang64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/clang64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/clang64/share/cmake/Modules/FindThreads.cmake C$:/msys64/clang64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD-C.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD-C.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang-C.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/clang64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake C$:/msys64/clang64/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake: phony
 
 
 #############################################

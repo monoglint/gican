@@ -1,9 +1,7 @@
-add_library(gican_client_src INTERFACE
-    render
-)
+add_subdirectory(engine)
+add_subdirectory(game)
 
-target_link_libraries(gican_client_src INTERFACE
-    gican_shared
-    raylib_cpp_modules 
-    raylib
+set(gican_client_src_libs 
+    client_engine
+    client_game
 )

@@ -1,3 +1,0 @@
--x c++-module
--fmodule-output=gican/src/base/CMakeFiles/base.dir/base.pcm
--fmodule-file=base:vector=gican/src/base/CMakeFiles/base.dir/base-vector.pcm

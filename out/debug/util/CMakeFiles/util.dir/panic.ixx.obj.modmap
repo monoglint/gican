@@ -1,0 +1,3 @@
+-x c++-module
+-fmodule-output=util/CMakeFiles/util.dir/util-panic.pcm
+-fmodule-file=util:ansi_format=util/CMakeFiles/util.dir/util-ansi_format.pcm

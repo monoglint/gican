@@ -1,0 +1,35 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "Clang",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : 
+	{
+		"gican_client/src/game/sketch/CMakeFiles/game_sketch.dir/sketch.ixx.obj" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "",
+			"source" : "C:/Users/jghig/projects/cxx/gican/gican_client/src/game/sketch/sketch.ixx",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		}
+	},
+	"database-info" : null,
+	"dir-cur-bld" : "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game/sketch",
+	"dir-cur-src" : "C:/Users/jghig/projects/cxx/gican/gican_client/src/game/sketch",
+	"dir-top-bld" : "C:/Users/jghig/projects/cxx/gican/out/debug",
+	"dir-top-src" : "C:/Users/jghig/projects/cxx/gican",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : 
+	[
+		"C:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir"
+	],
+	"module-dir" : "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game/sketch/CMakeFiles/game_sketch.dir",
+	"sources" : {}
+}

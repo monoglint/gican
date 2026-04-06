@@ -1,4 +1,0 @@
-ninja_dyndep_version = 1.0
-build gican/src/voxel/CMakeFiles/voxel.dir/chunk.ixx.obj | gican/src/voxel/CMakeFiles/voxel.dir/voxel-chunk.pcm: dyndep | gican/src/base/CMakeFiles/base.dir/base.pcm
-  restat = 1
-

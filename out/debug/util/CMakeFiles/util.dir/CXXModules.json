@@ -1,0 +1,94 @@
+{
+	"modules" : 
+	{
+		"util" : 
+		{
+			"bmi" : "C:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir/util.pcm",
+			"is-private" : false
+		},
+		"util:ansi_format" : 
+		{
+			"bmi" : "C:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir/util-ansi_format.pcm",
+			"is-private" : false
+		},
+		"util:cube_array" : 
+		{
+			"bmi" : "C:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir/util-cube_array.pcm",
+			"is-private" : false
+		},
+		"util:geometry" : 
+		{
+			"bmi" : "C:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir/util-geometry.pcm",
+			"is-private" : false
+		},
+		"util:hash" : 
+		{
+			"bmi" : "C:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir/util-hash.pcm",
+			"is-private" : false
+		},
+		"util:panic" : 
+		{
+			"bmi" : "C:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir/util-panic.pcm",
+			"is-private" : false
+		}
+	},
+	"references" : 
+	{
+		"util" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util.pcm"
+		},
+		"util:ansi_format" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-ansi_format.pcm"
+		},
+		"util:cube_array" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-cube_array.pcm"
+		},
+		"util:geometry" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-geometry.pcm"
+		},
+		"util:hash" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-hash.pcm"
+		},
+		"util:panic" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-panic.pcm"
+		}
+	},
+	"usages" : 
+	{
+		"util" : 
+		[
+			"util:ansi_format",
+			"util:cube_array",
+			"util:geometry",
+			"util:hash",
+			"util:panic"
+		],
+		"util:cube_array" : 
+		[
+			"util:ansi_format",
+			"util:geometry",
+			"util:hash",
+			"util:panic"
+		],
+		"util:geometry" : 
+		[
+			"util:hash"
+		],
+		"util:panic" : 
+		[
+			"util:ansi_format"
+		]
+	}
+}

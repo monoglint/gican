@@ -1,0 +1,33 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "util\\CMakeFiles\\util.dir\\util.ixx.obj",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "util",
+          "source-path": "C:/Users/jghig/projects/cxx/gican/util/util.ixx"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "util:ansi_format"
+        },
+        {
+          "logical-name": "util:panic"
+        },
+        {
+          "logical-name": "util:cube_array"
+        },
+        {
+          "logical-name": "util:geometry"
+        },
+        {
+          "logical-name": "util:hash"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

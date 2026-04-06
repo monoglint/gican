@@ -1,0 +1,74 @@
+{
+	"modules" : 
+	{
+		"game.sketch" : 
+		{
+			"bmi" : "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game/sketch/CMakeFiles/game_sketch.dir/game.sketch.pcm",
+			"is-private" : false
+		}
+	},
+	"references" : 
+	{
+		"game.sketch" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "gican_client/src/game/sketch/CMakeFiles/game_sketch.dir/game.sketch.pcm"
+		},
+		"util" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util.pcm"
+		},
+		"util:ansi_format" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-ansi_format.pcm"
+		},
+		"util:cube_array" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-cube_array.pcm"
+		},
+		"util:geometry" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-geometry.pcm"
+		},
+		"util:hash" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-hash.pcm"
+		},
+		"util:panic" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-panic.pcm"
+		}
+	},
+	"usages" : 
+	{
+		"util" : 
+		[
+			"util:ansi_format",
+			"util:cube_array",
+			"util:geometry",
+			"util:hash",
+			"util:panic"
+		],
+		"util:cube_array" : 
+		[
+			"util:ansi_format",
+			"util:geometry",
+			"util:hash",
+			"util:panic"
+		],
+		"util:geometry" : 
+		[
+			"util:hash"
+		],
+		"util:panic" : 
+		[
+			"util:ansi_format"
+		]
+	}
+}

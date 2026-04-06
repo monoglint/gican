@@ -1,0 +1,4 @@
+ninja_dyndep_version = 1.0
+build gican_client/src/game/sketch/CMakeFiles/game_sketch.dir/sketch.ixx.obj | gican_client/src/game/sketch/CMakeFiles/game_sketch.dir/game.sketch.pcm: dyndep
+  restat = 1
+

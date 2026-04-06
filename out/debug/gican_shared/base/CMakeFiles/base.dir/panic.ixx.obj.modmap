@@ -1,3 +1,0 @@
--x c++-module
--fmodule-output=gican_shared/base/CMakeFiles/base.dir/base-panic.pcm
--fmodule-file=base:ansi_format=gican_shared/base/CMakeFiles/base.dir/base-ansi_format.pcm

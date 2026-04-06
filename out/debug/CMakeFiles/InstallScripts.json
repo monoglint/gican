@@ -10,11 +10,13 @@
 		"C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/cmake_install.cmake",
 		"C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/include/cmake_install.cmake",
 		"C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/modules/cmake_install.cmake",
-		"C:/Users/jghig/projects/cxx/gican/out/debug/gican_shared/cmake_install.cmake",
-		"C:/Users/jghig/projects/cxx/gican/out/debug/gican_shared/base/cmake_install.cmake",
+		"C:/Users/jghig/projects/cxx/gican/out/debug/util/cmake_install.cmake",
 		"C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/cmake_install.cmake",
 		"C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/cmake_install.cmake",
-		"C:/Users/jghig/projects/cxx/gican/out/debug/gican_server/cmake_install.cmake"
+		"C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/cmake_install.cmake",
+		"C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/cmake_install.cmake",
+		"C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game/cmake_install.cmake",
+		"C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game/sketch/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

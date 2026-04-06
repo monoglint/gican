@@ -1,0 +1,16 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "gican_client\\src\\game\\sketch\\CMakeFiles\\game_sketch.dir\\sketch.ixx.obj",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "game.sketch",
+          "source-path": "C:/Users/jghig/projects/cxx/gican/gican_client/src/game/sketch/sketch.ixx"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

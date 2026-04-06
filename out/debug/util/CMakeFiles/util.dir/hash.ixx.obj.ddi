@@ -1,0 +1,16 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "util\\CMakeFiles\\util.dir\\hash.ixx.obj",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "util:hash",
+          "source-path": "C:/Users/jghig/projects/cxx/gican/util/hash.ixx"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

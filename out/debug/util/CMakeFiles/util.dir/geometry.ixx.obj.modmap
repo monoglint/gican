@@ -1,0 +1,3 @@
+-x c++-module
+-fmodule-output=util/CMakeFiles/util.dir/util-geometry.pcm
+-fmodule-file=util:hash=util/CMakeFiles/util.dir/util-hash.pcm

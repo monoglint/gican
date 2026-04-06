@@ -1,0 +1,2 @@
+-x c++-module
+-fmodule-output=gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-voxel.pcm

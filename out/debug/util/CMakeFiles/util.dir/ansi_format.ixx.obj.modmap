@@ -1,0 +1,2 @@
+-x c++-module
+-fmodule-output=util/CMakeFiles/util.dir/util-ansi_format.pcm

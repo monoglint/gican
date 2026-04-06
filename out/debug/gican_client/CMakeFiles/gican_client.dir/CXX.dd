@@ -1,3 +1,3 @@
 ninja_dyndep_version = 1.0
-build gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj: dyndep
+build gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj: dyndep | lib/raylib-cpp/modules/CMakeFiles/raylib_cpp_modules.dir/raylib.pcm
 

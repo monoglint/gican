@@ -1,0 +1,21 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\tensor_manager.ixx.obj",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "engine.tensor:tensor_manager",
+          "source-path": "C:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/tensor_manager.ixx"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "util"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

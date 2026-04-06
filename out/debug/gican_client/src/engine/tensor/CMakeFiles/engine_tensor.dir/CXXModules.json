@@ -1,0 +1,103 @@
+{
+	"modules" : 
+	{
+		"engine.tensor" : 
+		{
+			"bmi" : "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor.pcm",
+			"is-private" : false
+		},
+		"engine.tensor:tensor_manager" : 
+		{
+			"bmi" : "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-tensor_manager.pcm",
+			"is-private" : false
+		}
+	},
+	"references" : 
+	{
+		"engine.tensor" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor.pcm"
+		},
+		"engine.tensor:tensor_manager" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-tensor_manager.pcm"
+		},
+		"util" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util.pcm"
+		},
+		"util:ansi_format" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-ansi_format.pcm"
+		},
+		"util:cube_array" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-cube_array.pcm"
+		},
+		"util:geometry" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-geometry.pcm"
+		},
+		"util:hash" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-hash.pcm"
+		},
+		"util:panic" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-panic.pcm"
+		}
+	},
+	"usages" : 
+	{
+		"engine.tensor" : 
+		[
+			"engine.tensor:tensor_manager",
+			"util",
+			"util:ansi_format",
+			"util:cube_array",
+			"util:geometry",
+			"util:hash",
+			"util:panic"
+		],
+		"engine.tensor:tensor_manager" : 
+		[
+			"util",
+			"util:ansi_format",
+			"util:cube_array",
+			"util:geometry",
+			"util:hash",
+			"util:panic"
+		],
+		"util" : 
+		[
+			"util:ansi_format",
+			"util:cube_array",
+			"util:geometry",
+			"util:hash",
+			"util:panic"
+		],
+		"util:cube_array" : 
+		[
+			"util:ansi_format",
+			"util:geometry",
+			"util:hash",
+			"util:panic"
+		],
+		"util:geometry" : 
+		[
+			"util:hash"
+		],
+		"util:panic" : 
+		[
+			"util:ansi_format"
+		]
+	}
+}

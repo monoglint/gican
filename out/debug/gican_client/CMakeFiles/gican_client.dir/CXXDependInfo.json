@@ -12,9 +12,18 @@
 	"dir-top-src" : "C:/Users/jghig/projects/cxx/gican",
 	"exports" : [],
 	"forward-modules-from-target-dirs" : [],
-	"include-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\raylib-cpp\\include",
+		"C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\raylib\\src",
+		"C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\raylib\\src\\external\\glfw\\include"
+	],
 	"language" : "CXX",
-	"linked-target-dirs" : [],
+	"linked-target-dirs" : 
+	[
+		"C:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir",
+		"C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/modules/CMakeFiles/raylib_cpp_modules.dir"
+	],
 	"module-dir" : "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/CMakeFiles/gican_client.dir",
 	"sources" : 
 	{

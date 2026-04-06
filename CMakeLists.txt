@@ -7,9 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_SCAN_FOR_MODULES ON) 
 
-project(gican LANGUAGES CXX)
+project(gican LANGUAGES C CXX)
 
 add_subdirectory(lib)
-add_subdirectory(gican_shared)
+add_subdirectory(util)
 add_subdirectory(gican_client)
-add_subdirectory(gican_server)

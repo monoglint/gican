@@ -1,0 +1,24 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "util\\CMakeFiles\\util.dir\\cube_array.ixx.obj",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "util:cube_array",
+          "source-path": "C:/Users/jghig/projects/cxx/gican/util/cube_array.ixx"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "util:geometry"
+        },
+        {
+          "logical-name": "util:panic"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}
