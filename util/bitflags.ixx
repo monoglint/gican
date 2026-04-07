@@ -26,8 +26,15 @@ module;
 export module util:bitflags;
 
 export namespace util {
-    template <typename Enum>
-    requires std::is_enum_v<Enum>
+    template <typename T>
+    concept IsBitFlagSafe = 
+        std::is_enum_v<T> && 
+        std::is_unsigned_v<std::underlying_type_t<T>> &&
+        requires {
+            static_cast<std::underlying_type_t<T>>(T::NONE) == 0;
+        };
+
+    template <IsBitFlagSafe Enum>
     class BitFlags {
     public:
         // for external access
@@ -38,6 +45,10 @@ export namespace util {
             : value(value)
         {}
 
+        constexpr BitFlags()
+            : value(Enum::NONE)
+        {}
+        
         Enum value;
 
         constexpr operator Enum() const {

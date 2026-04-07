@@ -14,19 +14,14 @@ module;
 #include <cstddef>
 #include <type_traits>
 #include <fstream>
+#include <filesystem>
 
 export module engine.tensor:tensor_manager;
 
 import util;
 
 export namespace engine::tensor {
-    namespace chunk_data {
-        using ChunkLength = uint16_t;
-        using ChunkVolume = uint16_t;
-        constexpr ChunkLength CHUNK_LENGTH = 16;
-        constexpr ChunkVolume CHUNK_VOLUME = CHUNK_LENGTH * CHUNK_LENGTH * CHUNK_LENGTH;
-    };
-
+    
     // To note for voxels, they are not set structs and are instead left open
     // for interpretation because even though this engine will probably only be used for this game,
     // I want to keep the engine purely independent.
@@ -57,7 +52,8 @@ export namespace engine::tensor {
         // If disabled, the chunk is elegible for being cleaned up from RAM and serialized to the disk.
         IS_LOADED = 1 << 0,
 
-        // When the chunk is unloaded, ticking 
+        // Marked as true the moment a change is made to the chunk.
+        // The engine does not interact with this variable. The game layer on top should set this flag when needed.
         IS_SERIALIZABLE = 1 << 1,
     };
 
@@ -66,12 +62,22 @@ export namespace engine::tensor {
     template <IsVoxel Voxel>
     class Chunk {
     public:
-        static constexpr std::size_t SERIALIZED_BYTE_COUNT = chunk_data::CHUNK_VOLUME * Voxel::SERIALIZED_BYTE_COUNT;
+        using ChunkLength = uint16_t;
+        using ChunkVolume = uint16_t;
+
+        /// @warning GROUNDS FOR DATA_VERSION CHANGE
+        static constexpr ChunkLength CHUNK_LENGTH = 16;
+        static constexpr ChunkVolume CHUNK_VOLUME = CHUNK_LENGTH * CHUNK_LENGTH * CHUNK_LENGTH;
+        static constexpr std::size_t SERIALIZED_BYTE_COUNT = CHUNK_VOLUME * Voxel::SERIALIZED_BYTE_COUNT;
+
+        // Update every time there is a change to the chunk system that requires a new file format.
+        static constexpr std::size_t DATA_VERSION = 0;
         
-        util::CubeArray<Voxel, chunk_data::ChunkLength, chunk_data::CHUNK_LENGTH> voxels;
+        util::CubeArray<Voxel, ChunkLength, CHUNK_LENGTH> voxels;
 
         // Flags dictate external behavior with the Chunk, not how the chunk works internally.
-        ChunkFlags flags = ChunkFlags(ChunkFlags::Values::IS_LOADED) | ChunkFlags::Values::IS_SERIALIZABLE;
+        // Can be modified by the engine or game layer depending on the specific flag.
+        ChunkFlags flags;
     
         // Saves to a state in the form of bytes.
         void serialize(std::ofstream& buffer) const {
@@ -88,19 +94,52 @@ export namespace engine::tensor {
         }
     };
 
+    /*
+    
+        REGION FILE FORMAT
+        
+        repeat (REGION_VOLUME) {
+            u32 - chunk pos in rest of file per CHUNK_ALIGNMENT
+        }
+    */
     // A RAM representation of an existing region file for fast incremental disk editing
     template <IsVoxel Voxel>
     class Region {
     public:
-        Region(util::Vec3I region_pos)
-            : region_pos(region_pos), stream(region_pos.()) {}
+        // Change every time a major file-based change occurs to the Region struct.
+        // This variable will be smashed together with the other data versions of Chunk and Voxel to make a unique tag.
+        static constexpr std::size_t DATA_VERSION = 0;
+
+        // The character used to delimit the numbers in their vec3 position.
+        static constexpr char FILE_NAME_POS_DELIMITER = '-';
+
+        // The size of each buffer chunk the file system should use when reading and writing.
+        static constexpr std::size_t FSTREAM_BUFFER_SIZE = 5e6; // 5 megs. magic number, change however
+
+        /// @warning DATA_VERSION should increment if these change:
+        static constexpr std::size_t REGION_LENGTH = 32; // in chunks
+        static constexpr std::size_t REGION_VOLUME = REGION_LENGTH * REGION_LENGTH * REGION_LENGTH;
+
+
+
+        Region(std::string region_directory, util::Vec3I region_pos)
+            : region_pos(region_pos) {
+                stream.rdbuf()->pubsetbuf(buffer, FSTREAM_BUFFER_SIZE);
+                stream.open(region_directory + '/' + region_pos.to_string(FILE_NAME_POS_DELIMITER));
+            }
 
         const util::Vec3I region_pos;
 
-        void write_chunk(util::Vec3I pos, Chunk<Voxel>& chunk) {
+        // Returns how many bytes forward from the start of the file a
+        std::size_t find_or_make_chunk_registry(util::Vec3I chunk_pos) {
+
+        }
+
+        void write_chunk(util::Vec3I chunk_pos, Chunk<Voxel>& chunk) {
 
         }
     private:
+        char buffer[FSTREAM_BUFFER_SIZE];
         std::fstream stream;
     };
 
