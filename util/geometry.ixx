@@ -1,6 +1,6 @@
-#include <string>
 module;
 
+#include <string>
 #include <cstddef>
 #include <type_traits>
 #include <cmath>
