@@ -6,6 +6,9 @@
       "requires": [
         {
           "logical-name": "raylib"
+        },
+        {
+          "logical-name": "util"
         }
       ]
     }

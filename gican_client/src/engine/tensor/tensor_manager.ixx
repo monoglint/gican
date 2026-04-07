@@ -1,7 +1,9 @@
 /*
 
-The terrain manager is responsible for serverside handling of chunks, serializing, deserializing, loading, unloading, and more.
+The tensor manager is responsible for serverside handling of chunks, serializing, deserializing, loading, unloading, and more.
+To note, this is the engine side of the project. This means that there are no mentions of sketches or any other data relating to a live ingame voxel.
 
+For that, this file is built to be the base architecture that game/ can build on.
 */
 
 module;
@@ -11,17 +13,17 @@ module;
 #include <vector>
 #include <cstddef>
 #include <type_traits>
-#include <limits>
+#include <array>
 
 export module engine.tensor:tensor_manager;
 
 import util;
 
 export namespace engine::tensor {
-    using ChunkSize = uint8_t;
-    constexpr ChunkSize CHUNK_SIZE = 16;
-
-    static_assert(CHUNK_SIZE < std::numeric_limits<ChunkSize>::max(), "ChunkSize does not support CHUNK_SIZE. Increase it to a longer type.");
+    using ChunkLength = uint16_t;
+    using ChunkVolume = uint16_t;
+    constexpr ChunkLength CHUNK_LENGTH = 16;
+    constexpr ChunkVolume CHUNK_VOLUME = CHUNK_LENGTH * CHUNK_LENGTH * CHUNK_LENGTH;
 
     // To note for voxels, they are not set structs and are instead left open
     // for interpretation because even though this engine will probably only be used for this game,
@@ -29,44 +31,42 @@ export namespace engine::tensor {
     struct VoxelBase;
 
     template <class T>
-    concept IsVoxel = std::is_base_of<VoxelBase, T>::value && requires(T t) {
-        // a voxel class must contain a type that represents itself serialized.
-        // this type should be bit based and MUST be architecture friendly
-        typename T::AsSerialized;
+    concept IsVoxel = 
+        std::is_base_of<VoxelBase, T>::value && 
+        std::same_as<decltype(T::SERIALIZED_BYTE_COUNT), std::size_t> &&
+        requires(T t, std::byte* ptr) {
+            { t.serialize(ptr) } -> std::same_as<void>;
 
-        // a voxel class should have a serialize function
-        { t.serialize() -> std::template same_as<T::AsSerialized> };
-
-        // to note, it might be useful to also require a named static constructor for deserializing which could POTENTIALLY speed things up a little bit
-        // that idea is probably not necessary though
-        // @monoglint 5 Apr 2026
-        { t.deserialize(T::AsSerialized) -> std::template same_as<void> };
+            { t.deserialize(ptr) } -> std::same_as<void>;
     };
 
     template <IsVoxel Voxel>
     struct Chunk {
         /// @todo Replace with actual type
-        using AsSerialized = nullptr_t;
+        using AsSerialized = std::array<std::byte, CHUNK_VOLUME * Voxel::SERIALIZED_BYTE_COUNT>;
 
-        util::CubeArray<Voxel, ChunkSize, CHUNK_SIZE> voxels;
+        util::CubeArray<Voxel, ChunkLength, CHUNK_LENGTH> voxels;
     
+        // Saves to a state in the form of bytes.
         AsSerialized serialize() {
-            // note: serialize assuming the deserializer is of <Voxel>
+            AsSerialized container {};
+            std::byte* ptr = container.data();
 
-            // 1. loop through all voxels
-            // 2. serialize them individually
-            // 3. append their serialized data to a buffer
-            // 4. return the buffer
-            
-            /// @todo Replace with actual Serialized type
-            return nullptr;
+            for (ChunkLength index; Voxel& voxel : voxels.items) {
+                voxels.items[index].serialize(ptr);
+                ptr += Voxel::SERIALIZED_BYTE_COUNT;
+            }
+
+            return container;
         }
 
+        // Loads a saved state in the form of bytes.
         void deserialize(AsSerialized serialized) {
-            // note: deserialize assuming the serializer is of <Voxel>
-            
-            // 1. iterate through bits in the buffer, select by sizeof(Voxel::AsSerialized)
-            // 2. run Voxel::deserialize per voxel, append one-by-one to voxels
+            std::byte* ptr = serialized.data();
+            for (ChunkVolume index = 0; index < serialized.size(); index++) {
+                voxels.items[index].deserialize(ptr);
+                ptr += Voxel::SERIALIZED_BYTE_COUNT;
+            }
         }
     };
 
@@ -96,6 +96,15 @@ export namespace engine::tensor {
 
         std::string tensor_directory;
 
+        /*
+        
+        GET-BACK-TO-NOTE
+
+        Instead of moving chunks from loaded_chunks to unloaded_chunks and vise verca,
+
+        STORE ALL CHUNKS IN ONE MAP, USE VECTORS TO STORE KEYS OF LOADED AND UNLOADED CHUNKS. BIG MEMORY AND PROCESS SAVER!!!
+        
+        */
         // active chunks that exist in the running game
         ChunkPosMap<Voxel> loaded_chunks;
 
@@ -121,6 +130,10 @@ export namespace engine::tensor {
 
         // Remove the chunks at the selected positions and have them cached for disk writing.
         void unload_chunks(std::vector<util::Vec3I> chunks) {
+            for (util::Vec3I& pos : chunks) {
+                unloaded_chunks[pos] = loaded_chunks[pos];
+                loaded_chunks.erase(pos);
+            }
             // 1. loop through each chunk
             // 2. move them over to discarded_chunks
         }

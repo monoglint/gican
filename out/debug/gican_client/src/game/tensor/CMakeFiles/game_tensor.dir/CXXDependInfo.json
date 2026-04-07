@@ -1,0 +1,46 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "Clang",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : 
+	{
+		"gican_client/src/game/tensor/CMakeFiles/game_tensor.dir/tensor.ixx.obj" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "",
+			"source" : "C:/Users/jghig/projects/cxx/gican/gican_client/src/game/tensor/tensor.ixx",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"gican_client/src/game/tensor/CMakeFiles/game_tensor.dir/tensor_manager.ixx.obj" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "",
+			"source" : "C:/Users/jghig/projects/cxx/gican/gican_client/src/game/tensor/tensor_manager.ixx",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		}
+	},
+	"database-info" : null,
+	"dir-cur-bld" : "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game/tensor",
+	"dir-cur-src" : "C:/Users/jghig/projects/cxx/gican/gican_client/src/game/tensor",
+	"dir-top-bld" : "C:/Users/jghig/projects/cxx/gican/out/debug",
+	"dir-top-src" : "C:/Users/jghig/projects/cxx/gican",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : 
+	[
+		"C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir",
+		"C:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir"
+	],
+	"module-dir" : "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game/tensor/CMakeFiles/game_tensor.dir",
+	"sources" : {}
+}
