@@ -15,6 +15,9 @@
           "logical-name": "util:ansi_format"
         },
         {
+          "logical-name": "util:bitflags"
+        },
+        {
           "logical-name": "util:panic"
         },
         {

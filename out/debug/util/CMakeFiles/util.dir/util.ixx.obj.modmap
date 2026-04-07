@@ -1,6 +1,7 @@
 -x c++-module
 -fmodule-output=util/CMakeFiles/util.dir/util.pcm
 -fmodule-file=util:ansi_format=util/CMakeFiles/util.dir/util-ansi_format.pcm
+-fmodule-file=util:bitflags=util/CMakeFiles/util.dir/util-bitflags.pcm
 -fmodule-file=util:panic=util/CMakeFiles/util.dir/util-panic.pcm
 -fmodule-file=util:cube_array=util/CMakeFiles/util.dir/util-cube_array.pcm
 -fmodule-file=util:geometry=util/CMakeFiles/util.dir/util-geometry.pcm

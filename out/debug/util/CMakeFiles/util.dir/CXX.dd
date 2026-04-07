@@ -2,7 +2,10 @@ ninja_dyndep_version = 1.0
 build util/CMakeFiles/util.dir/ansi_format.ixx.obj | util/CMakeFiles/util.dir/util-ansi_format.pcm: dyndep
   restat = 1
 
-build util/CMakeFiles/util.dir/util.ixx.obj | util/CMakeFiles/util.dir/util.pcm: dyndep | util/CMakeFiles/util.dir/util-ansi_format.pcm util/CMakeFiles/util.dir/util-panic.pcm util/CMakeFiles/util.dir/util-cube_array.pcm util/CMakeFiles/util.dir/util-geometry.pcm util/CMakeFiles/util.dir/util-hash.pcm
+build util/CMakeFiles/util.dir/bitflags.ixx.obj | util/CMakeFiles/util.dir/util-bitflags.pcm: dyndep
+  restat = 1
+
+build util/CMakeFiles/util.dir/util.ixx.obj | util/CMakeFiles/util.dir/util.pcm: dyndep | util/CMakeFiles/util.dir/util-ansi_format.pcm util/CMakeFiles/util.dir/util-bitflags.pcm util/CMakeFiles/util.dir/util-panic.pcm util/CMakeFiles/util.dir/util-cube_array.pcm util/CMakeFiles/util.dir/util-geometry.pcm util/CMakeFiles/util.dir/util-hash.pcm
   restat = 1
 
 build util/CMakeFiles/util.dir/panic.ixx.obj | util/CMakeFiles/util.dir/util-panic.pcm: dyndep | util/CMakeFiles/util.dir/util-ansi_format.pcm

@@ -16,6 +16,16 @@
 			"type" : "CXX_MODULES",
 			"visibility" : "PUBLIC"
 		},
+		"util/CMakeFiles/util.dir/bitflags.ixx.obj" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "",
+			"source" : "C:/Users/jghig/projects/cxx/gican/util/bitflags.ixx",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
 		"util/CMakeFiles/util.dir/cube_array.ixx.obj" : 
 		{
 			"bmi-only" : false,

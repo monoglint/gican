@@ -181,6 +181,12 @@
 },
 {
   "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -Wall -g -stdlib=libc++ -std=c++23 @util\\CMakeFiles\\util.dir\\bitflags.ixx.obj.modmap -o util\\CMakeFiles\\util.dir\\bitflags.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\util\\bitflags.ixx",
+  "file": "C:/Users/jghig/projects/cxx/gican/util/bitflags.ixx",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir/bitflags.ixx.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
   "command": "C:\\msys64\\clang64\\bin\\clang++.exe -Wall -g -stdlib=libc++ -std=c++23 @util\\CMakeFiles\\util.dir\\util.ixx.obj.modmap -o util\\CMakeFiles\\util.dir\\util.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\util\\util.ixx",
   "file": "C:/Users/jghig/projects/cxx/gican/util/util.ixx",
   "output": "C:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir/util.ixx.obj"

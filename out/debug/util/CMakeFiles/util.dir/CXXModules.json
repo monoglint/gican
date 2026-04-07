@@ -11,6 +11,11 @@
 			"bmi" : "C:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir/util-ansi_format.pcm",
 			"is-private" : false
 		},
+		"util:bitflags" : 
+		{
+			"bmi" : "C:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir/util-bitflags.pcm",
+			"is-private" : false
+		},
 		"util:cube_array" : 
 		{
 			"bmi" : "C:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir/util-cube_array.pcm",
@@ -44,6 +49,11 @@
 			"lookup-method" : "by-name",
 			"path" : "util/CMakeFiles/util.dir/util-ansi_format.pcm"
 		},
+		"util:bitflags" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-bitflags.pcm"
+		},
 		"util:cube_array" : 
 		{
 			"lookup-method" : "by-name",
@@ -70,6 +80,7 @@
 		"util" : 
 		[
 			"util:ansi_format",
+			"util:bitflags",
 			"util:cube_array",
 			"util:geometry",
 			"util:hash",
