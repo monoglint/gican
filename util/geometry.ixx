@@ -1,3 +1,4 @@
+#include <string>
 module;
 
 #include <cstddef>
@@ -68,6 +69,11 @@ export namespace util {
         [[nodiscard]]
         T dot(const Vec3 other) const {
             return x * other.x + y * other.y + z * other.z;
+        }
+
+        [[nodiscard]]
+        std::string to_string(char delimiter) const {
+            return std::to_string(x) + delimiter + std::to_string(y) + delimiter + std::to_string(z);
         }
     };
 

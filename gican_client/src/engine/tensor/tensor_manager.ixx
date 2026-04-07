@@ -92,9 +92,8 @@ export namespace engine::tensor {
     template <IsVoxel Voxel>
     class Region {
     public:
-        Region(util::Vec3I region_pos) {
-
-        }
+        Region(util::Vec3I region_pos)
+            : region_pos(region_pos), stream(region_pos.to_string()) {}
 
         const util::Vec3I region_pos;
 
