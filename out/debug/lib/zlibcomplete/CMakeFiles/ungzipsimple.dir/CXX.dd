@@ -1,3 +1,0 @@
-ninja_dyndep_version = 1.0
-build lib/zlibcomplete/CMakeFiles/ungzipsimple.dir/examples/ungzipsimple.cpp.obj: dyndep
-

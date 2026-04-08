@@ -76,13 +76,6 @@ C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/modules/CMakeFiles/in
 C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/modules/CMakeFiles/install/local.dir
 C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/modules/CMakeFiles/install/strip.dir
 C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/zlibcomplete.dir
-C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/cppzltest.dir
-C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/gzipsimple.dir
-C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/rawdeflater.dir
-C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/rawinflater.dir
-C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/ungzipsimple.dir
-C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/unzlibsimple.dir
-C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/zlibsimple.dir
 C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/package.dir
 C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/package_source.dir
 C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/edit_cache.dir

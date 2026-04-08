@@ -9,4 +9,5 @@ target_sources(engine_tensor
 
 target_link_libraries(engine_tensor PRIVATE
     util
+    zlibcomplete
 )

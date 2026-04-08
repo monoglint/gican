@@ -550,4 +550,18 @@ gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor_manager.ixx.o
   C:/msys64/clang64/include/c++/v1/__filesystem/directory_options.h \
   C:/msys64/clang64/include/c++/v1/__filesystem/path_iterator.h \
   C:/msys64/clang64/include/c++/v1/__filesystem/recursive_directory_iterator.h \
-  C:/msys64/clang64/include/c++/v1/__filesystem/u8path.h
+  C:/msys64/clang64/include/c++/v1/__filesystem/u8path.h \
+  C:/msys64/clang64/include/zlib.h C:/msys64/clang64/include/zconf.h \
+  C:/msys64/clang64/include/sys/types.h \
+  C:/msys64/clang64/lib/clang/21/include/stdarg.h \
+  C:/msys64/clang64/lib/clang/21/include/__stdarg_header_macro.h \
+  C:/msys64/clang64/lib/clang/21/include/__stdarg___gnuc_va_list.h \
+  C:/msys64/clang64/lib/clang/21/include/__stdarg_va_list.h \
+  C:/msys64/clang64/lib/clang/21/include/__stdarg_va_arg.h \
+  C:/msys64/clang64/lib/clang/21/include/__stdarg___va_copy.h \
+  C:/msys64/clang64/lib/clang/21/include/__stdarg_va_copy.h \
+  C:/msys64/clang64/include/unistd.h C:/msys64/clang64/include/io.h \
+  C:/msys64/clang64/include/process.h \
+  C:/msys64/clang64/include/corecrt_startup.h \
+  C:/msys64/clang64/include/getopt.h \
+  C:/msys64/clang64/include/pthread_unistd.h

@@ -34,7 +34,10 @@
 	"dir-top-src" : "C:/Users/jghig/projects/cxx/gican",
 	"exports" : [],
 	"forward-modules-from-target-dirs" : [],
-	"include-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\lib"
+	],
 	"language" : "CXX",
 	"linked-target-dirs" : 
 	[
