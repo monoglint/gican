@@ -20,10 +20,13 @@ export namespace engine::tensor {
     24 array(REGION_VOLUME) {
         SegmentPos  CHUNK_POS
     }
-    x y -       FREE SPACE FOR CHUNK ALLOCATION
+    x array(n) {
+        u32 -   SIZE OF COMPRESSED CHUNK SEGMENT
+        n -     COMPRESSED CHUNK SEGMENT
+    }
 
     */
-    // A RAM representation of an existing region file for fast incremental disk editing
+    // A query-based reader/writer to any region file that allows incremental disk chunk editing.
     template <IsVoxel Voxel>
     class Region {
     public:
@@ -34,16 +37,16 @@ export namespace engine::tensor {
         // The character used to delimit the numbers in their vec3 position.
         static constexpr char FILE_NAME_POS_DELIMITER = '-';
 
-        // The size of each segment chunk the file system should use when reading and writing.
-        static constexpr std::size_t FSTREAM_BUFFER_SIZE = 5e6; // 5 megs. magic number, change however
-
         /// @warning DATA_VERSION should increment if these change:
+            static constexpr std::size_t REGION_LENGTH = 32; // in chunks
+            static constexpr std::size_t REGION_VOLUME = REGION_LENGTH * REGION_LENGTH * REGION_LENGTH;
+
             // #bytes after file header where a chunk segment can reside
             using SegmentPos = std::uint32_t;
             using SegmentSize = std::uint32_t;
 
-            static constexpr std::size_t REGION_LENGTH = 32; // in chunks
-            static constexpr std::size_t REGION_VOLUME = REGION_LENGTH * REGION_LENGTH * REGION_LENGTH;
+            // position of the tag in the header that contains a SegmentPos
+            using SegmentTagPos = std::size_t;
 
             // init_new_region_file() hardcodes '0xFF' for every byte, so changing this should change that logic.
             static constexpr SegmentPos INVALID_SEGMENT_POS = std::numeric_limits<SegmentPos>::max();
@@ -52,24 +55,36 @@ export namespace engine::tensor {
         static constexpr std::size_t DATA_VERSION_HEADER_SIZE = sizeof(DATA_VERSION) + sizeof(Chunk<Voxel>::DATA_VERSION) + sizeof(Voxel::DATA_VERSION);
         
         // Size of the chunk location tracker.
-        static constexpr std::size_t REGION_HEADER_SIZE = REGION_VOLUME * sizeof(SegmentPos);
+        static constexpr std::size_t SEGMENT_POSITIONS_HEADER_SIZE = REGION_VOLUME * sizeof(SegmentPos);
 
         // The total general size of the file header before chunk data is written.
-        static constexpr std::size_t FILE_HEADER_SIZE = DATA_VERSION_HEADER_SIZE + REGION_HEADER_SIZE; 
+        static constexpr std::size_t FILE_HEADER_SIZE = DATA_VERSION_HEADER_SIZE + SEGMENT_POSITIONS_HEADER_SIZE; 
+
+        struct RegionCache {
+            // This map memoizes chunk_index finds so the file only has to be read from once.
+            // Key: location in file of pointer to chunk segment location, Value: actual chunk segment location
+            std::unordered_map<SegmentTagPos, SegmentPos> segment_tag_destinations;
+
+            std::unordered_map<SegmentPos, SegmentSize> segment_sizes;
+        };
  
         Region(std::string region_directory, util::Vec3I region_pos)
-            : region_pos(region_pos) {
-                stream.open(region_directory + '/' + region_pos.to_string(FILE_NAME_POS_DELIMITER), std::ios::in | std::ios::out | std::ios::binary);
+            : region_pos(region_pos), region_file_name(region_directory + '/' + region_pos.to_string(FILE_NAME_POS_DELIMITER)) {
+                stream.open(region_file_name, std::ios::in | std::ios::out | std::ios::binary);
+                
+                if (!stream || !stream.is_open() || stream.bad())
+                    util::panic("Failed to load region from disk. There is currently no retry mechanism.");
 
                 if (stream.peek() == std::fstream::traits_type::eof())
                     init_new_region_file();
             }
 
         const util::Vec3I region_pos;
+        const std::string region_file_name;
 
-        // This map memoizes chunk_index finds so the file only has to be read from once.
-        // Key: location in file of pointer to chunk segment location, Value: actual chunk segment location
-        std::unordered_map<std::size_t, SegmentPos> memoized_chunk_locations;
+        RegionCache cache;
+
+        const std::string TEMP_BAD_ERR_MESSAGE = "There was a fatal memory error while managing region file \"" + region_file_name + "\". There is no recovery method set by the developer yet.";  
 
         // If the file has completely empty, set it up to conform with the current standard.
         void init_new_region_file() {
@@ -77,77 +92,103 @@ export namespace engine::tensor {
 
             std::byte* ptr = segment;
 
+            // DATA_VERSION HEADER
             std::memcpy(ptr, &DATA_VERSION, sizeof(DATA_VERSION)); ptr += sizeof(DATA_VERSION);
             std::memcpy(ptr, &Chunk<Voxel>::DATA_VERSION, sizeof(Chunk<Voxel>::DATA_VERSION)); ptr += sizeof(Chunk<Voxel>::DATA_VERSION);
             std::memcpy(ptr, &Voxel::DATA_VERSION, sizeof(Voxel::DATA_VERSION)); ptr += sizeof(Voxel::DATA_VERSION);
 
-            // uninitialized SegmentPos should be the highest value possible. 
+            // SEGMENT POSITION HEADER
+
+            // uninitialized SegmentPos should just be 11111111
             std::memset(ptr, 0xFF, REGION_VOLUME * sizeof(SegmentPos));
 
             /// @warning ENDIAN
             stream.write(segment, sizeof(segment));
+            
+            util::panic_assert(!stream.bad(), TEMP_BAD_ERR_MESSAGE);     
         }
 
-        // Does not determine if the given index is garbage.
-        SegmentPos find_segment_pos(util::Vec3U chunk_pos) {
-            // Location in the file of the tag that points to the chunk segment's location.
-            SegmentPos segment_pos = util::cube_pos_to_index<std::uint64_t, SegmentPos, REGION_LENGTH>(chunk_pos);
-        
-            // First attempt to access a memoized copy, then try to read from the file.
-            auto memoized_location_itr = memoized_chunk_locations.find(segment_pos);
+        //
+        //
+        //
 
-            if (memoized_location_itr != memoized_chunk_locations.end())
-                return memoized_location_itr->second;
+        SegmentTagPos get_segment_tag_pos(util::Vec3U chunk_pos) {
+            return util::cube_pos_to_index<REGION_LENGTH>(chunk_pos);
+        }
+
+        SegmentPos read_segment_tag(SegmentTagPos segment_tag_pos) {
+            // First attempt to access a memoized copy, then try to read from the file.
+            auto potentially_cached_itr = cache.segment_tag_destinations.find(segment_tag_pos);
+
+            if (potentially_cached_itr != cache.segment_tag_destinations.end())
+                return potentially_cached_itr->second;
 
             // Default to finding the location from directly in the file.
-            stream.seekg(segment_pos);
-                SegmentPos pos = 0;
-                /// @warning ENDIAN
-                stream.write(reinterpret_cast<char*>(pos), sizeof(pos));
-                return pos;
+            stream.seekp(FILE_HEADER_SIZE + segment_tag_pos);
+            
+            SegmentPos segment_pos = 0;
+
+            /// @warning ENDIAN
+            stream.write(reinterpret_cast<char*>(&segment_pos), sizeof(segment_pos));
+            util::panic_assert(!stream.bad(), TEMP_BAD_ERR_MESSAGE);     
+
+            cache.segment_tag_destinations[segment_tag_pos] = segment_pos;
+            
+            return segment_pos;
         };
 
-        SegmentPos alloc_segment(std::size_t chunk_index, SegmentSize segment_size) {
-            // get existing chunk segment location if any
-            // 
+        SegmentSize get_segment_size(SegmentPos segment_pos) {
+            auto potentially_cached_itr = cache.segment_sizes.find(segment_pos);
+
+            if (potentially_cached_itr != cache.segment_sizes.end())
+                return potentially_cached_itr->second;
+
+            stream.seekg(FILE_HEADER_SIZE + segment_pos);
+
+            SegmentSize segment_size = 0;
+
+            /// @warning ENDIAN
+            stream.write(reinterpret_cast<char*>(&segment_size), sizeof(segment_size));
+            util::panic_assert(!stream.bad(), TEMP_BAD_ERR_MESSAGE);
+
+            cache.segment_sizes[segment_pos] = segment_size;
+
+            return segment_size;
+        }
+
+        void set_segment_size(SegmentPos segment_pos, SegmentSize new_segment_size) {
+
+        }
+
+        SegmentPos realloc_segment(SegmentTagPos segment_tag_pos, SegmentSize segment_size) {
+            SegmentPos old_segment_pos = read_segment_tag(segment_tag_pos);
+            
+            if (old_segment_pos != INVALID_SEGMENT_POS) {
+                SegmentSize old_segment_size = get_segment_size(old_segment_pos);
+                if (segment_size == old_segment_size)
+                    return old_segment_pos;
+                else if (segment_size < old_segment_size) {
+                    set_segment_size(old_segment_pos, segment_size);
+                    return old_segment_pos;
+                }
+                // fail condition: segment_size > old_segment_size - REALLOC
+            } 
+            // fail condition: old_segment_pos does not exist - REALLOC
+
+            // invalidate SegmentPos pointer in header
+            // perform logic to find a fitting space
+            // set SegmentPos pointer in header to new space
+            // return SegmentPos
         }
 
         /* u32 - #bytes of chunk for quick access - n - bytes chunk takes up  */
         // Writes a chunk into an appropriately sized segment.
         void write_chunk(util::Vec3U chunk_pos, Chunk<Voxel>& chunk) {
-            std::string serialized = chunk.serialize();
-            SegmentSize new_size = serialized.length();
-            std::string length_indicator;
-
-            /// @todo: to_append needs to include 4 bytes in the beginning stating how long the chunk of memory is
-
-            std::string to_append = compressor.compress(serialized);
-
-            SegmentPos index = find_segment_pos(chunk_pos);
-
-            if (index == INVALID_SEGMENT_POS)
-                index = alloc_segment(chunk_pos, new_size);
-
-            stream.seekp(index);
-            stream.write(to_append.data(), to_append.length());
-
-            /// @todo move pointer to appropriate header position to update where the chunk is located
+            
         }
 
         void load_chunk(util::Vec3U chunk_pos, Chunk<Voxel>& chunk) {
-            SegmentPos index = find_segment_pos(chunk_pos);
-            stream.seekg(index);
-
-            // read first n bits to get segment length.
-            /// @warning ENDIAN
-            SegmentSize segment_length;
-            stream.read(reinterpret_cast<char*>(&segment_length), sizeof(segment_length));
-
-            std::string compressed;
-            stream.read(compressed.data(), segment_length);
-
-            std::string decompressed = decompressor.decompress(compressed);
-            chunk.deserialize(decompressed);
+  
         }
 
     private:

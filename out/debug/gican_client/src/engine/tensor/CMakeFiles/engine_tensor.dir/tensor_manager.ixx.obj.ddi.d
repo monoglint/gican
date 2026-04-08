@@ -328,4 +328,33 @@ gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor_manager.ixx.o
   C:/msys64/clang64/include/c++/v1/__iterator/empty.h \
   C:/msys64/clang64/include/c++/v1/__iterator/reverse_access.h \
   C:/msys64/clang64/include/c++/v1/__iterator/size.h \
-  C:/msys64/clang64/include/c++/v1/cstddef
+  C:/msys64/clang64/include/c++/v1/cstddef \
+  C:/msys64/clang64/include/c++/v1/unordered_map \
+  C:/msys64/clang64/include/c++/v1/__algorithm/is_permutation.h \
+  C:/msys64/clang64/include/c++/v1/__functional/is_transparent.h \
+  C:/msys64/clang64/include/c++/v1/__functional/operations.h \
+  C:/msys64/clang64/include/c++/v1/__functional/binary_function.h \
+  C:/msys64/clang64/include/c++/v1/__hash_table \
+  C:/msys64/clang64/include/c++/v1/__bit/countl.h \
+  C:/msys64/clang64/include/c++/v1/__math/rounding_functions.h \
+  C:/msys64/clang64/include/c++/v1/__memory/unique_ptr.h \
+  C:/msys64/clang64/include/c++/v1/__memory/array_cookie.h \
+  C:/msys64/clang64/include/c++/v1/__type_traits/is_trivially_destructible.h \
+  C:/msys64/clang64/include/c++/v1/__memory/auto_ptr.h \
+  C:/msys64/clang64/include/c++/v1/__type_traits/dependent_type.h \
+  C:/msys64/clang64/include/c++/v1/__type_traits/is_bounded_array.h \
+  C:/msys64/clang64/include/c++/v1/__type_traits/is_unbounded_array.h \
+  C:/msys64/clang64/include/c++/v1/__utility/private_constructor_tag.h \
+  C:/msys64/clang64/include/c++/v1/__new/launder.h \
+  C:/msys64/clang64/include/c++/v1/__type_traits/can_extract_key.h \
+  C:/msys64/clang64/include/c++/v1/__type_traits/remove_const_ref.h \
+  C:/msys64/clang64/include/c++/v1/__iterator/erase_if_container.h \
+  C:/msys64/clang64/include/c++/v1/__iterator/ranges_iterator_traits.h \
+  C:/msys64/clang64/include/c++/v1/__node_handle \
+  C:/msys64/clang64/include/c++/v1/__type_traits/is_specialization.h \
+  C:/msys64/clang64/include/c++/v1/optional \
+  C:/msys64/clang64/include/c++/v1/__type_traits/is_scalar.h \
+  C:/msys64/clang64/include/c++/v1/__type_traits/is_null_pointer.h \
+  C:/msys64/clang64/include/c++/v1/__type_traits/is_trivially_assignable.h \
+  C:/msys64/clang64/include/c++/v1/__utility/in_place.h \
+  C:/msys64/clang64/include/c++/v1/__type_traits/container_traits.h

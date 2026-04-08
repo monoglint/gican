@@ -13,17 +13,15 @@ template <typename T>
 concept IsArithmetic = requires(T x) { x + x; };
 
 export namespace util {
-    template <typename InputNum, typename OutputNum, std::size_t CUBE_LENGTH>
-    requires IsArithmetic<InputNum> && IsArithmetic<OutputNum>
+    template <std::size_t CUBE_LENGTH, typename Index, typename VecType>
     [[nodiscard]]
-    constexpr Vec3<OutputNum> cube_index_to_pos(InputNum index) {
+    constexpr Vec3<VecType> cube_index_to_pos(Index index) {
         return { index % CUBE_LENGTH, (index / CUBE_LENGTH) % CUBE_LENGTH, index / (CUBE_LENGTH * CUBE_LENGTH) }; 
     }
 
-    template <typename InputNum, typename OutputNum, std::size_t CUBE_LENGTH>
-    requires IsArithmetic<InputNum> && IsArithmetic<OutputNum>
+    template <std::size_t CUBE_LENGTH, typename T>
     [[nodiscard]]
-    constexpr OutputNum cube_pos_to_index(Vec3<InputNum> pos) {
+    constexpr T cube_pos_to_index(Vec3<T> pos) {
         return (pos.x) + (pos.y * CUBE_LENGTH) + (pos.z * CUBE_LENGTH * CUBE_LENGTH);
     }
 
