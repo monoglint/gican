@@ -175,6 +175,78 @@
 },
 {
   "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\gzipcomplete.cpp.obj.modmap -o lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\gzipcomplete.cpp.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\lib\\gzipcomplete.cpp",
+  "file": "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/gzipcomplete.cpp",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/gzipcomplete.cpp.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\mainpage.cpp.obj.modmap -o lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\mainpage.cpp.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\lib\\mainpage.cpp",
+  "file": "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/mainpage.cpp",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/mainpage.cpp.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\raw.cpp.obj.modmap -o lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\raw.cpp.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\lib\\raw.cpp",
+  "file": "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/raw.cpp",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/raw.cpp.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\zlibmisc.cpp.obj.modmap -o lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\zlibmisc.cpp.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\lib\\zlibmisc.cpp",
+  "file": "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/zlibmisc.cpp",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibmisc.cpp.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\zlibtop.cpp.obj.modmap -o lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\zlibtop.cpp.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\lib\\zlibtop.cpp",
+  "file": "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/zlibtop.cpp",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibtop.cpp.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @lib\\zlibcomplete\\CMakeFiles\\cppzltest.dir\\examples\\cppzltest.cpp.obj.modmap -o lib\\zlibcomplete\\CMakeFiles\\cppzltest.dir\\examples\\cppzltest.cpp.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\examples\\cppzltest.cpp",
+  "file": "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/cppzltest.cpp",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/cppzltest.dir/examples/cppzltest.cpp.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @lib\\zlibcomplete\\CMakeFiles\\gzipsimple.dir\\examples\\gzipsimple.cpp.obj.modmap -o lib\\zlibcomplete\\CMakeFiles\\gzipsimple.dir\\examples\\gzipsimple.cpp.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\examples\\gzipsimple.cpp",
+  "file": "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/gzipsimple.cpp",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/gzipsimple.dir/examples/gzipsimple.cpp.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @lib\\zlibcomplete\\CMakeFiles\\rawdeflater.dir\\examples\\rawdeflater.cpp.obj.modmap -o lib\\zlibcomplete\\CMakeFiles\\rawdeflater.dir\\examples\\rawdeflater.cpp.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\examples\\rawdeflater.cpp",
+  "file": "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/rawdeflater.cpp",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/rawdeflater.dir/examples/rawdeflater.cpp.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @lib\\zlibcomplete\\CMakeFiles\\rawinflater.dir\\examples\\rawinflater.cpp.obj.modmap -o lib\\zlibcomplete\\CMakeFiles\\rawinflater.dir\\examples\\rawinflater.cpp.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\examples\\rawinflater.cpp",
+  "file": "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/rawinflater.cpp",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/rawinflater.dir/examples/rawinflater.cpp.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @lib\\zlibcomplete\\CMakeFiles\\ungzipsimple.dir\\examples\\ungzipsimple.cpp.obj.modmap -o lib\\zlibcomplete\\CMakeFiles\\ungzipsimple.dir\\examples\\ungzipsimple.cpp.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\examples\\ungzipsimple.cpp",
+  "file": "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/ungzipsimple.cpp",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/ungzipsimple.dir/examples/ungzipsimple.cpp.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @lib\\zlibcomplete\\CMakeFiles\\unzlibsimple.dir\\examples\\unzlibsimple.cpp.obj.modmap -o lib\\zlibcomplete\\CMakeFiles\\unzlibsimple.dir\\examples\\unzlibsimple.cpp.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\examples\\unzlibsimple.cpp",
+  "file": "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/unzlibsimple.cpp",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/unzlibsimple.dir/examples/unzlibsimple.cpp.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @lib\\zlibcomplete\\CMakeFiles\\zlibsimple.dir\\examples\\zlibsimple.cpp.obj.modmap -o lib\\zlibcomplete\\CMakeFiles\\zlibsimple.dir\\examples\\zlibsimple.cpp.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\examples\\zlibsimple.cpp",
+  "file": "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/zlibsimple.cpp",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/zlibsimple.dir/examples/zlibsimple.cpp.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
   "command": "C:\\msys64\\clang64\\bin\\clang++.exe -Wall -g -stdlib=libc++ -std=c++23 @util\\CMakeFiles\\util.dir\\ansi_format.ixx.obj.modmap -o util\\CMakeFiles\\util.dir\\ansi_format.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\util\\ansi_format.ixx",
   "file": "C:/Users/jghig/projects/cxx/gican/util/ansi_format.ixx",
   "output": "C:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir/ansi_format.ixx.obj"
@@ -217,7 +289,7 @@
 },
 {
   "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
-  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -IC:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/include -Wall -g -stdlib=libc++ -std=c++23 @gican_client\\CMakeFiles\\gican_client.dir\\src\\main.cxx.obj.modmap -o gican_client\\CMakeFiles\\gican_client.dir\\src\\main.cxx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_client\\src\\main.cxx",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -IC:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/include -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @gican_client\\CMakeFiles\\gican_client.dir\\src\\main.cxx.obj.modmap -o gican_client\\CMakeFiles\\gican_client.dir\\src\\main.cxx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_client\\src\\main.cxx",
   "file": "C:/Users/jghig/projects/cxx/gican/gican_client/src/main.cxx",
   "output": "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj"
 },

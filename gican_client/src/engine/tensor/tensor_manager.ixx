@@ -14,14 +14,63 @@ module;
 #include <cstddef>
 #include <type_traits>
 #include <fstream>
-#include <filesystem>
 
 export module engine.tensor:tensor_manager;
 
 import util;
 
 export namespace engine::tensor {
-    
+    namespace io {
+        // This variable can change across versions. The header for the region file should start with the size of the chunks.
+
+        constexpr std::uint32_t BUFFER_SIZE = 1024 * 8;
+
+        /*
+        
+        NOTE
+        ALL REGION FILE FORMATS SHOULD HAVE THEIR FIRST 4 BYTES DEDICATED TO HOW BIG EACH BUFFER CHUNK IS.
+        
+        */
+
+        // This class performs live writing,
+        class RegionBufferWriter {
+        public:
+            RegionBufferWriter(std::string path, std::uint32_t BUFFER_SIZE)
+                : BUFFER_SIZE(BUFFER_SIZE)
+            {
+                // removing .open() and passing path into stream initialization is okay if there are no reasons later to have .open() individual
+                stream.open(path, std::ios::binary);
+
+            }
+
+            ~RegionBufferWriter() {
+                flush_to_stream();
+            }
+
+            const std::uint32_t BUFFER_SIZE;
+
+            // Writing needs a given position for incremental writing.
+            void write_at() {
+
+            }
+            
+            void flush_to_stream() {
+                /// @todo impl compressor
+                
+                // for now, just assume buffer is the final output:
+                stream.write(buffer.data(), buffer.size());
+            }
+        private:
+            std::vector<char> buffer;
+            std::ofstream stream;
+            /// @todo impl compressor
+        };
+
+        class RegionBufferReader {
+
+        };
+    }
+
     // To note for voxels, they are not set structs and are instead left open
     // for interpretation because even though this engine will probably only be used for this game,
     // I want to keep the engine purely independent.
@@ -45,7 +94,7 @@ export namespace engine::tensor {
             { t.deserialize(stream) } -> std::same_as<void>;
         };
 
-    enum class _ChunkFlags : uint8_t {
+    enum class _ChunkFlags : std::uint8_t {
         NONE = 0,
 
         // Whether or not the chunk should be actively modified and displayed in-game.

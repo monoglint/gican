@@ -7,3 +7,6 @@
 [submodule "lib/raylib"]
 	path = lib/raylib
 	url = https://github.com/raysan5/raylib
+[submodule "lib/zlibcomplete"]
+	path = lib/zlibcomplete
+	url = https://github.com/rudi-cilibrasi/zlibcomplete.git

@@ -331,6 +331,12 @@ CPACK_SOURCE_ZIP:BOOL=ON
 //Show options for customizing your Raylib library build.
 CUSTOMIZE_BUILD:BOOL=OFF
 
+//Dot tool for use with Doxygen
+DOXYGEN_DOT_EXECUTABLE:FILEPATH=DOXYGEN_DOT_EXECUTABLE-NOTFOUND
+
+//Doxygen documentation generation tool (https://www.doxygen.nl)
+DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
+
 //Enable AddressSanitizer (ASAN) for debugging (degrades performance)
 ENABLE_ASAN:BOOL=OFF
 
@@ -392,6 +398,45 @@ USE_EXTERNAL_GLFW:STRING=OFF
 WITH_PIC:BOOL=OFF
 
 //Value Computed by CMake
+ZLIBCOMPLETE_BINARY_DIR:STATIC=C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete
+
+//Generate HTML documentation (Doxygen)
+ZLIBCOMPLETE_DOCS:BOOL=OFF
+
+//Build examples
+ZLIBCOMPLETE_EXAMPLES:BOOL=ON
+
+//Value Computed by CMake
+ZLIBCOMPLETE_IS_TOP_LEVEL:STATIC=OFF
+
+//Build with optimizations
+ZLIBCOMPLETE_RELEASE:BOOL=ON
+
+//Build shared library.
+ZLIBCOMPLETE_SHARED:BOOL=OFF
+
+//Value Computed by CMake
+ZLIBCOMPLETE_SOURCE_DIR:STATIC=C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete
+
+//Build static library.
+ZLIBCOMPLETE_STATIC:BOOL=ON
+
+//Build with -Werror flag.
+ZLIBCOMPLETE_WERROR:BOOL=OFF
+
+//Build with really strict warning flags.
+ZLIBCOMPLETE_WSTRICT:BOOL=OFF
+
+//Path to a file.
+ZLIB_INCLUDE_DIR:PATH=C:/msys64/clang64/include
+
+//Path to a library.
+ZLIB_LIBRARY_DEBUG:FILEPATH=ZLIB_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+ZLIB_LIBRARY_RELEASE:FILEPATH=C:/msys64/clang64/lib/libz.dll.a
+
+//Value Computed by CMake
 gican_BINARY_DIR:STATIC=C:/Users/jghig/projects/cxx/gican/out/debug
 
 //Value Computed by CMake
@@ -420,6 +465,9 @@ raylib_cpp_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 raylib_cpp_SOURCE_DIR:STATIC=C:/Users/jghig/projects/cxx/gican/lib/raylib-cpp
+
+//Dependencies for the target
+zlibcomplete_LIB_DEPENDS:STATIC=general;C:/msys64/clang64/lib/libz.dll.a;
 
 
 ########################
@@ -570,7 +618,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=16
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=17
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -634,8 +682,14 @@ CPACK_SOURCE_7Z-ADVANCED:INTERNAL=1
 CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 //Have include dinput.h
 DINPUT_H_FOUND:INTERNAL=1
+//ADVANCED property for variable: DOXYGEN_DOT_EXECUTABLE
+DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: DOXYGEN_EXECUTABLE
+DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Details about finding ZLIB
+FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[C:/msys64/clang64/lib/libz.dll.a][C:/msys64/clang64/include][ ][v1.3.2()]
 //Build support for Wayland
 GLFW_BUILD_WAYLAND:INTERNAL=OFF
 //Build support for X11
@@ -663,6 +717,12 @@ SUPPORT_MODULE_RTEXTURES:INTERNAL=ON
 USE_EXTERNAL_GLFW-STRINGS:INTERNAL=OFF;IF_POSSIBLE;ON
 //Have include xinput.h
 XINPUT_H_FOUND:INTERNAL=1
+//ADVANCED property for variable: ZLIB_INCLUDE_DIR
+ZLIB_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ZLIB_LIBRARY_DEBUG
+ZLIB_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ZLIB_LIBRARY_RELEASE
+ZLIB_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/gican
 

@@ -11,4 +11,5 @@ target_link_libraries(gican_client PUBLIC
     util
     raylib_cpp_modules 
     raylib
+    zlibcomplete
 )

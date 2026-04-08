@@ -1,0 +1,9 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "lib\\zlibcomplete\\CMakeFiles\\ungzipsimple.dir\\examples\\ungzipsimple.cpp.obj"
+    }
+  ],
+  "version": 1
+}

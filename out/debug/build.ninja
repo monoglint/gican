@@ -1281,6 +1281,574 @@ build lib/raylib-cpp/modules/install/strip: phony lib/raylib-cpp/modules/CMakeFi
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
+# C:/Users/jghig/projects/cxx/gican/lib/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target zlibcomplete
+
+
+#############################################
+# Order-only phony target for zlibcomplete
+
+build cmake_object_order_depends_target_zlibcomplete: phony || .
+
+build lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/gzipcomplete.cpp.obj.ddi: CXX_SCAN__zlibcomplete_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/gzipcomplete.cpp || cmake_object_order_depends_target_zlibcomplete
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\gzipcomplete.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\gzipcomplete.cpp.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJ_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\gzipcomplete.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\gzipcomplete.cpp.obj.ddi.i
+
+build lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/gzipcomplete.cpp.obj: CXX_COMPILER__zlibcomplete_scanned_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/gzipcomplete.cpp | lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/gzipcomplete.cpp.obj.modmap || cmake_object_order_depends_target_zlibcomplete lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\gzipcomplete.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\gzipcomplete.cpp.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir
+  OBJECT_FILE_DIR = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir
+  dyndep = lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/CXX.dd
+
+build lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/mainpage.cpp.obj.ddi: CXX_SCAN__zlibcomplete_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/mainpage.cpp || cmake_object_order_depends_target_zlibcomplete
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\mainpage.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\mainpage.cpp.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJ_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\mainpage.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\mainpage.cpp.obj.ddi.i
+
+build lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/mainpage.cpp.obj: CXX_COMPILER__zlibcomplete_scanned_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/mainpage.cpp | lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/mainpage.cpp.obj.modmap || cmake_object_order_depends_target_zlibcomplete lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\mainpage.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\mainpage.cpp.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir
+  OBJECT_FILE_DIR = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir
+  dyndep = lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/CXX.dd
+
+build lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/raw.cpp.obj.ddi: CXX_SCAN__zlibcomplete_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/raw.cpp || cmake_object_order_depends_target_zlibcomplete
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\raw.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\raw.cpp.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJ_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\raw.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\raw.cpp.obj.ddi.i
+
+build lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/raw.cpp.obj: CXX_COMPILER__zlibcomplete_scanned_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/raw.cpp | lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/raw.cpp.obj.modmap || cmake_object_order_depends_target_zlibcomplete lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\raw.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\raw.cpp.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir
+  OBJECT_FILE_DIR = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir
+  dyndep = lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/CXX.dd
+
+build lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibmisc.cpp.obj.ddi: CXX_SCAN__zlibcomplete_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/zlibmisc.cpp || cmake_object_order_depends_target_zlibcomplete
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\zlibmisc.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\zlibmisc.cpp.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJ_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\zlibmisc.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\zlibmisc.cpp.obj.ddi.i
+
+build lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibmisc.cpp.obj: CXX_COMPILER__zlibcomplete_scanned_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/zlibmisc.cpp | lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibmisc.cpp.obj.modmap || cmake_object_order_depends_target_zlibcomplete lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\zlibmisc.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\zlibmisc.cpp.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir
+  OBJECT_FILE_DIR = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir
+  dyndep = lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/CXX.dd
+
+build lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibtop.cpp.obj.ddi: CXX_SCAN__zlibcomplete_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/zlibtop.cpp || cmake_object_order_depends_target_zlibcomplete
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\zlibtop.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\zlibtop.cpp.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJ_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\zlibtop.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\zlibtop.cpp.obj.ddi.i
+
+build lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibtop.cpp.obj: CXX_COMPILER__zlibcomplete_scanned_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/zlibtop.cpp | lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibtop.cpp.obj.modmap || cmake_object_order_depends_target_zlibcomplete lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\zlibtop.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib\zlibtop.cpp.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir
+  OBJECT_FILE_DIR = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir\lib
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir
+  dyndep = lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/CXX.dd
+
+build lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/CXX.dd | lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/CXXModules.json lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/gzipcomplete.cpp.obj.modmap lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/mainpage.cpp.obj.modmap lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/raw.cpp.obj.modmap lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibmisc.cpp.obj.modmap lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibtop.cpp.obj.modmap: CXX_DYNDEP__zlibcomplete_Debug lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/gzipcomplete.cpp.obj.ddi lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/mainpage.cpp.obj.ddi lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/raw.cpp.obj.ddi lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibmisc.cpp.obj.ddi lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibtop.cpp.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/CXXDependInfo.json
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target zlibcomplete
+
+
+#############################################
+# Link the static library lib\zlibcomplete\libzlibcomplete.a
+
+build lib/zlibcomplete/libzlibcomplete.a: CXX_STATIC_LIBRARY_LINKER__zlibcomplete_Debug lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/gzipcomplete.cpp.obj lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/mainpage.cpp.obj lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/raw.cpp.obj lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibmisc.cpp.obj lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibtop.cpp.obj
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -Wall -g -stdlib=libc++
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\zlibcomplete\libzlibcomplete.a
+  TARGET_PDB = zlibcomplete.a.dbg
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\zlibcomplete.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target cppzltest
+
+
+#############################################
+# Order-only phony target for cppzltest
+
+build cmake_object_order_depends_target_cppzltest: phony || cmake_object_order_depends_target_zlibcomplete
+
+build lib/zlibcomplete/CMakeFiles/cppzltest.dir/examples/cppzltest.cpp.obj.ddi: CXX_SCAN__cppzltest_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/cppzltest.cpp || cmake_object_order_depends_target_cppzltest
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\cppzltest.dir\examples\cppzltest.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = lib\zlibcomplete\CMakeFiles\cppzltest.dir\examples\cppzltest.cpp.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJ_FILE = lib\zlibcomplete\CMakeFiles\cppzltest.dir\examples\cppzltest.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = lib\zlibcomplete\CMakeFiles\cppzltest.dir\examples\cppzltest.cpp.obj.ddi.i
+
+build lib/zlibcomplete/CMakeFiles/cppzltest.dir/examples/cppzltest.cpp.obj: CXX_COMPILER__cppzltest_scanned_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/cppzltest.cpp | lib/zlibcomplete/CMakeFiles/cppzltest.dir/examples/cppzltest.cpp.obj.modmap || cmake_object_order_depends_target_cppzltest lib/zlibcomplete/CMakeFiles/cppzltest.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\cppzltest.dir\examples\cppzltest.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = lib\zlibcomplete\CMakeFiles\cppzltest.dir\examples\cppzltest.cpp.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\cppzltest.dir
+  OBJECT_FILE_DIR = lib\zlibcomplete\CMakeFiles\cppzltest.dir\examples
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\cppzltest.dir
+  dyndep = lib/zlibcomplete/CMakeFiles/cppzltest.dir/CXX.dd
+
+build lib/zlibcomplete/CMakeFiles/cppzltest.dir/CXX.dd | lib/zlibcomplete/CMakeFiles/cppzltest.dir/CXXModules.json lib/zlibcomplete/CMakeFiles/cppzltest.dir/examples/cppzltest.cpp.obj.modmap: CXX_DYNDEP__cppzltest_Debug lib/zlibcomplete/CMakeFiles/cppzltest.dir/examples/cppzltest.cpp.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/cppzltest.dir/CXXDependInfo.json
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cppzltest
+
+
+#############################################
+# Link the executable lib\zlibcomplete\cppzltest.exe
+
+build lib/zlibcomplete/cppzltest.exe: CXX_EXECUTABLE_LINKER__cppzltest_Debug lib/zlibcomplete/CMakeFiles/cppzltest.dir/examples/cppzltest.cpp.obj | lib/zlibcomplete/libzlibcomplete.a C$:/msys64/clang64/lib/libz.dll.a || lib/zlibcomplete/libzlibcomplete.a
+  CONFIG = Debug
+  FLAGS = -Wall -g -stdlib=libc++
+  LINK_LIBRARIES = lib/zlibcomplete/libzlibcomplete.a  C:/msys64/clang64/lib/libz.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\cppzltest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\zlibcomplete\cppzltest.exe
+  TARGET_IMPLIB = lib\zlibcomplete\libcppzltest.dll.a
+  TARGET_PDB = cppzltest.exe.dbg
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\cppzltest.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target gzipsimple
+
+
+#############################################
+# Order-only phony target for gzipsimple
+
+build cmake_object_order_depends_target_gzipsimple: phony || cmake_object_order_depends_target_zlibcomplete
+
+build lib/zlibcomplete/CMakeFiles/gzipsimple.dir/examples/gzipsimple.cpp.obj.ddi: CXX_SCAN__gzipsimple_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/gzipsimple.cpp || cmake_object_order_depends_target_gzipsimple
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\gzipsimple.dir\examples\gzipsimple.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = lib\zlibcomplete\CMakeFiles\gzipsimple.dir\examples\gzipsimple.cpp.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJ_FILE = lib\zlibcomplete\CMakeFiles\gzipsimple.dir\examples\gzipsimple.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = lib\zlibcomplete\CMakeFiles\gzipsimple.dir\examples\gzipsimple.cpp.obj.ddi.i
+
+build lib/zlibcomplete/CMakeFiles/gzipsimple.dir/examples/gzipsimple.cpp.obj: CXX_COMPILER__gzipsimple_scanned_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/gzipsimple.cpp | lib/zlibcomplete/CMakeFiles/gzipsimple.dir/examples/gzipsimple.cpp.obj.modmap || cmake_object_order_depends_target_gzipsimple lib/zlibcomplete/CMakeFiles/gzipsimple.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\gzipsimple.dir\examples\gzipsimple.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = lib\zlibcomplete\CMakeFiles\gzipsimple.dir\examples\gzipsimple.cpp.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\gzipsimple.dir
+  OBJECT_FILE_DIR = lib\zlibcomplete\CMakeFiles\gzipsimple.dir\examples
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\gzipsimple.dir
+  dyndep = lib/zlibcomplete/CMakeFiles/gzipsimple.dir/CXX.dd
+
+build lib/zlibcomplete/CMakeFiles/gzipsimple.dir/CXX.dd | lib/zlibcomplete/CMakeFiles/gzipsimple.dir/CXXModules.json lib/zlibcomplete/CMakeFiles/gzipsimple.dir/examples/gzipsimple.cpp.obj.modmap: CXX_DYNDEP__gzipsimple_Debug lib/zlibcomplete/CMakeFiles/gzipsimple.dir/examples/gzipsimple.cpp.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/gzipsimple.dir/CXXDependInfo.json
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target gzipsimple
+
+
+#############################################
+# Link the executable lib\zlibcomplete\gzipsimple.exe
+
+build lib/zlibcomplete/gzipsimple.exe: CXX_EXECUTABLE_LINKER__gzipsimple_Debug lib/zlibcomplete/CMakeFiles/gzipsimple.dir/examples/gzipsimple.cpp.obj | lib/zlibcomplete/libzlibcomplete.a C$:/msys64/clang64/lib/libz.dll.a || lib/zlibcomplete/libzlibcomplete.a
+  CONFIG = Debug
+  FLAGS = -Wall -g -stdlib=libc++
+  LINK_LIBRARIES = lib/zlibcomplete/libzlibcomplete.a  C:/msys64/clang64/lib/libz.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\gzipsimple.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\zlibcomplete\gzipsimple.exe
+  TARGET_IMPLIB = lib\zlibcomplete\libgzipsimple.dll.a
+  TARGET_PDB = gzipsimple.exe.dbg
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\gzipsimple.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target rawdeflater
+
+
+#############################################
+# Order-only phony target for rawdeflater
+
+build cmake_object_order_depends_target_rawdeflater: phony || cmake_object_order_depends_target_zlibcomplete
+
+build lib/zlibcomplete/CMakeFiles/rawdeflater.dir/examples/rawdeflater.cpp.obj.ddi: CXX_SCAN__rawdeflater_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/rawdeflater.cpp || cmake_object_order_depends_target_rawdeflater
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\rawdeflater.dir\examples\rawdeflater.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = lib\zlibcomplete\CMakeFiles\rawdeflater.dir\examples\rawdeflater.cpp.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJ_FILE = lib\zlibcomplete\CMakeFiles\rawdeflater.dir\examples\rawdeflater.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = lib\zlibcomplete\CMakeFiles\rawdeflater.dir\examples\rawdeflater.cpp.obj.ddi.i
+
+build lib/zlibcomplete/CMakeFiles/rawdeflater.dir/examples/rawdeflater.cpp.obj: CXX_COMPILER__rawdeflater_scanned_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/rawdeflater.cpp | lib/zlibcomplete/CMakeFiles/rawdeflater.dir/examples/rawdeflater.cpp.obj.modmap || cmake_object_order_depends_target_rawdeflater lib/zlibcomplete/CMakeFiles/rawdeflater.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\rawdeflater.dir\examples\rawdeflater.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = lib\zlibcomplete\CMakeFiles\rawdeflater.dir\examples\rawdeflater.cpp.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\rawdeflater.dir
+  OBJECT_FILE_DIR = lib\zlibcomplete\CMakeFiles\rawdeflater.dir\examples
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\rawdeflater.dir
+  dyndep = lib/zlibcomplete/CMakeFiles/rawdeflater.dir/CXX.dd
+
+build lib/zlibcomplete/CMakeFiles/rawdeflater.dir/CXX.dd | lib/zlibcomplete/CMakeFiles/rawdeflater.dir/CXXModules.json lib/zlibcomplete/CMakeFiles/rawdeflater.dir/examples/rawdeflater.cpp.obj.modmap: CXX_DYNDEP__rawdeflater_Debug lib/zlibcomplete/CMakeFiles/rawdeflater.dir/examples/rawdeflater.cpp.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/rawdeflater.dir/CXXDependInfo.json
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target rawdeflater
+
+
+#############################################
+# Link the executable lib\zlibcomplete\rawdeflater.exe
+
+build lib/zlibcomplete/rawdeflater.exe: CXX_EXECUTABLE_LINKER__rawdeflater_Debug lib/zlibcomplete/CMakeFiles/rawdeflater.dir/examples/rawdeflater.cpp.obj | lib/zlibcomplete/libzlibcomplete.a C$:/msys64/clang64/lib/libz.dll.a || lib/zlibcomplete/libzlibcomplete.a
+  CONFIG = Debug
+  FLAGS = -Wall -g -stdlib=libc++
+  LINK_LIBRARIES = lib/zlibcomplete/libzlibcomplete.a  C:/msys64/clang64/lib/libz.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\rawdeflater.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\zlibcomplete\rawdeflater.exe
+  TARGET_IMPLIB = lib\zlibcomplete\librawdeflater.dll.a
+  TARGET_PDB = rawdeflater.exe.dbg
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\rawdeflater.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target rawinflater
+
+
+#############################################
+# Order-only phony target for rawinflater
+
+build cmake_object_order_depends_target_rawinflater: phony || cmake_object_order_depends_target_zlibcomplete
+
+build lib/zlibcomplete/CMakeFiles/rawinflater.dir/examples/rawinflater.cpp.obj.ddi: CXX_SCAN__rawinflater_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/rawinflater.cpp || cmake_object_order_depends_target_rawinflater
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\rawinflater.dir\examples\rawinflater.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = lib\zlibcomplete\CMakeFiles\rawinflater.dir\examples\rawinflater.cpp.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJ_FILE = lib\zlibcomplete\CMakeFiles\rawinflater.dir\examples\rawinflater.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = lib\zlibcomplete\CMakeFiles\rawinflater.dir\examples\rawinflater.cpp.obj.ddi.i
+
+build lib/zlibcomplete/CMakeFiles/rawinflater.dir/examples/rawinflater.cpp.obj: CXX_COMPILER__rawinflater_scanned_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/rawinflater.cpp | lib/zlibcomplete/CMakeFiles/rawinflater.dir/examples/rawinflater.cpp.obj.modmap || cmake_object_order_depends_target_rawinflater lib/zlibcomplete/CMakeFiles/rawinflater.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\rawinflater.dir\examples\rawinflater.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = lib\zlibcomplete\CMakeFiles\rawinflater.dir\examples\rawinflater.cpp.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\rawinflater.dir
+  OBJECT_FILE_DIR = lib\zlibcomplete\CMakeFiles\rawinflater.dir\examples
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\rawinflater.dir
+  dyndep = lib/zlibcomplete/CMakeFiles/rawinflater.dir/CXX.dd
+
+build lib/zlibcomplete/CMakeFiles/rawinflater.dir/CXX.dd | lib/zlibcomplete/CMakeFiles/rawinflater.dir/CXXModules.json lib/zlibcomplete/CMakeFiles/rawinflater.dir/examples/rawinflater.cpp.obj.modmap: CXX_DYNDEP__rawinflater_Debug lib/zlibcomplete/CMakeFiles/rawinflater.dir/examples/rawinflater.cpp.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/rawinflater.dir/CXXDependInfo.json
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target rawinflater
+
+
+#############################################
+# Link the executable lib\zlibcomplete\rawinflater.exe
+
+build lib/zlibcomplete/rawinflater.exe: CXX_EXECUTABLE_LINKER__rawinflater_Debug lib/zlibcomplete/CMakeFiles/rawinflater.dir/examples/rawinflater.cpp.obj | lib/zlibcomplete/libzlibcomplete.a C$:/msys64/clang64/lib/libz.dll.a || lib/zlibcomplete/libzlibcomplete.a
+  CONFIG = Debug
+  FLAGS = -Wall -g -stdlib=libc++
+  LINK_LIBRARIES = lib/zlibcomplete/libzlibcomplete.a  C:/msys64/clang64/lib/libz.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\rawinflater.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\zlibcomplete\rawinflater.exe
+  TARGET_IMPLIB = lib\zlibcomplete\librawinflater.dll.a
+  TARGET_PDB = rawinflater.exe.dbg
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\rawinflater.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ungzipsimple
+
+
+#############################################
+# Order-only phony target for ungzipsimple
+
+build cmake_object_order_depends_target_ungzipsimple: phony || cmake_object_order_depends_target_zlibcomplete
+
+build lib/zlibcomplete/CMakeFiles/ungzipsimple.dir/examples/ungzipsimple.cpp.obj.ddi: CXX_SCAN__ungzipsimple_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/ungzipsimple.cpp || cmake_object_order_depends_target_ungzipsimple
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\ungzipsimple.dir\examples\ungzipsimple.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = lib\zlibcomplete\CMakeFiles\ungzipsimple.dir\examples\ungzipsimple.cpp.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJ_FILE = lib\zlibcomplete\CMakeFiles\ungzipsimple.dir\examples\ungzipsimple.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = lib\zlibcomplete\CMakeFiles\ungzipsimple.dir\examples\ungzipsimple.cpp.obj.ddi.i
+
+build lib/zlibcomplete/CMakeFiles/ungzipsimple.dir/examples/ungzipsimple.cpp.obj: CXX_COMPILER__ungzipsimple_scanned_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/ungzipsimple.cpp | lib/zlibcomplete/CMakeFiles/ungzipsimple.dir/examples/ungzipsimple.cpp.obj.modmap || cmake_object_order_depends_target_ungzipsimple lib/zlibcomplete/CMakeFiles/ungzipsimple.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\ungzipsimple.dir\examples\ungzipsimple.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = lib\zlibcomplete\CMakeFiles\ungzipsimple.dir\examples\ungzipsimple.cpp.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\ungzipsimple.dir
+  OBJECT_FILE_DIR = lib\zlibcomplete\CMakeFiles\ungzipsimple.dir\examples
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\ungzipsimple.dir
+  dyndep = lib/zlibcomplete/CMakeFiles/ungzipsimple.dir/CXX.dd
+
+build lib/zlibcomplete/CMakeFiles/ungzipsimple.dir/CXX.dd | lib/zlibcomplete/CMakeFiles/ungzipsimple.dir/CXXModules.json lib/zlibcomplete/CMakeFiles/ungzipsimple.dir/examples/ungzipsimple.cpp.obj.modmap: CXX_DYNDEP__ungzipsimple_Debug lib/zlibcomplete/CMakeFiles/ungzipsimple.dir/examples/ungzipsimple.cpp.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/ungzipsimple.dir/CXXDependInfo.json
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ungzipsimple
+
+
+#############################################
+# Link the executable lib\zlibcomplete\ungzipsimple.exe
+
+build lib/zlibcomplete/ungzipsimple.exe: CXX_EXECUTABLE_LINKER__ungzipsimple_Debug lib/zlibcomplete/CMakeFiles/ungzipsimple.dir/examples/ungzipsimple.cpp.obj | lib/zlibcomplete/libzlibcomplete.a C$:/msys64/clang64/lib/libz.dll.a || lib/zlibcomplete/libzlibcomplete.a
+  CONFIG = Debug
+  FLAGS = -Wall -g -stdlib=libc++
+  LINK_LIBRARIES = lib/zlibcomplete/libzlibcomplete.a  C:/msys64/clang64/lib/libz.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\ungzipsimple.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\zlibcomplete\ungzipsimple.exe
+  TARGET_IMPLIB = lib\zlibcomplete\libungzipsimple.dll.a
+  TARGET_PDB = ungzipsimple.exe.dbg
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\ungzipsimple.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target unzlibsimple
+
+
+#############################################
+# Order-only phony target for unzlibsimple
+
+build cmake_object_order_depends_target_unzlibsimple: phony || cmake_object_order_depends_target_zlibcomplete
+
+build lib/zlibcomplete/CMakeFiles/unzlibsimple.dir/examples/unzlibsimple.cpp.obj.ddi: CXX_SCAN__unzlibsimple_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/unzlibsimple.cpp || cmake_object_order_depends_target_unzlibsimple
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\unzlibsimple.dir\examples\unzlibsimple.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = lib\zlibcomplete\CMakeFiles\unzlibsimple.dir\examples\unzlibsimple.cpp.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJ_FILE = lib\zlibcomplete\CMakeFiles\unzlibsimple.dir\examples\unzlibsimple.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = lib\zlibcomplete\CMakeFiles\unzlibsimple.dir\examples\unzlibsimple.cpp.obj.ddi.i
+
+build lib/zlibcomplete/CMakeFiles/unzlibsimple.dir/examples/unzlibsimple.cpp.obj: CXX_COMPILER__unzlibsimple_scanned_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/unzlibsimple.cpp | lib/zlibcomplete/CMakeFiles/unzlibsimple.dir/examples/unzlibsimple.cpp.obj.modmap || cmake_object_order_depends_target_unzlibsimple lib/zlibcomplete/CMakeFiles/unzlibsimple.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\unzlibsimple.dir\examples\unzlibsimple.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = lib\zlibcomplete\CMakeFiles\unzlibsimple.dir\examples\unzlibsimple.cpp.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\unzlibsimple.dir
+  OBJECT_FILE_DIR = lib\zlibcomplete\CMakeFiles\unzlibsimple.dir\examples
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\unzlibsimple.dir
+  dyndep = lib/zlibcomplete/CMakeFiles/unzlibsimple.dir/CXX.dd
+
+build lib/zlibcomplete/CMakeFiles/unzlibsimple.dir/CXX.dd | lib/zlibcomplete/CMakeFiles/unzlibsimple.dir/CXXModules.json lib/zlibcomplete/CMakeFiles/unzlibsimple.dir/examples/unzlibsimple.cpp.obj.modmap: CXX_DYNDEP__unzlibsimple_Debug lib/zlibcomplete/CMakeFiles/unzlibsimple.dir/examples/unzlibsimple.cpp.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/unzlibsimple.dir/CXXDependInfo.json
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target unzlibsimple
+
+
+#############################################
+# Link the executable lib\zlibcomplete\unzlibsimple.exe
+
+build lib/zlibcomplete/unzlibsimple.exe: CXX_EXECUTABLE_LINKER__unzlibsimple_Debug lib/zlibcomplete/CMakeFiles/unzlibsimple.dir/examples/unzlibsimple.cpp.obj | lib/zlibcomplete/libzlibcomplete.a C$:/msys64/clang64/lib/libz.dll.a || lib/zlibcomplete/libzlibcomplete.a
+  CONFIG = Debug
+  FLAGS = -Wall -g -stdlib=libc++
+  LINK_LIBRARIES = lib/zlibcomplete/libzlibcomplete.a  C:/msys64/clang64/lib/libz.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\unzlibsimple.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\zlibcomplete\unzlibsimple.exe
+  TARGET_IMPLIB = lib\zlibcomplete\libunzlibsimple.dll.a
+  TARGET_PDB = unzlibsimple.exe.dbg
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\unzlibsimple.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target zlibsimple
+
+
+#############################################
+# Order-only phony target for zlibsimple
+
+build cmake_object_order_depends_target_zlibsimple: phony || cmake_object_order_depends_target_zlibcomplete
+
+build lib/zlibcomplete/CMakeFiles/zlibsimple.dir/examples/zlibsimple.cpp.obj.ddi: CXX_SCAN__zlibsimple_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/zlibsimple.cpp || cmake_object_order_depends_target_zlibsimple
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\zlibsimple.dir\examples\zlibsimple.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = lib\zlibcomplete\CMakeFiles\zlibsimple.dir\examples\zlibsimple.cpp.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJ_FILE = lib\zlibcomplete\CMakeFiles\zlibsimple.dir\examples\zlibsimple.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = lib\zlibcomplete\CMakeFiles\zlibsimple.dir\examples\zlibsimple.cpp.obj.ddi.i
+
+build lib/zlibcomplete/CMakeFiles/zlibsimple.dir/examples/zlibsimple.cpp.obj: CXX_COMPILER__zlibsimple_scanned_Debug C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/zlibsimple.cpp | lib/zlibcomplete/CMakeFiles/zlibsimple.dir/examples/zlibsimple.cpp.obj.modmap || cmake_object_order_depends_target_zlibsimple lib/zlibcomplete/CMakeFiles/zlibsimple.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = lib\zlibcomplete\CMakeFiles\zlibsimple.dir\examples\zlibsimple.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = lib\zlibcomplete\CMakeFiles\zlibsimple.dir\examples\zlibsimple.cpp.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\zlibsimple.dir
+  OBJECT_FILE_DIR = lib\zlibcomplete\CMakeFiles\zlibsimple.dir\examples
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\zlibsimple.dir
+  dyndep = lib/zlibcomplete/CMakeFiles/zlibsimple.dir/CXX.dd
+
+build lib/zlibcomplete/CMakeFiles/zlibsimple.dir/CXX.dd | lib/zlibcomplete/CMakeFiles/zlibsimple.dir/CXXModules.json lib/zlibcomplete/CMakeFiles/zlibsimple.dir/examples/zlibsimple.cpp.obj.modmap: CXX_DYNDEP__zlibsimple_Debug lib/zlibcomplete/CMakeFiles/zlibsimple.dir/examples/zlibsimple.cpp.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/zlibsimple.dir/CXXDependInfo.json
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target zlibsimple
+
+
+#############################################
+# Link the executable lib\zlibcomplete\zlibsimple.exe
+
+build lib/zlibcomplete/zlibsimple.exe: CXX_EXECUTABLE_LINKER__zlibsimple_Debug lib/zlibcomplete/CMakeFiles/zlibsimple.dir/examples/zlibsimple.cpp.obj | lib/zlibcomplete/libzlibcomplete.a C$:/msys64/clang64/lib/libz.dll.a || lib/zlibcomplete/libzlibcomplete.a
+  CONFIG = Debug
+  FLAGS = -Wall -g -stdlib=libc++
+  LINK_LIBRARIES = lib/zlibcomplete/libzlibcomplete.a  C:/msys64/clang64/lib/libz.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = lib\zlibcomplete\CMakeFiles\zlibsimple.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\zlibcomplete\zlibsimple.exe
+  TARGET_IMPLIB = lib\zlibcomplete\libzlibsimple.dll.a
+  TARGET_PDB = zlibsimple.exe.dbg
+  TARGET_SUPPORT_DIR = lib\zlibcomplete\CMakeFiles\zlibsimple.dir
+
+
+#############################################
+# Utility command for package
+
+build lib/zlibcomplete/CMakeFiles/package.util: CUSTOM_COMMAND lib/zlibcomplete/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug && C:\msys64\clang64\bin\cpack.exe --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build lib/zlibcomplete/package: phony lib/zlibcomplete/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build lib/zlibcomplete/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug && C:\msys64\clang64\bin\cpack.exe --config ./CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build lib/zlibcomplete/package_source: phony lib/zlibcomplete/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build lib/zlibcomplete/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\lib\zlibcomplete && C:\msys64\clang64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build lib/zlibcomplete/edit_cache: phony lib/zlibcomplete/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build lib/zlibcomplete/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\lib\zlibcomplete && C:\msys64\clang64\bin\cmake.exe --regenerate-during-build -SC:\Users\jghig\projects\cxx\gican -BC:\Users\jghig\projects\cxx\gican\out\debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build lib/zlibcomplete/rebuild_cache: phony lib/zlibcomplete/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build lib/zlibcomplete/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build lib/zlibcomplete/CMakeFiles/install.util: CUSTOM_COMMAND lib/zlibcomplete/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\lib\zlibcomplete && C:\msys64\clang64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build lib/zlibcomplete/install: phony lib/zlibcomplete/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build lib/zlibcomplete/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/zlibcomplete/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\lib\zlibcomplete && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build lib/zlibcomplete/install/local: phony lib/zlibcomplete/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build lib/zlibcomplete/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/zlibcomplete/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jghig\projects\cxx\gican\out\debug\lib\zlibcomplete && C:\msys64\clang64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build lib/zlibcomplete/install/strip: phony lib/zlibcomplete/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
 # C:/Users/jghig/projects/cxx/gican/CMakeLists.txt
 # =============================================================================
 
@@ -1533,14 +2101,14 @@ build util/install/strip: phony util/CMakeFiles/install/strip.util
 #############################################
 # Order-only phony target for gican_client
 
-build cmake_object_order_depends_target_gican_client: phony || cmake_object_order_depends_target_glfw cmake_object_order_depends_target_raylib cmake_object_order_depends_target_raylib_cpp_modules cmake_object_order_depends_target_util
+build cmake_object_order_depends_target_gican_client: phony || cmake_object_order_depends_target_glfw cmake_object_order_depends_target_raylib cmake_object_order_depends_target_raylib_cpp_modules cmake_object_order_depends_target_util cmake_object_order_depends_target_zlibcomplete
 
 build gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj.ddi: CXX_SCAN__gican_client_Debug C$:/Users/jghig/projects/cxx/gican/gican_client/src/main.cxx || cmake_object_order_depends_target_gican_client
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
   DEP_FILE = gican_client\CMakeFiles\gican_client.dir\src\main.cxx.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = gican_client\CMakeFiles\gican_client.dir\src\main.cxx.obj.ddi
   FLAGS = -Wall -g -stdlib=libc++ -std=c++23
-  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/include
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/include -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
   OBJ_FILE = gican_client\CMakeFiles\gican_client.dir\src\main.cxx.obj
   PREPROCESSED_OUTPUT_FILE = gican_client\CMakeFiles\gican_client.dir\src\main.cxx.obj.ddi.i
 
@@ -1550,7 +2118,7 @@ build gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj: CXX_COMPILER__g
   DEP_FILE = gican_client\CMakeFiles\gican_client.dir\src\main.cxx.obj.d
   DYNDEP_MODULE_MAP_FILE = gican_client\CMakeFiles\gican_client.dir\src\main.cxx.obj.modmap
   FLAGS = -Wall -g -stdlib=libc++ -std=c++23
-  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/include
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/include -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
   OBJECT_DIR = gican_client\CMakeFiles\gican_client.dir
   OBJECT_FILE_DIR = gican_client\CMakeFiles\gican_client.dir\src
   TARGET_SUPPORT_DIR = gican_client\CMakeFiles\gican_client.dir
@@ -1566,10 +2134,10 @@ build gican_client/CMakeFiles/gican_client.dir/CXX.dd | gican_client/CMakeFiles/
 #############################################
 # Link the executable gican_client\gican_client.exe
 
-build gican_client/gican_client.exe: CXX_EXECUTABLE_LINKER__gican_client_Debug gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj | util/libutil.a lib/raylib-cpp/modules/libraylib_cpp_modules.a lib/raylib/raylib/libraylib.a || lib/raylib-cpp/modules/libraylib_cpp_modules.a lib/raylib/raylib/external/glfw/src/glfw lib/raylib/raylib/libraylib.a util/libutil.a
+build gican_client/gican_client.exe: CXX_EXECUTABLE_LINKER__gican_client_Debug gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj | util/libutil.a lib/raylib-cpp/modules/libraylib_cpp_modules.a lib/raylib/raylib/libraylib.a lib/zlibcomplete/libzlibcomplete.a C$:/msys64/clang64/lib/libz.dll.a || lib/raylib-cpp/modules/libraylib_cpp_modules.a lib/raylib/raylib/external/glfw/src/glfw lib/raylib/raylib/libraylib.a lib/zlibcomplete/libzlibcomplete.a util/libutil.a
   CONFIG = Debug
   FLAGS = -Wall -g -stdlib=libc++
-  LINK_LIBRARIES = util/libutil.a  lib/raylib-cpp/modules/libraylib_cpp_modules.a  lib/raylib/raylib/libraylib.a  -lopengl32  -lglu32  -lwinmm  -lpthread  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = util/libutil.a  lib/raylib-cpp/modules/libraylib_cpp_modules.a  lib/raylib/raylib/libraylib.a  lib/zlibcomplete/libzlibcomplete.a  -lopengl32  -lglu32  -lwinmm  -lpthread  C:/msys64/clang64/lib/libz.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = gican_client\CMakeFiles\gican_client.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -2249,6 +2817,10 @@ build gican_client/src/game/sketch/install/strip: phony gican_client/src/game/sk
 # =============================================================================
 # Target aliases.
 
+build cppzltest: phony lib/zlibcomplete/cppzltest.exe
+
+build cppzltest.exe: phony lib/zlibcomplete/cppzltest.exe
+
 build engine_tensor: phony gican_client/src/engine/tensor/libengine_tensor.a
 
 build game_sketch: phony gican_client/src/game/sketch/libgame_sketch.a
@@ -2258,6 +2830,10 @@ build gican_client: phony gican_client/gican_client.exe
 build gican_client.exe: phony gican_client/gican_client.exe
 
 build glfw: phony lib/raylib/raylib/external/glfw/src/glfw
+
+build gzipsimple: phony lib/zlibcomplete/gzipsimple.exe
+
+build gzipsimple.exe: phony lib/zlibcomplete/gzipsimple.exe
 
 build libengine_tensor.a: phony gican_client/src/engine/tensor/libengine_tensor.a
 
@@ -2269,15 +2845,39 @@ build libraylib_cpp_modules.a: phony lib/raylib-cpp/modules/libraylib_cpp_module
 
 build libutil.a: phony util/libutil.a
 
+build libzlibcomplete.a: phony lib/zlibcomplete/libzlibcomplete.a
+
+build rawdeflater: phony lib/zlibcomplete/rawdeflater.exe
+
+build rawdeflater.exe: phony lib/zlibcomplete/rawdeflater.exe
+
+build rawinflater: phony lib/zlibcomplete/rawinflater.exe
+
+build rawinflater.exe: phony lib/zlibcomplete/rawinflater.exe
+
 build raylib: phony lib/raylib/raylib/libraylib.a
 
 build raylib_cpp_modules: phony lib/raylib-cpp/modules/libraylib_cpp_modules.a
 
+build ungzipsimple: phony lib/zlibcomplete/ungzipsimple.exe
+
+build ungzipsimple.exe: phony lib/zlibcomplete/ungzipsimple.exe
+
 build uninstall: phony lib/raylib/uninstall
+
+build unzlibsimple: phony lib/zlibcomplete/unzlibsimple.exe
+
+build unzlibsimple.exe: phony lib/zlibcomplete/unzlibsimple.exe
 
 build update_mappings: phony lib/raylib/raylib/external/glfw/src/update_mappings
 
 build util: phony util/libutil.a
+
+build zlibcomplete: phony lib/zlibcomplete/libzlibcomplete.a
+
+build zlibsimple: phony lib/zlibcomplete/zlibsimple.exe
+
+build zlibsimple.exe: phony lib/zlibcomplete/zlibsimple.exe
 
 # =============================================================================
 # Folder targets.
@@ -2336,7 +2936,7 @@ build gican_client/src/game/sketch/codegen: phony
 #############################################
 # Folder: C:/Users/jghig/projects/cxx/gican/out/debug/lib
 
-build lib/codegen: phony lib/raylib/codegen lib/raylib-cpp/codegen
+build lib/codegen: phony lib/raylib/codegen lib/raylib-cpp/codegen lib/zlibcomplete/codegen
 
 # =============================================================================
 
@@ -2386,6 +2986,13 @@ build lib/raylib/raylib/external/glfw/codegen: phony lib/raylib/raylib/external/
 # Folder: C:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/external/glfw/src
 
 build lib/raylib/raylib/external/glfw/src/codegen: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete
+
+build lib/zlibcomplete/codegen: phony
 
 # =============================================================================
 
@@ -2448,7 +3055,7 @@ build gican_client/src/game/sketch/all: phony gican_client/src/game/sketch/libga
 #############################################
 # Folder: C:/Users/jghig/projects/cxx/gican/out/debug/lib
 
-build lib/all: phony lib/raylib/all lib/raylib-cpp/all
+build lib/all: phony lib/raylib/all lib/raylib-cpp/all lib/zlibcomplete/all
 
 # =============================================================================
 
@@ -2502,6 +3109,13 @@ build lib/raylib/raylib/external/glfw/src/all: phony lib/raylib/raylib/external/
 # =============================================================================
 
 #############################################
+# Folder: C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete
+
+build lib/zlibcomplete/all: phony lib/zlibcomplete/libzlibcomplete.a lib/zlibcomplete/cppzltest.exe lib/zlibcomplete/gzipsimple.exe lib/zlibcomplete/rawdeflater.exe lib/zlibcomplete/rawinflater.exe lib/zlibcomplete/ungzipsimple.exe lib/zlibcomplete/unzlibsimple.exe lib/zlibcomplete/zlibsimple.exe
+
+# =============================================================================
+
+#############################################
 # Folder: C:/Users/jghig/projects/cxx/gican/out/debug/util
 
 build util/all: phony util/libutil.a
@@ -2513,14 +3127,14 @@ build util/all: phony util/libutil.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:/Users/jghig/projects/cxx/gican/out/debug/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/external/glfw/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/external/glfw/src/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/include/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/modules/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/util/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game/sketch/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/CTestTestfile.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/CTestTestfile.cmake: RERUN_CMAKE | C$:/Users/jghig/projects/cxx/gican/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/game/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/game/sketch/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/modules/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/CMakeOptions.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/AddIfFlagCompiles.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/CompileDefinitions.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/CompilerFlags.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/EnumOption.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/GlfwImport.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/InstallConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/JoinPaths.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/LibraryConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/LibraryPathToLinkerFlags.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/PackConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/ParseConfigHeader.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/PopulateConfigVariablesLocally.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/Uninstall.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/raylib-config-version.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/raylib.pc.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMake/glfw3.pc.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMake/glfw3Config.cmake.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/util/CMakeLists.txt C$:/msys64/clang64/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/msys64/clang64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/clang64/share/cmake/Modules/CPack.cmake C$:/msys64/clang64/share/cmake/Modules/CPackComponent.cmake C$:/msys64/clang64/share/cmake/Modules/CheckCCompilerFlag.cmake C$:/msys64/clang64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/clang64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/clang64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang-C.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/FindOpenGL.cmake C$:/msys64/clang64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/clang64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/clang64/share/cmake/Modules/FindThreads.cmake C$:/msys64/clang64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD-C.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD-C.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang-C.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/clang64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake C$:/msys64/clang64/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake
+build build.ninja C$:/Users/jghig/projects/cxx/gican/out/debug/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/external/glfw/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/external/glfw/src/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/include/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib-cpp/modules/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/util/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/game/sketch/cmake_install.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/CTestTestfile.cmake C$:/Users/jghig/projects/cxx/gican/out/debug/lib/raylib/raylib/CTestTestfile.cmake: RERUN_CMAKE | C$:/Users/jghig/projects/cxx/gican/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/game/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/game/sketch/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/modules/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/CMakeOptions.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/AddIfFlagCompiles.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/CompileDefinitions.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/CompilerFlags.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/EnumOption.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/GlfwImport.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/InstallConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/JoinPaths.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/LibraryConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/LibraryPathToLinkerFlags.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/PackConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/ParseConfigHeader.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/PopulateConfigVariablesLocally.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/Uninstall.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/raylib-config-version.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/raylib.pc.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMake/glfw3.pc.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMake/glfw3Config.cmake.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/util/CMakeLists.txt C$:/msys64/clang64/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/msys64/clang64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/clang64/share/cmake/Modules/CPack.cmake C$:/msys64/clang64/share/cmake/Modules/CPackComponent.cmake C$:/msys64/clang64/share/cmake/Modules/CheckCCompilerFlag.cmake C$:/msys64/clang64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/clang64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/clang64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang-C.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/FindDoxygen.cmake C$:/msys64/clang64/share/cmake/Modules/FindOpenGL.cmake C$:/msys64/clang64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/clang64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/clang64/share/cmake/Modules/FindThreads.cmake C$:/msys64/clang64/share/cmake/Modules/FindZLIB.cmake C$:/msys64/clang64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD-C.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD-C.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang-C.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/clang64/share/cmake/Modules/SelectLibraryConfigurations.cmake C$:/msys64/clang64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake C$:/msys64/clang64/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/jghig/projects/cxx/gican/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/game/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/game/sketch/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/modules/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/CMakeOptions.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/AddIfFlagCompiles.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/CompileDefinitions.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/CompilerFlags.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/EnumOption.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/GlfwImport.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/InstallConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/JoinPaths.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/LibraryConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/LibraryPathToLinkerFlags.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/PackConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/ParseConfigHeader.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/PopulateConfigVariablesLocally.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/Uninstall.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/raylib-config-version.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/raylib.pc.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMake/glfw3.pc.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMake/glfw3Config.cmake.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/util/CMakeLists.txt C$:/msys64/clang64/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/msys64/clang64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/clang64/share/cmake/Modules/CPack.cmake C$:/msys64/clang64/share/cmake/Modules/CPackComponent.cmake C$:/msys64/clang64/share/cmake/Modules/CheckCCompilerFlag.cmake C$:/msys64/clang64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/clang64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/clang64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang-C.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/FindOpenGL.cmake C$:/msys64/clang64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/clang64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/clang64/share/cmake/Modules/FindThreads.cmake C$:/msys64/clang64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD-C.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD-C.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang-C.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/clang64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake C$:/msys64/clang64/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake: phony
+build C$:/Users/jghig/projects/cxx/gican/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/game/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/gican_client/src/game/sketch/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/modules/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/CMakeOptions.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/AddIfFlagCompiles.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/CompileDefinitions.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/CompilerFlags.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/EnumOption.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/GlfwImport.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/InstallConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/JoinPaths.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/LibraryConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/LibraryPathToLinkerFlags.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/PackConfigurations.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/ParseConfigHeader.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/PopulateConfigVariablesLocally.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/Uninstall.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/cmake/raylib-config-version.cmake C$:/Users/jghig/projects/cxx/gican/lib/raylib/raylib.pc.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMake/glfw3.pc.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/CMake/glfw3Config.cmake.in C$:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/src/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/CMakeLists.txt C$:/Users/jghig/projects/cxx/gican/util/CMakeLists.txt C$:/msys64/clang64/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/msys64/clang64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/clang64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/clang64/share/cmake/Modules/CPack.cmake C$:/msys64/clang64/share/cmake/Modules/CPackComponent.cmake C$:/msys64/clang64/share/cmake/Modules/CheckCCompilerFlag.cmake C$:/msys64/clang64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/clang64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/clang64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang-C.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/Clang.cmake C$:/msys64/clang64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/FindDoxygen.cmake C$:/msys64/clang64/share/cmake/Modules/FindOpenGL.cmake C$:/msys64/clang64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/clang64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/clang64/share/cmake/Modules/FindThreads.cmake C$:/msys64/clang64/share/cmake/Modules/FindZLIB.cmake C$:/msys64/clang64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckCompilerFlag.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake C$:/msys64/clang64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD-C.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Linker/LLD.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD-C.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-LLD.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang-C.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang-CXX.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Clang.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/clang64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/clang64/share/cmake/Modules/SelectLibraryConfigurations.cmake C$:/msys64/clang64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake C$:/msys64/clang64/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake: phony
 
 
 #############################################

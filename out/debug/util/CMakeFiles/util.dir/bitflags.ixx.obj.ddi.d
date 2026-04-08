@@ -1,6 +1,6 @@
 util\CMakeFiles\util.dir\bitflags.ixx.obj.ddi: \
   C:/Users/jghig/projects/cxx/gican/util/bitflags.ixx \
-  C:/msys64/clang64/include/c++/v1/type_traits \
+  C:/msys64/clang64/include/c++/v1/cstddef \
   C:/msys64/clang64/include/c++/v1/__config \
   C:/msys64/clang64/include/c++/v1/__config_site \
   C:/msys64/clang64/include/c++/v1/__configuration/abi.h \
@@ -8,16 +8,36 @@ util\CMakeFiles\util.dir\bitflags.ixx.obj.ddi: \
   C:/msys64/clang64/include/c++/v1/__configuration/platform.h \
   C:/msys64/clang64/include/c++/v1/__configuration/availability.h \
   C:/msys64/clang64/include/c++/v1/__configuration/language.h \
+  C:/msys64/clang64/include/c++/v1/version \
+  C:/msys64/clang64/include/c++/v1/stddef.h \
+  C:/msys64/clang64/lib/clang/21/include/stddef.h \
+  C:/msys64/clang64/lib/clang/21/include/__stddef_header_macro.h \
+  C:/msys64/clang64/lib/clang/21/include/__stddef_ptrdiff_t.h \
+  C:/msys64/clang64/lib/clang/21/include/__stddef_size_t.h \
+  C:/msys64/clang64/lib/clang/21/include/__stddef_wchar_t.h \
+  C:/msys64/clang64/lib/clang/21/include/__stddef_null.h \
+  C:/msys64/clang64/lib/clang/21/include/__stddef_nullptr_t.h \
+  C:/msys64/clang64/lib/clang/21/include/__stddef_max_align_t.h \
+  C:/msys64/clang64/lib/clang/21/include/__stddef_offsetof.h \
+  C:/msys64/clang64/include/c++/v1/__cstddef/byte.h \
+  C:/msys64/clang64/include/c++/v1/__fwd/byte.h \
+  C:/msys64/clang64/include/c++/v1/__type_traits/enable_if.h \
+  C:/msys64/clang64/include/c++/v1/__type_traits/is_integral.h \
+  C:/msys64/clang64/include/c++/v1/__type_traits/integral_constant.h \
+  C:/msys64/clang64/include/c++/v1/__type_traits/remove_cv.h \
+  C:/msys64/clang64/include/c++/v1/__cstddef/max_align_t.h \
+  C:/msys64/clang64/include/c++/v1/__cstddef/nullptr_t.h \
+  C:/msys64/clang64/include/c++/v1/__cstddef/ptrdiff_t.h \
+  C:/msys64/clang64/include/c++/v1/__cstddef/size_t.h \
+  C:/msys64/clang64/include/c++/v1/type_traits \
   C:/msys64/clang64/include/c++/v1/__type_traits/add_cv_quals.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/add_pointer.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_referenceable.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/void_t.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_void.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/integral_constant.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/remove_reference.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/add_reference.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/aligned_storage.h \
-  C:/msys64/clang64/include/c++/v1/__cstddef/size_t.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/type_list.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/aligned_union.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/alignment_of.h \
@@ -29,14 +49,11 @@ util\CMakeFiles\util.dir\bitflags.ixx.obj.ddi: \
   C:/msys64/clang64/include/c++/v1/__type_traits/type_identity.h \
   C:/msys64/clang64/include/c++/v1/__utility/declval.h \
   C:/msys64/clang64/include/c++/v1/__utility/empty.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/enable_if.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/extent.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/has_virtual_destructor.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_abstract.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_arithmetic.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_floating_point.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/remove_cv.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_integral.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_array.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_assignable.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_base_of.h \
@@ -44,7 +61,6 @@ util\CMakeFiles\util.dir\bitflags.ixx.obj.ddi: \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_compound.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_fundamental.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_null_pointer.h \
-  C:/msys64/clang64/include/c++/v1/__cstddef/nullptr_t.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_const.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_constructible.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_convertible.h \
@@ -78,9 +94,6 @@ util\CMakeFiles\util.dir\bitflags.ixx.obj.ddi: \
   C:/msys64/clang64/include/_mingw_secapi.h \
   C:/msys64/clang64/lib/clang/21/include/vadefs.h \
   C:/msys64/clang64/include/vadefs.h \
-  C:/msys64/clang64/include/c++/v1/stddef.h \
-  C:/msys64/clang64/lib/clang/21/include/stddef.h \
-  C:/msys64/clang64/lib/clang/21/include/__stddef_wchar_t.h \
   C:/msys64/clang64/lib/clang/21/include/__stddef_wint_t.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_trivially_destructible.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_union.h \
@@ -117,5 +130,4 @@ util\CMakeFiles\util.dir\bitflags.ixx.obj.ddi: \
   C:/msys64/clang64/include/c++/v1/__type_traits/unwrap_ref.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_implicit_lifetime.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/reference_constructs_from_temporary.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/reference_converts_from_temporary.h \
-  C:/msys64/clang64/include/c++/v1/version
+  C:/msys64/clang64/include/c++/v1/__type_traits/reference_converts_from_temporary.h

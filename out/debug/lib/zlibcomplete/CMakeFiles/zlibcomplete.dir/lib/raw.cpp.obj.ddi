@@ -1,0 +1,9 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\raw.cpp.obj"
+    }
+  ],
+  "version": 1
+}

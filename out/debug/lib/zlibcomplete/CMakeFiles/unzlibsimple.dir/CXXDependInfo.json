@@ -1,0 +1,30 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "Clang",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete",
+	"dir-cur-src" : "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete",
+	"dir-top-bld" : "C:/Users/jghig/projects/cxx/gican/out/debug",
+	"dir-top-src" : "C:/Users/jghig/projects/cxx/gican",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\lib"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/unzlibsimple.dir",
+	"sources" : 
+	{
+		"lib/zlibcomplete/CMakeFiles/unzlibsimple.dir/examples/unzlibsimple.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/examples/unzlibsimple.cpp"
+		}
+	}
+}

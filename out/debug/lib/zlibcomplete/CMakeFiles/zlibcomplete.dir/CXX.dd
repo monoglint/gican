@@ -1,0 +1,11 @@
+ninja_dyndep_version = 1.0
+build lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/gzipcomplete.cpp.obj: dyndep
+
+build lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/mainpage.cpp.obj: dyndep
+
+build lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/raw.cpp.obj: dyndep
+
+build lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibmisc.cpp.obj: dyndep
+
+build lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibtop.cpp.obj: dyndep
+
