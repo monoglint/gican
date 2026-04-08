@@ -6,6 +6,16 @@
 			"bmi" : "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor.pcm",
 			"is-private" : false
 		},
+		"engine.tensor:chunk" : 
+		{
+			"bmi" : "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-chunk.pcm",
+			"is-private" : false
+		},
+		"engine.tensor:region" : 
+		{
+			"bmi" : "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-region.pcm",
+			"is-private" : false
+		},
 		"engine.tensor:tensor_manager" : 
 		{
 			"bmi" : "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-tensor_manager.pcm",
@@ -18,6 +28,16 @@
 		{
 			"lookup-method" : "by-name",
 			"path" : "gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor.pcm"
+		},
+		"engine.tensor:chunk" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-chunk.pcm"
+		},
+		"engine.tensor:region" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-region.pcm"
 		},
 		"engine.tensor:tensor_manager" : 
 		{
@@ -64,7 +84,30 @@
 	{
 		"engine.tensor" : 
 		[
+			"engine.tensor:chunk",
+			"engine.tensor:region",
 			"engine.tensor:tensor_manager",
+			"util",
+			"util:ansi_format",
+			"util:bitflags",
+			"util:cube_array",
+			"util:geometry",
+			"util:hash",
+			"util:panic"
+		],
+		"engine.tensor:chunk" : 
+		[
+			"util",
+			"util:ansi_format",
+			"util:bitflags",
+			"util:cube_array",
+			"util:geometry",
+			"util:hash",
+			"util:panic"
+		],
+		"engine.tensor:region" : 
+		[
+			"engine.tensor:chunk",
 			"util",
 			"util:ansi_format",
 			"util:bitflags",
@@ -75,6 +118,8 @@
 		],
 		"engine.tensor:tensor_manager" : 
 		[
+			"engine.tensor:chunk",
+			"engine.tensor:region",
 			"util",
 			"util:ansi_format",
 			"util:bitflags",

@@ -253,6 +253,18 @@
 },
 {
   "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\chunk.ixx.obj.modmap -o gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\chunk.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_client\\src\\engine\\tensor\\chunk.ixx",
+  "file": "C:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/chunk.ixx",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/chunk.ixx.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\region.ixx.obj.modmap -o gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\region.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_client\\src\\engine\\tensor\\region.ixx",
+  "file": "C:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/region.ixx",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/region.ixx.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
   "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\tensor_manager.ixx.obj.modmap -o gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\tensor_manager.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_client\\src\\engine\\tensor\\tensor_manager.ixx",
   "file": "C:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/tensor_manager.ixx",
   "output": "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor_manager.ixx.obj"

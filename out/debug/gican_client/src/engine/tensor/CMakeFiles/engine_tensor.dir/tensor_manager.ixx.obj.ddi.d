@@ -1,8 +1,6 @@
 gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor_manager.ixx.obj.ddi: \
   C:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/tensor_manager.ixx \
-  C:/msys64/clang64/include/c++/v1/string \
-  C:/msys64/clang64/include/c++/v1/__algorithm/max.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/comp.h \
+  C:/msys64/clang64/include/c++/v1/cstring \
   C:/msys64/clang64/include/c++/v1/__config \
   C:/msys64/clang64/include/c++/v1/__config_site \
   C:/msys64/clang64/include/c++/v1/__configuration/abi.h \
@@ -10,6 +8,19 @@ gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor_manager.ixx.o
   C:/msys64/clang64/include/c++/v1/__configuration/platform.h \
   C:/msys64/clang64/include/c++/v1/__configuration/availability.h \
   C:/msys64/clang64/include/c++/v1/__configuration/language.h \
+  C:/msys64/clang64/include/c++/v1/__cstddef/size_t.h \
+  C:/msys64/clang64/include/c++/v1/__type_traits/is_constant_evaluated.h \
+  C:/msys64/clang64/include/c++/v1/string.h \
+  C:/msys64/clang64/include/string.h C:/msys64/clang64/include/crtdefs.h \
+  C:/msys64/clang64/include/corecrt.h C:/msys64/clang64/include/_mingw.h \
+  C:/msys64/clang64/include/_mingw_mac.h \
+  C:/msys64/clang64/include/_mingw_secapi.h \
+  C:/msys64/clang64/lib/clang/21/include/vadefs.h \
+  C:/msys64/clang64/include/vadefs.h \
+  C:/msys64/clang64/include/sec_api/string_s.h \
+  C:/msys64/clang64/include/c++/v1/string \
+  C:/msys64/clang64/include/c++/v1/__algorithm/max.h \
+  C:/msys64/clang64/include/c++/v1/__algorithm/comp.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/desugars_to.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_integral.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/integral_constant.h \
@@ -32,7 +43,6 @@ gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor_manager.ixx.o
   C:/msys64/clang64/include/c++/v1/__type_traits/is_convertible.h \
   C:/msys64/clang64/include/c++/v1/__concepts/destructible.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_nothrow_destructible.h \
-  C:/msys64/clang64/include/c++/v1/__cstddef/size_t.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_destructible.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_function.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_reference.h \
@@ -129,18 +139,12 @@ gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor_manager.ixx.o
   C:/msys64/clang64/include/c++/v1/__type_traits/is_trivially_copyable.h \
   C:/msys64/clang64/include/c++/v1/cstdint \
   C:/msys64/clang64/lib/clang/21/include/stdint.h \
-  C:/msys64/clang64/include/stdint.h C:/msys64/clang64/include/crtdefs.h \
-  C:/msys64/clang64/include/corecrt.h C:/msys64/clang64/include/_mingw.h \
-  C:/msys64/clang64/include/_mingw_mac.h \
-  C:/msys64/clang64/include/_mingw_secapi.h \
-  C:/msys64/clang64/lib/clang/21/include/vadefs.h \
-  C:/msys64/clang64/include/vadefs.h \
+  C:/msys64/clang64/include/stdint.h \
   C:/msys64/clang64/include/c++/v1/stddef.h \
   C:/msys64/clang64/lib/clang/21/include/stddef.h \
   C:/msys64/clang64/lib/clang/21/include/__stddef_wchar_t.h \
   C:/msys64/clang64/lib/clang/21/include/__stddef_wint_t.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_assignable.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_constant_evaluated.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_equality_comparable.h \
   C:/msys64/clang64/include/c++/v1/__type_traits/is_trivially_lexicographically_comparable.h \
   C:/msys64/clang64/include/c++/v1/__fwd/byte.h \
@@ -202,10 +206,6 @@ gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor_manager.ixx.o
   C:/msys64/clang64/include/c++/v1/__type_traits/unwrap_ref.h \
   C:/msys64/clang64/include/c++/v1/__utility/piecewise_construct.h \
   C:/msys64/clang64/include/c++/v1/__utility/swap.h \
-  C:/msys64/clang64/include/c++/v1/cstring \
-  C:/msys64/clang64/include/c++/v1/string.h \
-  C:/msys64/clang64/include/string.h \
-  C:/msys64/clang64/include/sec_api/string_s.h \
   C:/msys64/clang64/include/c++/v1/__fwd/string.h \
   C:/msys64/clang64/include/c++/v1/__fwd/memory.h \
   C:/msys64/clang64/include/c++/v1/__fwd/memory_resource.h \
@@ -328,240 +328,4 @@ gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor_manager.ixx.o
   C:/msys64/clang64/include/c++/v1/__iterator/empty.h \
   C:/msys64/clang64/include/c++/v1/__iterator/reverse_access.h \
   C:/msys64/clang64/include/c++/v1/__iterator/size.h \
-  C:/msys64/clang64/include/c++/v1/unordered_map \
-  C:/msys64/clang64/include/c++/v1/__algorithm/is_permutation.h \
-  C:/msys64/clang64/include/c++/v1/__functional/is_transparent.h \
-  C:/msys64/clang64/include/c++/v1/__functional/operations.h \
-  C:/msys64/clang64/include/c++/v1/__functional/binary_function.h \
-  C:/msys64/clang64/include/c++/v1/__hash_table \
-  C:/msys64/clang64/include/c++/v1/__bit/countl.h \
-  C:/msys64/clang64/include/c++/v1/__math/rounding_functions.h \
-  C:/msys64/clang64/include/c++/v1/__memory/unique_ptr.h \
-  C:/msys64/clang64/include/c++/v1/__memory/array_cookie.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_trivially_destructible.h \
-  C:/msys64/clang64/include/c++/v1/__memory/auto_ptr.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/dependent_type.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_bounded_array.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_unbounded_array.h \
-  C:/msys64/clang64/include/c++/v1/__utility/private_constructor_tag.h \
-  C:/msys64/clang64/include/c++/v1/__new/launder.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/can_extract_key.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/remove_const_ref.h \
-  C:/msys64/clang64/include/c++/v1/__iterator/erase_if_container.h \
-  C:/msys64/clang64/include/c++/v1/__iterator/ranges_iterator_traits.h \
-  C:/msys64/clang64/include/c++/v1/__node_handle \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_specialization.h \
-  C:/msys64/clang64/include/c++/v1/optional \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_scalar.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_null_pointer.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_trivially_assignable.h \
-  C:/msys64/clang64/include/c++/v1/__utility/in_place.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/container_traits.h \
-  C:/msys64/clang64/include/c++/v1/vector \
-  C:/msys64/clang64/include/c++/v1/__vector/comparison.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/equal.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/lexicographical_compare.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/mismatch.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/simd_utils.h \
-  C:/msys64/clang64/include/c++/v1/__iterator/aliasing_iterator.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/lexicographical_compare_three_way.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/three_way_comp_ref_type.h \
-  C:/msys64/clang64/include/c++/v1/__fwd/vector.h \
-  C:/msys64/clang64/include/c++/v1/__vector/swap.h \
-  C:/msys64/clang64/include/c++/v1/__vector/vector.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/copy.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/copy_move_common.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/unwrap_range.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/for_each_segment.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/copy_n.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/move.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/move_backward.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/copy_backward.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/ranges_copy_n.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/in_out_result.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/ranges_copy.h \
-  C:/msys64/clang64/include/c++/v1/__iterator/unreachable_sentinel.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/rotate.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/swap_ranges.h \
-  C:/msys64/clang64/include/c++/v1/__iterator/move_iterator.h \
-  C:/msys64/clang64/include/c++/v1/__iterator/move_sentinel.h \
-  C:/msys64/clang64/include/c++/v1/__memory/temp_value.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/aligned_storage.h \
-  C:/msys64/clang64/include/c++/v1/__memory/uninitialized_algorithms.h \
-  C:/msys64/clang64/include/c++/v1/__memory/destroy.h \
-  C:/msys64/clang64/include/c++/v1/__split_buffer \
-  C:/msys64/clang64/include/c++/v1/__vector/container_traits.h \
-  C:/msys64/clang64/include/c++/v1/__vector/vector_bool.h \
-  C:/msys64/clang64/include/c++/v1/__bit_reference \
-  C:/msys64/clang64/include/c++/v1/__vector/pmr.h \
-  C:/msys64/clang64/include/c++/v1/__vector/erase.h \
-  C:/msys64/clang64/include/c++/v1/__vector/vector_bool_formatter.h \
-  C:/msys64/clang64/include/c++/v1/__format/formatter.h \
-  C:/msys64/clang64/include/c++/v1/__fwd/format.h \
-  C:/msys64/clang64/include/c++/v1/__format/formatter_bool.h \
-  C:/msys64/clang64/include/c++/v1/__format/concepts.h \
-  C:/msys64/clang64/include/c++/v1/__format/format_parse_context.h \
-  C:/msys64/clang64/include/c++/v1/__format/format_error.h \
-  C:/msys64/clang64/include/c++/v1/__format/formatter_integral.h \
-  C:/msys64/clang64/include/c++/v1/__charconv/to_chars_integral.h \
-  C:/msys64/clang64/include/c++/v1/__charconv/tables.h \
-  C:/msys64/clang64/include/c++/v1/__charconv/to_chars_base_10.h \
-  C:/msys64/clang64/include/c++/v1/__charconv/to_chars_result.h \
-  C:/msys64/clang64/include/c++/v1/__system_error/errc.h \
-  C:/msys64/clang64/include/c++/v1/cerrno \
-  C:/msys64/clang64/include/c++/v1/errno.h \
-  C:/msys64/clang64/include/errno.h \
-  C:/msys64/clang64/include/c++/v1/__charconv/traits.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/make_32_64_or_128_bit.h \
-  C:/msys64/clang64/include/c++/v1/__format/formatter_output.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/ranges_fill_n.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/ranges_transform.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/in_in_out_result.h \
-  C:/msys64/clang64/include/c++/v1/__iterator/projected.h \
-  C:/msys64/clang64/include/c++/v1/__format/buffer.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/transform.h \
-  C:/msys64/clang64/include/c++/v1/__format/format_to_n_result.h \
-  C:/msys64/clang64/include/c++/v1/__iterator/back_insert_iterator.h \
-  C:/msys64/clang64/include/c++/v1/__format/parser_std_format_spec.h \
-  C:/msys64/clang64/include/c++/v1/__format/format_arg.h \
-  C:/msys64/clang64/include/c++/v1/__variant/monostate.h \
-  C:/msys64/clang64/include/c++/v1/__format/format_string.h \
-  C:/msys64/clang64/include/c++/v1/__format/unicode.h \
-  C:/msys64/clang64/include/c++/v1/__format/extended_grapheme_cluster_table.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/ranges_upper_bound.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/lower_bound.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/half_positive.h \
-  C:/msys64/clang64/include/c++/v1/__functional/ranges_operations.h \
-  C:/msys64/clang64/include/c++/v1/__format/indic_conjunct_break_table.h \
-  C:/msys64/clang64/include/c++/v1/__format/width_estimation_table.h \
-  C:/msys64/clang64/include/c++/v1/array \
-  C:/msys64/clang64/include/c++/v1/__iterator/static_bounded_iter.h \
-  C:/msys64/clang64/include/c++/v1/__locale \
-  C:/msys64/clang64/include/c++/v1/__locale_dir/locale_base_api.h \
-  C:/msys64/clang64/include/c++/v1/__locale_dir/support/windows.h \
-  C:/msys64/clang64/include/c++/v1/clocale \
-  C:/msys64/clang64/include/locale.h \
-  C:/msys64/clang64/include/c++/v1/cstddef \
-  C:/msys64/clang64/include/c++/v1/stdlib.h \
-  C:/msys64/clang64/include/stdlib.h \
-  C:/msys64/clang64/include/sec_api/stdlib_s.h \
-  C:/msys64/clang64/include/c++/v1/__math/abs.h \
-  C:/msys64/clang64/include/malloc.h \
-  C:/msys64/clang64/lib/clang/21/include/mm_malloc.h \
-  C:/msys64/clang64/include/time.h C:/msys64/clang64/include/sys/timeb.h \
-  C:/msys64/clang64/include/sec_api/sys/timeb_s.h \
-  C:/msys64/clang64/include/_timeval.h \
-  C:/msys64/clang64/include/pthread_time.h \
-  C:/msys64/clang64/include/pthread_compat.h \
-  C:/msys64/clang64/include/c++/v1/__memory/shared_count.h \
-  C:/msys64/clang64/include/c++/v1/typeinfo \
-  C:/msys64/clang64/include/c++/v1/__mutex/once_flag.h \
-  C:/msys64/clang64/include/c++/v1/__utility/no_destroy.h \
-  C:/msys64/clang64/include/c++/v1/cstdlib \
-  C:/msys64/clang64/include/c++/v1/type_traits \
-  C:/msys64/clang64/include/c++/v1/__type_traits/add_cv_quals.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/aligned_union.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/alignment_of.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/has_virtual_destructor.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_abstract.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_compound.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_fundamental.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_literal_type.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_pod.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_polymorphic.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_trivial.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/rank.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/remove_volatile.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/result_of.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/has_unique_object_representation.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_aggregate.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_implicit_lifetime.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/reference_converts_from_temporary.h \
-  C:/msys64/clang64/include/c++/v1/fstream \
-  C:/msys64/clang64/include/c++/v1/__filesystem/path.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/replace.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/replace_copy.h \
-  C:/msys64/clang64/include/c++/v1/iomanip \
-  C:/msys64/clang64/include/c++/v1/__iterator/istreambuf_iterator.h \
-  C:/msys64/clang64/include/c++/v1/__iterator/default_sentinel.h \
-  C:/msys64/clang64/include/c++/v1/__locale_dir/money.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/reverse.h \
-  C:/msys64/clang64/include/c++/v1/__locale_dir/check_grouping.h \
-  C:/msys64/clang64/include/c++/v1/ios \
-  C:/msys64/clang64/include/c++/v1/__system_error/error_category.h \
-  C:/msys64/clang64/include/c++/v1/__system_error/error_code.h \
-  C:/msys64/clang64/include/c++/v1/__system_error/error_condition.h \
-  C:/msys64/clang64/include/c++/v1/__system_error/system_error.h \
-  C:/msys64/clang64/include/c++/v1/__atomic/atomic.h \
-  C:/msys64/clang64/include/c++/v1/__atomic/atomic_sync.h \
-  C:/msys64/clang64/include/c++/v1/__atomic/contention_t.h \
-  C:/msys64/clang64/include/c++/v1/__atomic/support.h \
-  C:/msys64/clang64/include/c++/v1/__atomic/support/c11.h \
-  C:/msys64/clang64/include/c++/v1/__atomic/memory_order.h \
-  C:/msys64/clang64/include/c++/v1/__atomic/to_gcc_order.h \
-  C:/msys64/clang64/include/c++/v1/__chrono/duration.h \
-  C:/msys64/clang64/include/c++/v1/ratio \
-  C:/msys64/clang64/include/c++/v1/__thread/poll_with_backoff.h \
-  C:/msys64/clang64/include/c++/v1/__chrono/high_resolution_clock.h \
-  C:/msys64/clang64/include/c++/v1/__chrono/steady_clock.h \
-  C:/msys64/clang64/include/c++/v1/__chrono/time_point.h \
-  C:/msys64/clang64/include/c++/v1/__chrono/system_clock.h \
-  C:/msys64/clang64/include/c++/v1/ctime \
-  C:/msys64/clang64/include/c++/v1/__atomic/check_memory_order.h \
-  C:/msys64/clang64/include/c++/v1/__atomic/is_always_lock_free.h \
-  C:/msys64/clang64/include/c++/v1/__locale_dir/get_c_locale.h \
-  C:/msys64/clang64/include/c++/v1/__locale_dir/pad_and_output.h \
-  C:/msys64/clang64/include/c++/v1/__locale_dir/time.h \
-  C:/msys64/clang64/include/c++/v1/__locale_dir/scan_keyword.h \
-  C:/msys64/clang64/include/c++/v1/__ostream/put_character_sequence.h \
-  C:/msys64/clang64/include/c++/v1/__iterator/ostreambuf_iterator.h \
-  C:/msys64/clang64/include/c++/v1/locale \
-  C:/msys64/clang64/include/c++/v1/__locale_dir/messages.h \
-  C:/msys64/clang64/include/c++/v1/__locale_dir/num.h \
-  C:/msys64/clang64/include/c++/v1/streambuf \
-  C:/msys64/clang64/include/c++/v1/__locale_dir/wbuffer_convert.h \
-  C:/msys64/clang64/include/c++/v1/__locale_dir/wstring_convert.h \
-  C:/msys64/clang64/include/c++/v1/__ostream/basic_ostream.h \
-  C:/msys64/clang64/include/c++/v1/__exception/operations.h \
-  C:/msys64/clang64/include/c++/v1/bitset \
-  C:/msys64/clang64/include/c++/v1/__algorithm/count.h \
-  C:/msys64/clang64/include/c++/v1/__bit/popcount.h \
-  C:/msys64/clang64/include/c++/v1/__algorithm/fill.h \
-  C:/msys64/clang64/include/c++/v1/__type_traits/is_char_like_type.h \
-  C:/msys64/clang64/include/c++/v1/istream \
-  C:/msys64/clang64/include/c++/v1/filesystem \
-  C:/msys64/clang64/include/c++/v1/__filesystem/copy_options.h \
-  C:/msys64/clang64/include/c++/v1/__filesystem/directory_entry.h \
-  C:/msys64/clang64/include/c++/v1/__filesystem/file_status.h \
-  C:/msys64/clang64/include/c++/v1/__filesystem/file_type.h \
-  C:/msys64/clang64/include/c++/v1/__filesystem/perms.h \
-  C:/msys64/clang64/include/c++/v1/__filesystem/file_time_type.h \
-  C:/msys64/clang64/include/c++/v1/__chrono/file_clock.h \
-  C:/msys64/clang64/include/c++/v1/__filesystem/filesystem_error.h \
-  C:/msys64/clang64/include/c++/v1/__memory/shared_ptr.h \
-  C:/msys64/clang64/include/c++/v1/__functional/reference_wrapper.h \
-  C:/msys64/clang64/include/c++/v1/__functional/weak_result_type.h \
-  C:/msys64/clang64/include/c++/v1/__memory/allocation_guard.h \
-  C:/msys64/clang64/include/c++/v1/__memory/allocator_destructor.h \
-  C:/msys64/clang64/include/c++/v1/__filesystem/operations.h \
-  C:/msys64/clang64/include/c++/v1/__filesystem/perm_options.h \
-  C:/msys64/clang64/include/c++/v1/__filesystem/space_info.h \
-  C:/msys64/clang64/include/c++/v1/__filesystem/directory_iterator.h \
-  C:/msys64/clang64/include/c++/v1/__filesystem/directory_options.h \
-  C:/msys64/clang64/include/c++/v1/__filesystem/path_iterator.h \
-  C:/msys64/clang64/include/c++/v1/__filesystem/recursive_directory_iterator.h \
-  C:/msys64/clang64/include/c++/v1/__filesystem/u8path.h \
-  C:/msys64/clang64/include/zlib.h C:/msys64/clang64/include/zconf.h \
-  C:/msys64/clang64/include/sys/types.h \
-  C:/msys64/clang64/lib/clang/21/include/stdarg.h \
-  C:/msys64/clang64/lib/clang/21/include/__stdarg_header_macro.h \
-  C:/msys64/clang64/lib/clang/21/include/__stdarg___gnuc_va_list.h \
-  C:/msys64/clang64/lib/clang/21/include/__stdarg_va_list.h \
-  C:/msys64/clang64/lib/clang/21/include/__stdarg_va_arg.h \
-  C:/msys64/clang64/lib/clang/21/include/__stdarg___va_copy.h \
-  C:/msys64/clang64/lib/clang/21/include/__stdarg_va_copy.h \
-  C:/msys64/clang64/include/unistd.h C:/msys64/clang64/include/io.h \
-  C:/msys64/clang64/include/process.h \
-  C:/msys64/clang64/include/corecrt_startup.h \
-  C:/msys64/clang64/include/getopt.h \
-  C:/msys64/clang64/include/pthread_unistd.h
+  C:/msys64/clang64/include/c++/v1/cstddef

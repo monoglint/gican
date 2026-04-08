@@ -3,6 +3,8 @@ add_library(engine_tensor)
 target_sources(engine_tensor
     PUBLIC
         FILE_SET CXX_MODULES FILES
+            chunk.ixx    
+            region.ixx
             tensor_manager.ixx
             tensor.ixx
 )

@@ -2087,6 +2087,44 @@ build gican_client/src/engine/install/strip: phony gican_client/src/engine/CMake
 
 build cmake_object_order_depends_target_engine_tensor: phony || cmake_object_order_depends_target_util cmake_object_order_depends_target_zlibcomplete
 
+build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/chunk.ixx.obj.ddi: CXX_SCAN__engine_tensor_Debug C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/chunk.ixx || cmake_object_order_depends_target_engine_tensor
+  DEP_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\chunk.ixx.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\chunk.ixx.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJ_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\chunk.ixx.obj
+  PREPROCESSED_OUTPUT_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\chunk.ixx.obj.ddi.i
+
+build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/chunk.ixx.obj: CXX_COMPILER__engine_tensor_scanned_Debug C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/chunk.ixx | gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/chunk.ixx.obj.modmap || cmake_object_order_depends_target_engine_tensor gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\chunk.ixx.obj.d
+  DYNDEP_MODULE_MAP_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\chunk.ixx.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJECT_DIR = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir
+  OBJECT_FILE_DIR = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir
+  TARGET_SUPPORT_DIR = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir
+  dyndep = gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXX.dd
+
+build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/region.ixx.obj.ddi: CXX_SCAN__engine_tensor_Debug C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/region.ixx || cmake_object_order_depends_target_engine_tensor
+  DEP_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\region.ixx.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\region.ixx.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJ_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\region.ixx.obj
+  PREPROCESSED_OUTPUT_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\region.ixx.obj.ddi.i
+
+build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/region.ixx.obj: CXX_COMPILER__engine_tensor_scanned_Debug C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/region.ixx | gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/region.ixx.obj.modmap || cmake_object_order_depends_target_engine_tensor gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\region.ixx.obj.d
+  DYNDEP_MODULE_MAP_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\region.ixx.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  INCLUDES = -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib
+  OBJECT_DIR = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir
+  OBJECT_FILE_DIR = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir
+  TARGET_SUPPORT_DIR = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir
+  dyndep = gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXX.dd
+
 build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor_manager.ixx.obj.ddi: CXX_SCAN__engine_tensor_Debug C$:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/tensor_manager.ixx || cmake_object_order_depends_target_engine_tensor
   DEP_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor_manager.ixx.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir\tensor_manager.ixx.obj.ddi
@@ -2125,7 +2163,7 @@ build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor.ixx.obj
   TARGET_SUPPORT_DIR = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir
   dyndep = gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXX.dd
 
-build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXX.dd | gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXXModules.json gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor_manager.ixx.obj.modmap gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor.ixx.obj.modmap: CXX_DYNDEP__engine_tensor_Debug gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor_manager.ixx.obj.ddi gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor.ixx.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXXDependInfo.json util/CMakeFiles/util.dir/CXXModules.json
+build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXX.dd | gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXXModules.json gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/chunk.ixx.obj.modmap gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/region.ixx.obj.modmap gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor_manager.ixx.obj.modmap gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor.ixx.obj.modmap: CXX_DYNDEP__engine_tensor_Debug gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/chunk.ixx.obj.ddi gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/region.ixx.obj.ddi gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor_manager.ixx.obj.ddi gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor.ixx.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXXDependInfo.json util/CMakeFiles/util.dir/CXXModules.json
 
 
 # =============================================================================
@@ -2135,7 +2173,7 @@ build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/CXX.dd | gican
 #############################################
 # Link the static library gican_client\src\engine\tensor\libengine_tensor.a
 
-build gican_client/src/engine/tensor/libengine_tensor.a: CXX_STATIC_LIBRARY_LINKER__engine_tensor_Debug gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor_manager.ixx.obj gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor.ixx.obj || lib/zlibcomplete/libzlibcomplete.a util/libutil.a
+build gican_client/src/engine/tensor/libengine_tensor.a: CXX_STATIC_LIBRARY_LINKER__engine_tensor_Debug gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/chunk.ixx.obj gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/region.ixx.obj gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor_manager.ixx.obj gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor.ixx.obj || lib/zlibcomplete/libzlibcomplete.a util/libutil.a
   CONFIG = Debug
   LANGUAGE_COMPILE_FLAGS = -Wall -g -stdlib=libc++
   OBJECT_DIR = gican_client\src\engine\tensor\CMakeFiles\engine_tensor.dir

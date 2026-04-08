@@ -1,7 +1,13 @@
 ninja_dyndep_version = 1.0
-build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor_manager.ixx.obj | gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-tensor_manager.pcm: dyndep | util/CMakeFiles/util.dir/util.pcm
+build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/chunk.ixx.obj | gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-chunk.pcm: dyndep | util/CMakeFiles/util.dir/util.pcm
   restat = 1
 
-build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor.ixx.obj | gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor.pcm: dyndep | gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-tensor_manager.pcm
+build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/region.ixx.obj | gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-region.pcm: dyndep | gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-chunk.pcm util/CMakeFiles/util.dir/util.pcm
+  restat = 1
+
+build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor_manager.ixx.obj | gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-tensor_manager.pcm: dyndep | util/CMakeFiles/util.dir/util.pcm gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-chunk.pcm gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-region.pcm
+  restat = 1
+
+build gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor.ixx.obj | gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor.pcm: dyndep | gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-tensor_manager.pcm gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-region.pcm gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-chunk.pcm
   restat = 1
 

@@ -13,6 +13,12 @@
       "requires": [
         {
           "logical-name": "engine.tensor:tensor_manager"
+        },
+        {
+          "logical-name": "engine.tensor:region"
+        },
+        {
+          "logical-name": "engine.tensor:chunk"
         }
       ]
     }

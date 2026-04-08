@@ -6,6 +6,26 @@
 	"config" : "Debug",
 	"cxx-modules" : 
 	{
+		"gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/chunk.ixx.obj" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "",
+			"source" : "C:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/chunk.ixx",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/region.ixx.obj" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "",
+			"source" : "C:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/region.ixx",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
 		"gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor.ixx.obj" : 
 		{
 			"bmi-only" : false,

@@ -1,6 +1,8 @@
 -x c++-module
 -fmodule-output=gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor.pcm
 -fmodule-file=engine.tensor:tensor_manager=gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-tensor_manager.pcm
+-fmodule-file=engine.tensor:region=gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-region.pcm
+-fmodule-file=engine.tensor:chunk=gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/engine.tensor-chunk.pcm
 -fmodule-file=util=util/CMakeFiles/util.dir/util.pcm
 -fmodule-file=util:ansi_format=util/CMakeFiles/util.dir/util-ansi_format.pcm
 -fmodule-file=util:bitflags=util/CMakeFiles/util.dir/util-bitflags.pcm

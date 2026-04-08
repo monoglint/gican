@@ -6,178 +6,21 @@ To note, this is the engine side of the project. This means that there are no me
 For that, this file is built to be the base architecture that game/ can build on.
 */
 
+
 module;
 
+#include <cstring>
 #include <string>
-#include <unordered_map>
-#include <vector>
 #include <cstddef>
-#include <type_traits>
-#include <fstream>
-
-#include "zlc/zlibcomplete.hpp"
+#include <unordered_map>
 
 export module engine.tensor:tensor_manager;
 
 import util;
+import :chunk;
+import :region;
 
 export namespace engine::tensor {
-    // To note for voxels, they are not set structs and are instead left open
-    // for interpretation because even though this engine will probably only be used for this game,
-    // I want to keep the engine purely independent.
-    struct VoxelBase;
-
-    template <class T>
-    concept IsVoxel = 
-        // A voxel class must inherit from VoxelBase for explicitness.
-        std::is_base_of<VoxelBase, T>::value && 
-        
-        // A voxel must contain a constant that reads how much it promises to write and read from file buffers.
-        std::same_as<decltype(T::SERIALIZED_SIZE), std::size_t> &&
-
-        // An important number to keep track of to prevent loading a file format where it is not supported version-wise.
-        std::same_as<decltype(T::DATA_VERSION), std::size_t> &&
-
-        requires(T t, char* buffer) {
-            { t.serialize(buffer) } -> std::same_as<void>;
-        } &&
-        requires(T t, const char* buffer) {
-            { t.deserialize(buffer) } -> std::same_as<void>;
-        };
-
-    enum class _ChunkFlags : std::uint8_t {
-        NONE = 0,
-
-        // Whether or not the chunk should be actively modified and displayed in-game.
-        // If disabled, the chunk is elegible for being cleaned up from RAM and serialized to the disk.
-        IS_LOADED = 1 << 0,
-
-        // Marked as true the moment a change is made to the chunk.
-        // The engine does not interact with this variable. The game layer on top should set this flag when needed.
-        IS_SERIALIZABLE = 1 << 1,
-    };
-
-    using ChunkFlags = util::BitFlags<_ChunkFlags>;
-
-    template <IsVoxel Voxel>
-    class Chunk {
-    public:
-        using ChunkLength = uint16_t;
-        using ChunkVolume = uint16_t;
-
-        /// @warning GROUNDS FOR DATA_VERSION CHANGE
-        static constexpr ChunkLength CHUNK_LENGTH = 16;
-        static constexpr ChunkVolume CHUNK_VOLUME = CHUNK_LENGTH * CHUNK_LENGTH * CHUNK_LENGTH;
-
-        static constexpr std::size_t SERIALIZED_SIZE = CHUNK_VOLUME * Voxel::SERIALIZED_SIZE;
-
-        using AsSerialzied = std::string;
-
-        // Update every time there is a change to the chunk system that requires a new file format.
-        static constexpr std::size_t DATA_VERSION = 0;
-        
-        /// @todo Make internals for voxels a pallated system.
-        util::CubeArray<Voxel, ChunkLength, CHUNK_LENGTH> voxels;
-
-        // Flags dictate external behavior with the Chunk, not how the chunk works internally.
-        // Can be modified by the engine or game layer depending on the specific flag.
-        ChunkFlags flags;
-    
-        AsSerialzied serialize() const {
-            AsSerialzied buffer(SERIALIZED_SIZE);
-
-            char* ptr = buffer.data();
-            for (const Voxel& voxel : voxels.items) {
-                voxel.serialize(ptr);
-                ptr += Voxel::SERIALIZED_SIZE;
-            }
-
-            return buffer;
-        }
-
-        void deserialize(AsSerialzied& buffer) {
-            const char* ptr = buffer.data();
-            for (Voxel& voxel : voxels) {
-                voxel.deserialize(ptr);
-                ptr += Voxel::SERIALIZED_SIZE;
-            }
-        }
-    };
-
-    /*
-    
-        REGION FILE FORMAT
-        
-        repeat (REGION_VOLUME) {
-            u32 - chunk pos in rest of file per CHUNK_ALIGNMENT
-        }
-    */
-    // A RAM representation of an existing region file for fast incremental disk editing
-    template <IsVoxel Voxel>
-    class Region {
-    public:
-        // Change every time a major file-based change occurs to the Region struct.
-        // This variable will be smashed together with the other data versions of Chunk and Voxel to make a unique tag.
-        static constexpr std::size_t DATA_VERSION = 0;
-
-        // The character used to delimit the numbers in their vec3 position.
-        static constexpr char FILE_NAME_POS_DELIMITER = '-';
-
-        // The size of each buffer chunk the file system should use when reading and writing.
-        static constexpr std::size_t FSTREAM_BUFFER_SIZE = 5e6; // 5 megs. magic number, change however
-
-        /// @warning DATA_VERSION should increment if these change:
-        static constexpr std::size_t REGION_LENGTH = 32; // in chunks
-        static constexpr std::size_t REGION_VOLUME = REGION_LENGTH * REGION_LENGTH * REGION_LENGTH;
-
-        Region(std::string region_directory, util::Vec3I region_pos)
-            : region_pos(region_pos) {
-                stream.open(region_directory + '/' + region_pos.to_string(FILE_NAME_POS_DELIMITER), std::ios::in | std::ios::out | std::ios::binary);
-            }
-
-        const util::Vec3I region_pos;
-
-        // Note: registers new index if there is none found
-        std::size_t find_chunk_index(util::Vec3I chunk_pos) {
-
-        }
-
-        /* u32 - #bytes of chunk for quick access - n - bytes chunk takes up  */
-        void write_chunk(util::Vec3I chunk_pos, Chunk<Voxel>& chunk) {
-            std::size_t index = find_chunk_index(chunk_pos);
-            std::string serialized = chunk.serialize();
-            std::string length_indicator;
-
-            /// @todo: to_append needs to include 4 bytes in the beginning stating how long the chunk of memory is
-
-            std::string to_append = compressor.compress(serialized);
-
-            stream.seekp(index);
-            stream.write(to_append.data(), to_append.length());
-        }
-
-        void load_chunk(util::Vec3I chunk_pos, Chunk<Voxel>& chunk) {
-            std::size_t index = find_chunk_index(chunk_pos);
-            stream.seekg(index);
-
-            // read first 4 bits to get buffer length.
-            /// @warning @todo THIS BECOMES ENDIAN-DEPENDENT.
-            std::uint32_t buffer_length;
-            stream.read(reinterpret_cast<char*>(&buffer_length), sizeof(buffer_length));
-
-            std::string compressed;
-            stream.read(compressed.data(), buffer_length);
-
-            std::string decompressed = decompressor.decompress(compressed);
-            chunk.deserialize(decompressed);
-        }
-
-    private:
-        std::fstream stream;
-
-        zlibcomplete::ZLibCompressor compressor;
-        zlibcomplete::ZLibDecompressor decompressor;
-    };
 
     // A hashmap of chunks identified by their vector3 position.
     template <IsVoxel Voxel>
