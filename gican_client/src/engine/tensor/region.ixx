@@ -1,3 +1,4 @@
+#include <zlib.h>
 module;
 
 #include "zlc/zlibcomplete.hpp"
@@ -27,6 +28,7 @@ export namespace engine::tensor {
 
     */
     // A query-based reader/writer to any region file that allows incremental disk chunk editing.
+    // Includes automatic caching to prevent the overuse of file reads.
     template <IsVoxel Voxel>
     class Region {
     public:
@@ -53,9 +55,11 @@ export namespace engine::tensor {
 
         // Size of the DATA_VERSION header.
         static constexpr std::size_t DATA_VERSION_HEADER_SIZE = sizeof(DATA_VERSION) + sizeof(Chunk<Voxel>::DATA_VERSION) + sizeof(Voxel::DATA_VERSION);
-        
+            static constexpr std::size_t SEGMENT_POSITIONS_HEADER_POS = DATA_VERSION_HEADER_SIZE;
+
         // Size of the chunk location tracker.
         static constexpr std::size_t SEGMENT_POSITIONS_HEADER_SIZE = REGION_VOLUME * sizeof(SegmentPos);
+            static constexpr std::size_t SEGMENT_SPACE_POS = DATA_VERSION_HEADER_SIZE + SEGMENT_POSITIONS_HEADER_SIZE;
 
         // The total general size of the file header before chunk data is written.
         static constexpr std::size_t FILE_HEADER_SIZE = DATA_VERSION_HEADER_SIZE + SEGMENT_POSITIONS_HEADER_SIZE; 
@@ -112,6 +116,16 @@ export namespace engine::tensor {
         //
         //
 
+        // Synchronizes caches by writing missing data, not validating what already exists.
+        void fill_cache_gaps() {
+            // First ensure tag-to-pos cache
+            /// @todo
+        }
+
+        //
+        //
+        //
+
         SegmentTagPos get_segment_tag_pos(util::Vec3U chunk_pos) {
             return util::cube_pos_to_index<REGION_LENGTH>(chunk_pos);
         }
@@ -124,12 +138,12 @@ export namespace engine::tensor {
                 return potentially_cached_itr->second;
 
             // Default to finding the location from directly in the file.
-            stream.seekp(FILE_HEADER_SIZE + segment_tag_pos);
+            stream.seekg(SEGMENT_POSITIONS_HEADER_POS + segment_tag_pos);
             
             SegmentPos segment_pos = 0;
 
             /// @warning ENDIAN
-            stream.write(reinterpret_cast<char*>(&segment_pos), sizeof(segment_pos));
+            stream.read(reinterpret_cast<char*>(&segment_pos), sizeof(segment_pos));
             util::panic_assert(!stream.bad(), TEMP_BAD_ERR_MESSAGE);     
 
             cache.segment_tag_destinations[segment_tag_pos] = segment_pos;
@@ -137,18 +151,27 @@ export namespace engine::tensor {
             return segment_pos;
         };
 
+        void set_segment_tag(SegmentTagPos segment_tag_pos, SegmentPos new_segment_pos) {
+            stream.seekp(SEGMENT_POSITIONS_HEADER_POS + segment_tag_pos);
+            /// @warning ENDIAN
+            stream.write(reinterpret_cast<const char*>(segment_tag_pos), sizeof(segment_tag_pos));
+            util::panic_assert(!stream.bad(), TEMP_BAD_ERR_MESSAGE);
+
+            cache.segment_tag_destinations[segment_tag_pos] = new_segment_pos;
+        }
+
         SegmentSize get_segment_size(SegmentPos segment_pos) {
             auto potentially_cached_itr = cache.segment_sizes.find(segment_pos);
 
             if (potentially_cached_itr != cache.segment_sizes.end())
                 return potentially_cached_itr->second;
 
-            stream.seekg(FILE_HEADER_SIZE + segment_pos);
+            stream.seekg(SEGMENT_SPACE_POS + segment_pos);
 
             SegmentSize segment_size = 0;
 
             /// @warning ENDIAN
-            stream.write(reinterpret_cast<char*>(&segment_size), sizeof(segment_size));
+            stream.read(reinterpret_cast<char*>(&segment_size), sizeof(segment_size));
             util::panic_assert(!stream.bad(), TEMP_BAD_ERR_MESSAGE);
 
             cache.segment_sizes[segment_pos] = segment_size;
@@ -157,7 +180,20 @@ export namespace engine::tensor {
         }
 
         void set_segment_size(SegmentPos segment_pos, SegmentSize new_segment_size) {
+            stream.seekp(SEGMENT_SPACE_POS + segment_pos);
+            /// @warning ENDIAN
+            stream.write(reinterpret_cast<const char*>(new_segment_size), sizeof(new_segment_size));
+            util::panic_assert(!stream.bad(), TEMP_BAD_ERR_MESSAGE);
 
+            cache.segment_sizes[segment_pos] = new_segment_size;
+        }
+
+        // Finds a new available location for grabs. Does not modify or claim any data.
+        SegmentPos find_available_segment_space(SegmentSize segment_size) const {
+            fill_cache_gaps();
+            for (auto [segment_pos, segment_size] : cache.segment_sizes) {
+                /// @todo
+            }
         }
 
         SegmentPos realloc_segment(SegmentTagPos segment_tag_pos, SegmentSize segment_size) {
@@ -174,11 +210,13 @@ export namespace engine::tensor {
                 // fail condition: segment_size > old_segment_size - REALLOC
             } 
             // fail condition: old_segment_pos does not exist - REALLOC
-
-            // invalidate SegmentPos pointer in header
-            // perform logic to find a fitting space
-            // set SegmentPos pointer in header to new space
-            // return SegmentPos
+            
+            SegmentPos new_segment_pos = find_available_segment_space(segment_size);
+            
+            set_segment_size(new_segment_pos, segment_size);
+            set_segment_tag(segment_tag_pos, new_segment_pos);
+            
+            return new_segment_pos;
         }
 
         /* u32 - #bytes of chunk for quick access - n - bytes chunk takes up  */
