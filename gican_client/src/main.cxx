@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include <string>
 
 import raylib;
 import util;
@@ -18,6 +19,9 @@ int main() {
 
     window.SetTargetFPS(64);
 
+    std::string date = __DATE__;
+    std::string time = __TIME__;
+
     while (!window.ShouldClose()) {
         window.BeginDrawing();
         window.ClearBackground(raylib::Colors::BLACK);
@@ -25,7 +29,7 @@ int main() {
         camera.BeginMode();
         camera.EndMode();
 
-        raylib::DrawText("Hello world", 6, 6, 16, raylib::Colors::WHITE);
+        raylib::DrawText(std::string("This is gican - Last compiled ") + date + " AT " + time + ".", 6, 6, 16, raylib::Colors::WHITE);
         
         window.EndDrawing();
     }

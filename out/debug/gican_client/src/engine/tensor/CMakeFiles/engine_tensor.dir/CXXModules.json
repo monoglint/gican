@@ -78,6 +78,11 @@
 		{
 			"lookup-method" : "by-name",
 			"path" : "util/CMakeFiles/util.dir/util-panic.pcm"
+		},
+		"zstd" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "lib/zstdpp/CMakeFiles/zstdpp.dir/zstd.pcm"
 		}
 	},
 	"usages" : 
@@ -93,7 +98,8 @@
 			"util:cube_array",
 			"util:geometry",
 			"util:hash",
-			"util:panic"
+			"util:panic",
+			"zstd"
 		],
 		"engine.tensor:chunk" : 
 		[
@@ -114,7 +120,8 @@
 			"util:cube_array",
 			"util:geometry",
 			"util:hash",
-			"util:panic"
+			"util:panic",
+			"zstd"
 		],
 		"engine.tensor:tensor_manager" : 
 		[
@@ -126,7 +133,8 @@
 			"util:cube_array",
 			"util:geometry",
 			"util:hash",
-			"util:panic"
+			"util:panic",
+			"zstd"
 		],
 		"util" : 
 		[

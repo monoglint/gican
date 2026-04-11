@@ -1,3 +1,3 @@
 add_subdirectory(raylib)
 add_subdirectory(raylib-cpp)
-add_subdirectory(zlibcomplete)
+add_subdirectory(zstdpp)

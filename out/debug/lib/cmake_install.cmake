@@ -49,7 +49,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/cmake_install.cmake")
+  include("C:/Users/jghig/projects/cxx/gican/out/debug/lib/zstdpp/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT

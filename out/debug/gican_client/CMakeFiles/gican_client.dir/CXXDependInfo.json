@@ -16,8 +16,7 @@
 	[
 		"C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\raylib-cpp\\include",
 		"C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\raylib\\src",
-		"C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\raylib\\src\\external\\glfw\\include",
-		"C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\lib"
+		"C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\raylib\\src\\external\\glfw\\include"
 	],
 	"language" : "CXX",
 	"linked-target-dirs" : 

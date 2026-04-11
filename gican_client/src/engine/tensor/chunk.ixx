@@ -64,6 +64,10 @@ export namespace engine::tensor {
 
         // Update every time there is a change to the chunk system that requires a new file format.
         static constexpr std::size_t DATA_VERSION = 0;
+
+        Chunk(AsSerialzied& serialized_form) {
+            deserialize(serialized_form);
+        }
         
         /// @todo Make internals for voxels a pallated system.
         util::CubeArray<Voxel, ChunkLength, CHUNK_LENGTH> voxels;
@@ -85,8 +89,8 @@ export namespace engine::tensor {
             return buffer;
         }
 
-        void deserialize(AsSerialzied& buffer) {
-            const std::byte* ptr = buffer.data();
+        void deserialize(AsSerialzied& serialized_form) {
+            const std::byte* ptr = serialized_form.data();
             for (Voxel& voxel : voxels) {
                 voxel.deserialize(ptr);
                 ptr += Voxel::SERIALIZED_SIZE;

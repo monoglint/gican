@@ -175,33 +175,9 @@
 },
 {
   "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
-  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\gzipcomplete.cpp.obj.modmap -o lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\gzipcomplete.cpp.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\lib\\gzipcomplete.cpp",
-  "file": "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/gzipcomplete.cpp",
-  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/gzipcomplete.cpp.obj"
-},
-{
-  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
-  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\mainpage.cpp.obj.modmap -o lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\mainpage.cpp.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\lib\\mainpage.cpp",
-  "file": "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/mainpage.cpp",
-  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/mainpage.cpp.obj"
-},
-{
-  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
-  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\raw.cpp.obj.modmap -o lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\raw.cpp.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\lib\\raw.cpp",
-  "file": "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/raw.cpp",
-  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/raw.cpp.obj"
-},
-{
-  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
-  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\zlibmisc.cpp.obj.modmap -o lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\zlibmisc.cpp.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\lib\\zlibmisc.cpp",
-  "file": "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/zlibmisc.cpp",
-  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibmisc.cpp.obj"
-},
-{
-  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
-  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\zlibtop.cpp.obj.modmap -o lib\\zlibcomplete\\CMakeFiles\\zlibcomplete.dir\\lib\\zlibtop.cpp.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zlibcomplete\\lib\\zlibtop.cpp",
-  "file": "C:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib/zlibtop.cpp",
-  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zlibcomplete/CMakeFiles/zlibcomplete.dir/lib/zlibtop.cpp.obj"
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -Wall -g -stdlib=libc++ -std=c++23 @lib\\zstdpp\\CMakeFiles\\zstdpp.dir\\zstdpp.ixx.obj.modmap -o lib\\zstdpp\\CMakeFiles\\zstdpp.dir\\zstdpp.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\lib\\zstdpp\\zstdpp.ixx",
+  "file": "C:/Users/jghig/projects/cxx/gican/lib/zstdpp/zstdpp.ixx",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/lib/zstdpp/CMakeFiles/zstdpp.dir/zstdpp.ixx.obj"
 },
 {
   "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
@@ -247,31 +223,31 @@
 },
 {
   "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
-  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -IC:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/include -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @gican_client\\CMakeFiles\\gican_client.dir\\src\\main.cxx.obj.modmap -o gican_client\\CMakeFiles\\gican_client.dir\\src\\main.cxx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_client\\src\\main.cxx",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -IC:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/include -Wall -g -stdlib=libc++ -std=c++23 @gican_client\\CMakeFiles\\gican_client.dir\\src\\main.cxx.obj.modmap -o gican_client\\CMakeFiles\\gican_client.dir\\src\\main.cxx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_client\\src\\main.cxx",
   "file": "C:/Users/jghig/projects/cxx/gican/gican_client/src/main.cxx",
   "output": "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj"
 },
 {
   "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
-  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\chunk.ixx.obj.modmap -o gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\chunk.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_client\\src\\engine\\tensor\\chunk.ixx",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -Wall -g -stdlib=libc++ -std=c++23 @gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\chunk.ixx.obj.modmap -o gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\chunk.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_client\\src\\engine\\tensor\\chunk.ixx",
   "file": "C:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/chunk.ixx",
   "output": "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/chunk.ixx.obj"
 },
 {
   "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
-  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\region.ixx.obj.modmap -o gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\region.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_client\\src\\engine\\tensor\\region.ixx",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -Wall -g -stdlib=libc++ -std=c++23 @gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\region.ixx.obj.modmap -o gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\region.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_client\\src\\engine\\tensor\\region.ixx",
   "file": "C:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/region.ixx",
   "output": "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/region.ixx.obj"
 },
 {
   "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
-  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\tensor_manager.ixx.obj.modmap -o gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\tensor_manager.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_client\\src\\engine\\tensor\\tensor_manager.ixx",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -Wall -g -stdlib=libc++ -std=c++23 @gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\tensor_manager.ixx.obj.modmap -o gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\tensor_manager.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_client\\src\\engine\\tensor\\tensor_manager.ixx",
   "file": "C:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/tensor_manager.ixx",
   "output": "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor_manager.ixx.obj"
 },
 {
   "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
-  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -IC:/Users/jghig/projects/cxx/gican/lib/zlibcomplete/lib -Wall -g -stdlib=libc++ -std=c++23 @gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\tensor.ixx.obj.modmap -o gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\tensor.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_client\\src\\engine\\tensor\\tensor.ixx",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -Wall -g -stdlib=libc++ -std=c++23 @gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\tensor.ixx.obj.modmap -o gican_client\\src\\engine\\tensor\\CMakeFiles\\engine_tensor.dir\\tensor.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_client\\src\\engine\\tensor\\tensor.ixx",
   "file": "C:/Users/jghig/projects/cxx/gican/gican_client/src/engine/tensor/tensor.ixx",
   "output": "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/src/engine/tensor/CMakeFiles/engine_tensor.dir/tensor.ixx.obj"
 },
