@@ -10,4 +10,5 @@ target_sources(util
             cube_array.ixx
             geometry.ixx
             hash.ixx
+            safe_wrapper.ixx
 )

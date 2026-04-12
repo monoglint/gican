@@ -48,6 +48,11 @@
 		{
 			"lookup-method" : "by-name",
 			"path" : "util/CMakeFiles/util.dir/util-panic.pcm"
+		},
+		"util:safe_wrapper" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-safe_wrapper.pcm"
 		}
 	},
 	"usages" : 
@@ -59,7 +64,8 @@
 			"util:cube_array",
 			"util:geometry",
 			"util:hash",
-			"util:panic"
+			"util:panic",
+			"util:safe_wrapper"
 		],
 		"util:cube_array" : 
 		[

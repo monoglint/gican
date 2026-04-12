@@ -117,7 +117,7 @@ export namespace util {
             *this |= flag;
         }
 
-        constexpr bool test(const BitFlags& flag) const noexcept {
+        constexpr bool has(const BitFlags& flag) const noexcept {
             return (*this & flag) == flag;
         }
 

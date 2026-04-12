@@ -1552,7 +1552,24 @@ build util/CMakeFiles/util.dir/hash.ixx.obj: CXX_COMPILER__util_scanned_Debug C$
   TARGET_SUPPORT_DIR = util\CMakeFiles\util.dir
   dyndep = util/CMakeFiles/util.dir/CXX.dd
 
-build util/CMakeFiles/util.dir/CXX.dd | util/CMakeFiles/util.dir/CXXModules.json util/CMakeFiles/util.dir/ansi_format.ixx.obj.modmap util/CMakeFiles/util.dir/bitflags.ixx.obj.modmap util/CMakeFiles/util.dir/util.ixx.obj.modmap util/CMakeFiles/util.dir/panic.ixx.obj.modmap util/CMakeFiles/util.dir/cube_array.ixx.obj.modmap util/CMakeFiles/util.dir/geometry.ixx.obj.modmap util/CMakeFiles/util.dir/hash.ixx.obj.modmap: CXX_DYNDEP__util_Debug util/CMakeFiles/util.dir/ansi_format.ixx.obj.ddi util/CMakeFiles/util.dir/bitflags.ixx.obj.ddi util/CMakeFiles/util.dir/util.ixx.obj.ddi util/CMakeFiles/util.dir/panic.ixx.obj.ddi util/CMakeFiles/util.dir/cube_array.ixx.obj.ddi util/CMakeFiles/util.dir/geometry.ixx.obj.ddi util/CMakeFiles/util.dir/hash.ixx.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir/CXXDependInfo.json
+build util/CMakeFiles/util.dir/safe_wrapper.ixx.obj.ddi: CXX_SCAN__util_Debug C$:/Users/jghig/projects/cxx/gican/util/safe_wrapper.ixx || cmake_object_order_depends_target_util
+  DEP_FILE = util\CMakeFiles\util.dir\safe_wrapper.ixx.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = util\CMakeFiles\util.dir\safe_wrapper.ixx.obj.ddi
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  OBJ_FILE = util\CMakeFiles\util.dir\safe_wrapper.ixx.obj
+  PREPROCESSED_OUTPUT_FILE = util\CMakeFiles\util.dir\safe_wrapper.ixx.obj.ddi.i
+
+build util/CMakeFiles/util.dir/safe_wrapper.ixx.obj: CXX_COMPILER__util_scanned_Debug C$:/Users/jghig/projects/cxx/gican/util/safe_wrapper.ixx | util/CMakeFiles/util.dir/safe_wrapper.ixx.obj.modmap || cmake_object_order_depends_target_util util/CMakeFiles/util.dir/CXX.dd
+  CONFIG = Debug
+  DEP_FILE = util\CMakeFiles\util.dir\safe_wrapper.ixx.obj.d
+  DYNDEP_MODULE_MAP_FILE = util\CMakeFiles\util.dir\safe_wrapper.ixx.obj.modmap
+  FLAGS = -Wall -g -stdlib=libc++ -std=c++23
+  OBJECT_DIR = util\CMakeFiles\util.dir
+  OBJECT_FILE_DIR = util\CMakeFiles\util.dir
+  TARGET_SUPPORT_DIR = util\CMakeFiles\util.dir
+  dyndep = util/CMakeFiles/util.dir/CXX.dd
+
+build util/CMakeFiles/util.dir/CXX.dd | util/CMakeFiles/util.dir/CXXModules.json util/CMakeFiles/util.dir/ansi_format.ixx.obj.modmap util/CMakeFiles/util.dir/bitflags.ixx.obj.modmap util/CMakeFiles/util.dir/util.ixx.obj.modmap util/CMakeFiles/util.dir/panic.ixx.obj.modmap util/CMakeFiles/util.dir/cube_array.ixx.obj.modmap util/CMakeFiles/util.dir/geometry.ixx.obj.modmap util/CMakeFiles/util.dir/hash.ixx.obj.modmap util/CMakeFiles/util.dir/safe_wrapper.ixx.obj.modmap: CXX_DYNDEP__util_Debug util/CMakeFiles/util.dir/ansi_format.ixx.obj.ddi util/CMakeFiles/util.dir/bitflags.ixx.obj.ddi util/CMakeFiles/util.dir/util.ixx.obj.ddi util/CMakeFiles/util.dir/panic.ixx.obj.ddi util/CMakeFiles/util.dir/cube_array.ixx.obj.ddi util/CMakeFiles/util.dir/geometry.ixx.obj.ddi util/CMakeFiles/util.dir/hash.ixx.obj.ddi util/CMakeFiles/util.dir/safe_wrapper.ixx.obj.ddi | C$:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir/CXXDependInfo.json
 
 
 # =============================================================================
@@ -1562,7 +1579,7 @@ build util/CMakeFiles/util.dir/CXX.dd | util/CMakeFiles/util.dir/CXXModules.json
 #############################################
 # Link the static library util\libutil.a
 
-build util/libutil.a: CXX_STATIC_LIBRARY_LINKER__util_Debug util/CMakeFiles/util.dir/ansi_format.ixx.obj util/CMakeFiles/util.dir/bitflags.ixx.obj util/CMakeFiles/util.dir/util.ixx.obj util/CMakeFiles/util.dir/panic.ixx.obj util/CMakeFiles/util.dir/cube_array.ixx.obj util/CMakeFiles/util.dir/geometry.ixx.obj util/CMakeFiles/util.dir/hash.ixx.obj
+build util/libutil.a: CXX_STATIC_LIBRARY_LINKER__util_Debug util/CMakeFiles/util.dir/ansi_format.ixx.obj util/CMakeFiles/util.dir/bitflags.ixx.obj util/CMakeFiles/util.dir/util.ixx.obj util/CMakeFiles/util.dir/panic.ixx.obj util/CMakeFiles/util.dir/cube_array.ixx.obj util/CMakeFiles/util.dir/geometry.ixx.obj util/CMakeFiles/util.dir/hash.ixx.obj util/CMakeFiles/util.dir/safe_wrapper.ixx.obj
   CONFIG = Debug
   LANGUAGE_COMPILE_FLAGS = -Wall -g -stdlib=libc++
   OBJECT_DIR = util\CMakeFiles\util.dir

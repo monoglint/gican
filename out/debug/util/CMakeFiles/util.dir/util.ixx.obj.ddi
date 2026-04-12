@@ -28,6 +28,9 @@
         },
         {
           "logical-name": "util:hash"
+        },
+        {
+          "logical-name": "util:safe_wrapper"
         }
       ]
     }

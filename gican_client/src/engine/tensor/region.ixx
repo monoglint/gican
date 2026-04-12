@@ -39,6 +39,8 @@ export namespace engine::tensor {
         // The character used to delimit the numbers in their vec3 position.
         static constexpr char FILE_NAME_POS_DELIMITER = '-';
 
+        using ChunkRegionPos = util::Vec3U;
+
         /// @warning DATA_VERSION should increment if these change:
             static constexpr std::size_t REGION_LENGTH = 32; // in chunks
             static constexpr std::size_t REGION_VOLUME = REGION_LENGTH * REGION_LENGTH * REGION_LENGTH;
@@ -66,7 +68,7 @@ export namespace engine::tensor {
         static constexpr std::size_t FILE_HEADER_SIZE = DATA_VERSION_HEADER_SIZE + SEGMENT_POSITIONS_HEADER_SIZE;
  
         RegionFileManager(std::string region_directory, util::Vec3I region_pos)
-            : region_pos(region_pos), region_file_name(region_directory + '/' + region_pos.to_string(FILE_NAME_POS_DELIMITER))
+            : region_file_name(region_directory + '/' + region_pos.to_string(FILE_NAME_POS_DELIMITER))
         {
             stream.open(region_file_name, std::ios::in | std::ios::out | std::ios::binary);
             
@@ -80,8 +82,14 @@ export namespace engine::tensor {
             file_end_pos = stream.tellg();
         }
 
-        const util::Vec3I region_pos;
+        RegionFileManager(const RegionFileManager&) = delete;
+        RegionFileManager& operator=(const RegionFileManager&) = delete;
+
+        RegionFileManager(RegionFileManager&&) = delete;
+        RegionFileManager& operator=(const RegionFileManager&&) = delete;
+        
         const std::string region_file_name;
+
         //
         //
         //
@@ -97,7 +105,7 @@ export namespace engine::tensor {
         //
 
         // Writes a chunk into an appropriately sized segment.
-        void write_chunk(util::Vec3U chunk_pos, Chunk<Voxel>& chunk) {
+        void write_chunk(ChunkRegionPos chunk_pos, Chunk<Voxel>& chunk) {
             zstd::buffer_t buffer = chunk.serialize();
             zstd::buffer_t serialized;
 
@@ -107,10 +115,14 @@ export namespace engine::tensor {
             write_segment(segment_tag_pos, serialized);
         }
 
-        Chunk<Voxel> load_chunk(util::Vec3U chunk_pos) {
+        Chunk<Voxel> load_chunk(ChunkRegionPos chunk_pos) {
             SegmentTagPos segment_tag_pos = get_segment_tag_pos(chunk_pos);
             
             zstd::buffer_t compressed = read_segment(segment_tag_pos);
+
+            if (compressed.size() == 0)
+                return Chunk<Voxel>();
+
             zstd::buffer_t buffer;
 
             zstd::inplace::decompress(compressed, buffer);
@@ -173,7 +185,7 @@ export namespace engine::tensor {
         //
 
         [[nodiscard]]
-        SegmentTagPos get_segment_tag_pos(util::Vec3U chunk_pos) {
+        SegmentTagPos get_segment_tag_pos(ChunkRegionPos chunk_pos) {
             return util::cube_pos_to_index<REGION_LENGTH>(chunk_pos) * sizeof(SegmentPos) + SEGMENT_POSITIONS_HEADER_POS;
         }
 
@@ -255,7 +267,14 @@ export namespace engine::tensor {
 
         zstd::buffer_t read_segment(SegmentTagPos segment_tag_pos) {
             SegmentPos segment_pos = read_segment_tag(segment_tag_pos);
+            
+            if (segment_pos == INVALID_SEGMENT_POS)
+                return {};
+
             SegmentSize segment_size = get_segment_size_metadata(segment_pos);
+
+            if (segment_size == 0)
+                return {};
 
             zstd::buffer_t buffer;
             buffer.resize(segment_size);
@@ -263,6 +282,8 @@ export namespace engine::tensor {
             stream.seekg(segment_pos + sizeof(SegmentSize));
             stream.read(reinterpret_cast<char*>(buffer.data()), buffer.size());
             test_badbit();
+
+            return buffer;
         }
 
         // Updates a segment to contain new content. If the size of the content requires expanding, a new segment is allocated and the current is deemed garbage to be compacted.

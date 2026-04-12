@@ -9,4 +9,5 @@
 -fmodule-file=util:geometry=util/CMakeFiles/util.dir/util-geometry.pcm
 -fmodule-file=util:hash=util/CMakeFiles/util.dir/util-hash.pcm
 -fmodule-file=util:panic=util/CMakeFiles/util.dir/util-panic.pcm
+-fmodule-file=util:safe_wrapper=util/CMakeFiles/util.dir/util-safe_wrapper.pcm
 -fmodule-file=zstd=lib/zstdpp/CMakeFiles/zstdpp.dir/zstd.pcm

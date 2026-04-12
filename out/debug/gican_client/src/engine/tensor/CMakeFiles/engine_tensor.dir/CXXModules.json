@@ -79,6 +79,11 @@
 			"lookup-method" : "by-name",
 			"path" : "util/CMakeFiles/util.dir/util-panic.pcm"
 		},
+		"util:safe_wrapper" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "util/CMakeFiles/util.dir/util-safe_wrapper.pcm"
+		},
 		"zstd" : 
 		{
 			"lookup-method" : "by-name",
@@ -99,6 +104,7 @@
 			"util:geometry",
 			"util:hash",
 			"util:panic",
+			"util:safe_wrapper",
 			"zstd"
 		],
 		"engine.tensor:chunk" : 
@@ -109,7 +115,8 @@
 			"util:cube_array",
 			"util:geometry",
 			"util:hash",
-			"util:panic"
+			"util:panic",
+			"util:safe_wrapper"
 		],
 		"engine.tensor:region" : 
 		[
@@ -121,6 +128,7 @@
 			"util:geometry",
 			"util:hash",
 			"util:panic",
+			"util:safe_wrapper",
 			"zstd"
 		],
 		"engine.tensor:tensor_manager" : 
@@ -134,6 +142,7 @@
 			"util:geometry",
 			"util:hash",
 			"util:panic",
+			"util:safe_wrapper",
 			"zstd"
 		],
 		"util" : 
@@ -143,7 +152,8 @@
 			"util:cube_array",
 			"util:geometry",
 			"util:hash",
-			"util:panic"
+			"util:panic",
+			"util:safe_wrapper"
 		],
 		"util:cube_array" : 
 		[

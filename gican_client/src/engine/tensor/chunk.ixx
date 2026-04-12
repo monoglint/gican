@@ -37,12 +37,14 @@ export namespace engine::tensor {
         NONE = 0,
 
         // Whether or not the chunk should be actively modified and displayed in-game.
-        // If disabled, the chunk is elegible for being cleaned up from RAM and serialized to the disk.
         IS_LOADED = 1 << 0,
 
-        // Marked as true the moment a change is made to the chunk.
-        // The engine does not interact with this variable. The game layer on top should set this flag when needed.
-        IS_SERIALIZABLE = 1 << 1,
+        // Whether or not the chunk is elegible for being written to the disk due to changes.
+        IS_SAVE_PENDING = 1 << 1,
+
+        // Marked as true if the chunk has beem previously automatically generated with a ChunkWriter.
+        // Disabling this flag (if already enabled) will result in an overwrite by the natural terrain generator.
+        HAS_BEEN_GENERATED = 1 << 2,
     };
 
     using ChunkFlags = util::BitFlags<_ChunkFlags>;
@@ -58,7 +60,15 @@ export namespace engine::tensor {
             static constexpr ChunkVolume CHUNK_VOLUME = CHUNK_LENGTH * CHUNK_LENGTH * CHUNK_LENGTH;
 
             /// @todo @note update for pallating support. replace with a method that gets the size based on the number of voxel type entries being pallated
-            static constexpr std::size_t SERIALIZED_SIZE = CHUNK_VOLUME * Voxel::SERIALIZED_SIZE;
+            static constexpr std::size_t SERIALIZED_SIZE = (CHUNK_VOLUME * Voxel::SERIALIZED_SIZE) + sizeof(ChunkFlags);
+
+            /*
+            
+            AS SERIALIZED:
+
+            [list of voxels] - serialized flags
+            
+            */
 
             using AsSerialzied = std::vector<std::byte>;
 
@@ -78,13 +88,16 @@ export namespace engine::tensor {
     
         AsSerialzied serialize() const {
             AsSerialzied buffer;
-            buffer.resize(SERIALIZED_SIZE); // 
+            buffer.resize(SERIALIZED_SIZE);
 
             std::byte* ptr = buffer.data();
             for (const Voxel& voxel : voxels.items) {
                 voxel.serialize(ptr);
                 ptr += Voxel::SERIALIZED_SIZE;
             }
+
+            /// @warning ENDIAN
+            memcpy(ptr, &flags, sizeof(flags));
 
             return buffer;
         }
@@ -95,6 +108,8 @@ export namespace engine::tensor {
                 voxel.deserialize(ptr);
                 ptr += Voxel::SERIALIZED_SIZE;
             }
+
+            memcpy(&flags, ptr, sizeof(flags));
         }
     };
 }

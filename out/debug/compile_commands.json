@@ -223,6 +223,12 @@
 },
 {
   "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -Wall -g -stdlib=libc++ -std=c++23 @util\\CMakeFiles\\util.dir\\safe_wrapper.ixx.obj.modmap -o util\\CMakeFiles\\util.dir\\safe_wrapper.ixx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\util\\safe_wrapper.ixx",
+  "file": "C:/Users/jghig/projects/cxx/gican/util/safe_wrapper.ixx",
+  "output": "C:/Users/jghig/projects/cxx/gican/out/debug/util/CMakeFiles/util.dir/safe_wrapper.ixx.obj"
+},
+{
+  "directory": "C:/Users/jghig/projects/cxx/gican/out/debug",
   "command": "C:\\msys64\\clang64\\bin\\clang++.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -IC:/Users/jghig/projects/cxx/gican/lib/raylib-cpp/include -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src -IC:/Users/jghig/projects/cxx/gican/lib/raylib/src/external/glfw/include -Wall -g -stdlib=libc++ -std=c++23 @gican_client\\CMakeFiles\\gican_client.dir\\src\\main.cxx.obj.modmap -o gican_client\\CMakeFiles\\gican_client.dir\\src\\main.cxx.obj -c C:\\Users\\jghig\\projects\\cxx\\gican\\gican_client\\src\\main.cxx",
   "file": "C:/Users/jghig/projects/cxx/gican/gican_client/src/main.cxx",
   "output": "C:/Users/jghig/projects/cxx/gican/out/debug/gican_client/CMakeFiles/gican_client.dir/src/main.cxx.obj"

@@ -66,6 +66,16 @@
 			"type" : "CXX_MODULES",
 			"visibility" : "PUBLIC"
 		},
+		"util/CMakeFiles/util.dir/safe_wrapper.ixx.obj" : 
+		{
+			"bmi-only" : false,
+			"destination" : null,
+			"name" : "CXX_MODULES",
+			"relative-directory" : "",
+			"source" : "C:/Users/jghig/projects/cxx/gican/util/safe_wrapper.ixx",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
 		"util/CMakeFiles/util.dir/util.ixx.obj" : 
 		{
 			"bmi-only" : false,

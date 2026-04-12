@@ -6,9 +6,11 @@ import raylib;
 import util;
 
 int main() {
+    std::cout << util::ansi_format::BLUE << "Note: Running gican_client will likely open a terminal. If you are seeing this, that is the case. The terminal is currently open for easy debugging.\n" << util::ansi_format::RESET;
+
     raylib::Window window(800, 450, "test window", raylib::ConfigFlags::FLAG_WINDOW_RESIZABLE);
 
-    std::cout << util::ansi_format::BLUE << "Note: Running gican_client will likely open a terminal. If you are seeing this, that is the case. The terminal is currently open for easy debugging.\n" << util::ansi_format::RESET;
+    raylib::Font google_sans = raylib::LoadFont("resources/GoogleSans-Regular.ttf");
 
     raylib::Camera3D camera;
     camera.position = {10, 10, 10};
@@ -29,7 +31,7 @@ int main() {
         camera.BeginMode();
         camera.EndMode();
 
-        raylib::DrawText(std::string("This is gican - Last compiled ") + date + " AT " + time + ".", 6, 6, 16, raylib::Colors::WHITE);
+        raylib::DrawTextEx(google_sans, std::string("This is gican - Last compiled ") + date + " AT " + time + ".", raylib::Vector2(32, 32), 32, 1, raylib::Colors::WHITE);
         
         window.EndDrawing();
     }
